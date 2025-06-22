@@ -29,20 +29,59 @@ val mekanismVersion: String by project
 val curseforge_laserio_id: String by project
 val curseforge_laserio_file: String by project
 
+configurations {
+    create("apiAnnotationProcessor") {
+        extendsFrom(annotationProcessor.get())
+    }
+    create("apiCompileOnly") {
+        extendsFrom(compileOnly.get())
+    }
+    create("apiImplementation") {
+        extendsFrom(implementation.get())
+    }
+}
+
+sourceSets {
+    create("api") {
+        // No resources.
+        resources.setSrcDirs(listOf<String>())
+    }
+
+    main {
+        resources {
+            srcDir("src/generated/resources")
+        }
+
+        compileClasspath += sourceSets["api"].output
+    }
+
+    create("gametest") {
+        compileClasspath += sourceSets.main.get().output
+        //runtimeClasspath += configurations.getByName("gametestLocalRuntime")
+    }
+
+    create("datagen") {
+        compileClasspath += sourceSets.main.get().output
+        //runtimeClasspath += configurations.getByName("gametestLocalRuntime")
+    }
+}
+
 dependencies {
     // Include modules
-    jarJar(project(":enderio-base"))
-    jarJar(project(":enderio-machines"))
-    jarJar(project(":enderio-conduits"))
-    jarJar(project(":enderio-conduits-modded"))
-    jarJar(project(":enderio-armory"))
-    implementation(project(":enderio-base"))
-    implementation(project(":enderio-machines"))
-    implementation(project(":enderio-conduits"))
-    implementation(project(":enderio-conduits-modded"))
-    implementation(project(":enderio-armory"))
+//    jarJar(project(":enderio-base"))
+//    jarJar(project(":enderio-machines"))
+//    jarJar(project(":enderio-conduits"))
+//    jarJar(project(":enderio-conduits-modded"))
+//    jarJar(project(":enderio-armory"))
+//    implementation(project(":enderio-base"))
+//    implementation(project(":enderio-machines"))
+//    implementation(project(":enderio-conduits"))
+//    implementation(project(":enderio-conduits-modded"))
+//    implementation(project(":enderio-armory"))
 
     // JEI
+    compileOnly("mezz.jei:jei-$jeiMinecraftVersion-common-api:$jeiVersion")
+    compileOnly("mezz.jei:jei-$jeiMinecraftVersion-neoforge-api:$jeiVersion")
     runtimeOnly("mezz.jei:jei-$jeiMinecraftVersion-common:$jeiVersion")
     runtimeOnly("mezz.jei:jei-$jeiMinecraftVersion-neoforge:$jeiVersion")
 
@@ -85,10 +124,21 @@ dependencies {
 
     //Laserio
     runtimeOnly("curse.maven:laserio-${curseforge_laserio_id}:${curseforge_laserio_file}")
+
+    testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 neoForge {
     version = neoForgeVersion
+
+    addModdingDependenciesTo(sourceSets.getByName("api"))
+    addModdingDependenciesTo(sourceSets.getByName("datagen"))
+    addModdingDependenciesTo(sourceSets.getByName("gametest"))
+
+    accessTransformers {
+        publish(project.file("src/main/resources/META-INF/accesstransformer.cfg"))
+    }
 
     runs {
         configureEach {
@@ -102,6 +152,29 @@ neoForge {
         create("server") {
             server()
             gameDirectory = project.file("run/server")
+        }
+
+        create("data") {
+            data()
+
+            programArguments.addAll(
+                    "--mod", "enderio",
+                    // TODO: Fix missing models...
+                    //"--all",
+                    "--server", "--client",
+                    "--output", file("src/generated/resources").absolutePath,
+                    "--existing", file("src/main/resources").absolutePath,
+            )
+        }
+    }
+
+    mods {
+        // define mod <-> source bindings
+        // these are used to tell the game which sources are for which mod
+        // multi mod projects should define one per mod
+        create("enderio") {
+            sourceSet(sourceSets["api"])
+            sourceSet(sourceSets.main.get())
         }
     }
 }

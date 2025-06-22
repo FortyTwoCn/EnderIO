@@ -47,10 +47,6 @@ tasks.test {
 neoForge {
     version = neoForgeVersion
 
-    accessTransformers {
-        publish(project.file("src/main/resources/META-INF/accesstransformer.cfg"))
-    }
-
     runs {
         create("data") {
             data()

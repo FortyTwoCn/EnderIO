@@ -1,0 +1,25 @@
+package com.enderio.enderio.common.registration.legacy_modules.base;
+
+import com.enderio.enderio.api.soul.binding.ingredients.AnySoulBindableIngredient;
+import com.enderio.enderio.api.soul.binding.ingredients.EmptySoulBindableIngredient;
+import com.enderio.enderio.api.soul.binding.ingredients.FilledSoulStorageIngredient;
+import com.enderio.enderio.common.EnderIO;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.crafting.IngredientType;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
+
+public class EIOIngredientTypes {
+    private static final DeferredRegister<IngredientType<?>> INGREDIENT_TYPES = DeferredRegister
+            .create(NeoForgeRegistries.Keys.INGREDIENT_TYPES, EnderIO.MOD_ID);
+
+    static {
+        INGREDIENT_TYPES.register("empty_soul_storage", () -> EmptySoulBindableIngredient.TYPE);
+        INGREDIENT_TYPES.register("filled_soul_storage", () -> FilledSoulStorageIngredient.TYPE);
+        INGREDIENT_TYPES.register("any_soul_storage", () -> AnySoulBindableIngredient.TYPE);
+    }
+
+    public static void register(IEventBus bus) {
+        INGREDIENT_TYPES.register(bus);
+    }
+}
