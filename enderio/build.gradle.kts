@@ -39,6 +39,38 @@ configurations {
     create("apiImplementation") {
         extendsFrom(implementation.get())
     }
+
+    create("datagenAnnotationProcessor") {
+        extendsFrom(annotationProcessor.get())
+    }
+    create("datagenCompileOnly") {
+        extendsFrom(compileOnly.get())
+    }
+    create("datagenImplementation") {
+        extendsFrom(implementation.get())
+    }
+    create("datagenRuntimeOnly") {
+        extendsFrom(runtimeOnly.get())
+    }
+    create("datagenLocalRuntime") {
+        extendsFrom(runtimeOnly.get())
+    }
+
+    create("gametestAnnotationProcessor") {
+        extendsFrom(annotationProcessor.get())
+    }
+    create("gametestCompileOnly") {
+        extendsFrom(compileOnly.get())
+    }
+    create("gametestImplementation") {
+        extendsFrom(implementation.get())
+    }
+    create("gametestRuntimeOnly") {
+        extendsFrom(runtimeOnly.get())
+    }
+    create("gametestLocalRuntime") {
+        extendsFrom(runtimeOnly.get())
+    }
 }
 
 sourceSets {
@@ -55,12 +87,14 @@ sourceSets {
         compileClasspath += sourceSets["api"].output
     }
 
-    create("gametest") {
+    create("datagen") {
         compileClasspath += sourceSets.main.get().output
-        //runtimeClasspath += configurations.getByName("gametestLocalRuntime")
+        runtimeClasspath += configurations.getByName("datagenLocalRuntime")
+
+        compileClasspath += sourceSets["api"].output
     }
 
-    create("datagen") {
+    create("gametest") {
         compileClasspath += sourceSets.main.get().output
         //runtimeClasspath += configurations.getByName("gametestLocalRuntime")
     }
@@ -140,6 +174,21 @@ neoForge {
         publish(project.file("src/main/resources/META-INF/accesstransformer.cfg"))
     }
 
+    mods {
+        // define mod <-> source bindings
+        // these are used to tell the game which sources are for which mod
+        // multi mod projects should define one per mod
+        create("enderio") {
+            sourceSet(sourceSets["api"])
+            sourceSet(sourceSets.main.get())
+        }
+
+        create("enderioData") {
+            modSourceSets = mods["enderio"].modSourceSets
+            sourceSet(sourceSets["datagen"])
+        }
+    }
+
     runs {
         configureEach {
             logLevel = org.slf4j.event.Level.INFO
@@ -157,6 +206,9 @@ neoForge {
         create("data") {
             data()
 
+            sourceSet = sourceSets["datagen"]
+            loadedMods.add(mods["enderioData"])
+
             programArguments.addAll(
                     "--mod", "enderio",
                     // TODO: Fix missing models...
@@ -167,30 +219,11 @@ neoForge {
             )
         }
     }
-
-    mods {
-        // define mod <-> source bindings
-        // these are used to tell the game which sources are for which mod
-        // multi mod projects should define one per mod
-        create("enderio") {
-            sourceSet(sourceSets["api"])
-            sourceSet(sourceSets.main.get())
-        }
-    }
 }
 
 // Collect all API packages from all modules.
 tasks.register<Jar>("apiJar") {
     archiveClassifier.set("api")
-
-    from(project(":enderio-armory").sourceSets["main"].output)
-    from(project(":enderio-armory").sourceSets["main"].allJava)
-    from(project(":enderio-base").sourceSets["main"].output)
-    from(project(":enderio-base").sourceSets["main"].allJava)
-    from(project(":enderio-conduits").sourceSets["main"].output)
-    from(project(":enderio-conduits").sourceSets["main"].allJava)
-    from(project(":enderio-machines").sourceSets["main"].output)
-    from(project(":enderio-machines").sourceSets["main"].allJava)
 
     include("com/enderio/api/**")
     include("com/enderio/*/api/**")
@@ -198,11 +231,6 @@ tasks.register<Jar>("apiJar") {
 
 tasks.register<Jar>("sourcesJar") {
     archiveClassifier.set("sources")
-
-    from(project(":enderio-armory").sourceSets["main"].allJava)
-    from(project(":enderio-base").sourceSets["main"].allJava)
-    from(project(":enderio-conduits").sourceSets["main"].allJava)
-    from(project(":enderio-machines").sourceSets["main"].allJava)
 }
 
 tasks.build {

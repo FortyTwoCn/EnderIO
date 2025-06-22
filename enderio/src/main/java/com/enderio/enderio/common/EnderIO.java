@@ -22,28 +22,8 @@ import com.enderio.enderio.common.registration.legacy_modules.base.EIOLootModifi
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOMenus;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOParticles;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIORecipes;
-import com.enderio.enderio.tempdata.EIODataProvider;
-import com.enderio.enderio.tempdata.advancement.EIOAdvancementGenerator;
-import com.enderio.enderio.tempdata.loot.ChestLootProvider;
-import com.enderio.enderio.tempdata.loot.EIOLootModifiersProvider;
-import com.enderio.enderio.tempdata.recipe.BlockRecipeProvider;
-import com.enderio.enderio.tempdata.recipe.FilterRecipeProvider;
-import com.enderio.enderio.tempdata.recipe.FireCraftingRecipeProvider;
-import com.enderio.enderio.tempdata.recipe.GlassRecipeProvider;
-import com.enderio.enderio.tempdata.recipe.ItemRecipeProvider;
-import com.enderio.enderio.tempdata.recipe.MaterialRecipeProvider;
-import com.enderio.enderio.tempdata.tags.EIOBlockTagsProvider;
-import com.enderio.enderio.tempdata.tags.EIOEntityTagsProvider;
-import com.enderio.enderio.tempdata.tags.EIOFluidTagsProvider;
-import com.enderio.enderio.tempdata.tags.EIOItemTagsProvider;
 import com.enderio.regilite.Regilite;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.PackOutput;
-import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -51,16 +31,10 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.InterModEnqueueEvent;
 import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.common.data.AdvancementProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.registries.NewRegistryEvent;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
 
 @Mod(EnderIO.MOD_ID)
 public class EnderIO {
@@ -119,7 +93,6 @@ public class EnderIO {
         // Register event handlers
         eventBus.addListener(this::registerRegistries);
         eventBus.addListener(this::sendIMC);
-        modEventBus.addListener(EventPriority.LOWEST, this::onGatherData);
 
         NeoForge.EVENT_BUS.addListener(PlayerMovementHandler::onPlayerTick);
 
@@ -135,38 +108,5 @@ public class EnderIO {
     private void sendIMC(InterModEnqueueEvent event) {
 //        InterModComms.sendTo("inventorysorter", "slotblacklist", ItemFilterSlot.class::getName);
 //        InterModComms.sendTo("inventorysorter", "slotblacklist", FluidFilterSlot.class::getName);
-    }
-
-    public void onGatherData(GatherDataEvent event) {
-        DataGenerator generator = event.getGenerator();
-        PackOutput packOutput = event.getGenerator().getPackOutput();
-        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-
-        EIODataProvider provider = new EIODataProvider("base");
-
-        provider.addSubProvider(event.includeServer(), new MaterialRecipeProvider(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new BlockRecipeProvider(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new ItemRecipeProvider(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new GlassRecipeProvider(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new FireCraftingRecipeProvider(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new FilterRecipeProvider(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EIOLootModifiersProvider(packOutput, lookupProvider));
-
-        var b = new EIOBlockTagsProvider(packOutput, lookupProvider, existingFileHelper);
-        provider.addSubProvider(event.includeServer(), b);
-        provider.addSubProvider(event.includeServer(),
-            new EIOItemTagsProvider(packOutput, lookupProvider, b.contentsGetter(), existingFileHelper));
-        provider.addSubProvider(event.includeServer(),
-            new EIOFluidTagsProvider(packOutput, lookupProvider, existingFileHelper));
-        provider.addSubProvider(event.includeServer(),
-            new EIOEntityTagsProvider(packOutput, lookupProvider, existingFileHelper));
-        provider.addSubProvider(event.includeServer(), new AdvancementProvider(packOutput, lookupProvider,
-            existingFileHelper, List.of(new EIOAdvancementGenerator())));
-        provider.addSubProvider(event.includeServer(),
-            new LootTableProvider(packOutput, Collections.emptySet(), List
-                .of(new LootTableProvider.SubProviderEntry(ChestLootProvider::new, LootContextParamSets.CHEST)),
-                lookupProvider));
-        generator.addProvider(true, provider);
     }
 }
