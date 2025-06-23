@@ -2,7 +2,7 @@ package com.enderio.enderio.client.features.decoration.paint;
 
 import com.enderio.enderio.common.features.decoration.paint.block.PaintedBlock;
 import com.enderio.enderio.common.features.decoration.paint.block.PaintedSlabBlock;
-import com.enderio.enderio.common.features.decoration.paint.blockentity.PaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.PaintedBlockEntity;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColor;

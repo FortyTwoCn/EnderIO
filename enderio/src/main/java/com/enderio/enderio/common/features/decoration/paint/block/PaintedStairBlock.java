@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.features.decoration.paint.block;
 
-import com.enderio.enderio.common.features.decoration.paint.blockentity.PaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.PaintedBlockEntity;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

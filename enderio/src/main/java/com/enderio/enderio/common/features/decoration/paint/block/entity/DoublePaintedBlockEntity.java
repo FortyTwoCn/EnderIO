@@ -1,4 +1,4 @@
-package com.enderio.enderio.common.features.decoration.paint.blockentity;
+package com.enderio.enderio.common.features.decoration.paint.block.entity;
 
 import com.enderio.enderio.common.EIONBTKeys;
 import com.enderio.enderio.common.features.decoration.paint.PaintUtils;

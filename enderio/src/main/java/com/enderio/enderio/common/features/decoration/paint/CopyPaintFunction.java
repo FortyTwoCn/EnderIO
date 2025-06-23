@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.features.decoration.paint;
 
-import com.enderio.enderio.common.features.decoration.paint.blockentity.PaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.PaintedBlockEntity;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOLootModifiers;
 import com.mojang.serialization.Codec;

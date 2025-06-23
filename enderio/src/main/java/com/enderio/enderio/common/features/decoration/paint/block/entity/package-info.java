@@ -1,4 +1,4 @@
 @javax.annotation.ParametersAreNonnullByDefault
 @net.minecraft.MethodsReturnNonnullByDefault
 
-package com.enderio.enderio.common.features.decoration.paint.blockentity;
+package com.enderio.enderio.common.features.decoration.paint.block.entity;

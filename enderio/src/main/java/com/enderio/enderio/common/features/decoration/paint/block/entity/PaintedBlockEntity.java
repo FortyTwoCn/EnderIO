@@ -1,4 +1,4 @@
-package com.enderio.enderio.common.features.decoration.paint.blockentity;
+package com.enderio.enderio.common.features.decoration.paint.block.entity;
 
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.data.ModelProperty;

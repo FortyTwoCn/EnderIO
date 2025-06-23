@@ -1,8 +1,8 @@
 package com.enderio.enderio.common.registration.legacy_modules.base;
 
 import com.enderio.enderio.common.EnderIO;
-import com.enderio.enderio.common.features.decoration.paint.blockentity.DoublePaintedBlockEntity;
-import com.enderio.enderio.common.features.decoration.paint.blockentity.SinglePaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.DoublePaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.SinglePaintedBlockEntity;
 import com.enderio.enderio.common.features.decoration.skulls.EnderSkullBlockEntity;
 import com.enderio.regilite.holder.RegiliteBlockEntity;
 import com.enderio.regilite.registry.BlockEntityRegistry;

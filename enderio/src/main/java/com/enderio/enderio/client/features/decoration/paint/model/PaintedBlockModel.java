@@ -2,9 +2,9 @@ package com.enderio.enderio.client.features.decoration.paint.model;
 
 import com.enderio.enderio.client.core_to_sort.RenderUtil;
 import com.enderio.enderio.client.features.decoration.paint.PaintedBlockColor;
-import com.enderio.enderio.common.features.decoration.paint.blockentity.DoublePaintedBlockEntity;
-import com.enderio.enderio.common.features.decoration.paint.blockentity.PaintedBlockEntity;
-import com.enderio.enderio.common.features.decoration.paint.blockentity.SinglePaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.DoublePaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.PaintedBlockEntity;
+import com.enderio.enderio.common.features.decoration.paint.block.entity.SinglePaintedBlockEntity;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import com.enderio.enderio.common.temp_data.model.ModelHelper;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
