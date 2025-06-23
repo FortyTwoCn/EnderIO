@@ -2,7 +2,7 @@ package com.enderio.enderio.common.features.souls;
 
 import com.enderio.enderio.api.EnderIOTags;
 import com.enderio.enderio.api.soul.Soul;
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;

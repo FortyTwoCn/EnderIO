@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.features.utilities;
 
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.DustParticleOptions;

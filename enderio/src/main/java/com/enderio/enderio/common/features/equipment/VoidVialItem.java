@@ -1,9 +1,8 @@
 package com.enderio.enderio.common.features.equipment;
 
-import com.enderio.core.common.network.EmitParticlePacket;
-import com.enderio.core.common.util.ExperienceUtil;
-import com.enderio.enderio.api.EnderIOTags;
 import com.enderio.enderio.common.compat.CommonTags;
+import com.enderio.enderio.common.foundation.network.EmitParticlePacket;
+import com.enderio.enderio.common.foundation.utils.ExperienceUtil;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOFluids;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOLang;
 import net.minecraft.core.BlockPos;

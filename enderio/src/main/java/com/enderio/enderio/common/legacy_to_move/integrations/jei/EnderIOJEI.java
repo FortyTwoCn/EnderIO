@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.legacy_to_move.integrations.jei;
 
-import com.enderio.core.client.gui.screen.EnderContainerScreen;
+import com.enderio.enderio.client.core_to_sort.gui.screen.EnderContainerScreen;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.common.features.decoration.glass.GlassBlocks;
 import com.enderio.enderio.common.features.souls.BrokenSpawnerItem;

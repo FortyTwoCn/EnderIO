@@ -1,8 +1,8 @@
 package com.enderio.enderio.common.features.souls;
 
-import com.enderio.core.common.recipes.WrappedShapedRecipe;
 import com.enderio.enderio.api.EnderIOCapabilities;
 import com.enderio.enderio.api.soul.SoulBoundUtils;
+import com.enderio.enderio.common.foundation.recipe.WrappedShapedRecipe;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIORecipes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.world.item.ItemStack;

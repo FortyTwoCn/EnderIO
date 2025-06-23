@@ -1,14 +1,14 @@
 package com.enderio.enderio.client.legacy_to_move.gui.screen;
 
-import com.enderio.core.client.gui.screen.EnderContainerScreen;
+import com.enderio.enderio.client.core_to_sort.gui.screen.EnderContainerScreen;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.common.features.equipment.coordinate_selector.CoordinateMenu;
 import com.enderio.enderio.common.features.equipment.coordinate_selector.UpdateCoordinateSelectionNameMenuPacket;
-import com.enderio.enderio.common.registration.legacy_modules.base.EIOLang;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
@@ -46,7 +46,7 @@ public class CoordinateMenuScreen extends EnderContainerScreen<CoordinateMenu> {
         setInitialFocus(nameInput);
         nameInput.setEditable(true);
 
-        this.addRenderableWidget(new Button.Builder(EIOLang.OK, mouseButton -> Minecraft.getInstance().player.closeContainer())
+        this.addRenderableWidget(new Button.Builder(CommonComponents.GUI_OK, mouseButton -> Minecraft.getInstance().player.closeContainer())
             .bounds(getGuiLeft() + imageWidth - 30, getGuiTop() + imageHeight - 30, 20, 20)
             .build());
     }

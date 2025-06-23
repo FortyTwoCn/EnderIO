@@ -1,10 +1,10 @@
 package com.enderio.enderio.client.legacy_to_move.tooltip;
 
-import com.enderio.core.client.item.AdvancedTooltipProvider;
-import com.enderio.core.common.util.TooltipUtil;
 import com.enderio.enderio.api.EnderIOCapabilities;
 import com.enderio.enderio.api.capacitor.CapacitorModifier;
 import com.enderio.enderio.api.grindingball.GrindingBallData;
+import com.enderio.enderio.client.core_to_sort.item.AdvancedTooltipProvider;
+import com.enderio.enderio.common.foundation.utils.TooltipUtil;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOLang;
 import net.minecraft.client.gui.screens.Screen;

@@ -26,9 +26,3 @@ modId="neoforge"
 type="required"
 versionRange="${neo_version}"
 side="BOTH"
-
-[[dependencies.enderio]]
-modId="endercore"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"

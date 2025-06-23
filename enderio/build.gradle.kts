@@ -16,19 +16,6 @@ java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 
 println("Building Ender IO version ${project.version}")
 
-val jeiMinecraftVersion: String by project
-val jeiVersion: String by project
-val cctMinecraftVersion: String by project
-val cctVersion: String by project
-val stitchVersion: String by project
-val ae2Version: String by project
-val refinedstorageVersion: String by project
-val jadeFileId: String by project
-val mekanismMinecraftVersion: String by project
-val mekanismVersion: String by project
-val curseforge_laserio_id: String by project
-val curseforge_laserio_file: String by project
-
 configurations {
     create("apiAnnotationProcessor") {
         extendsFrom(annotationProcessor.get())
@@ -100,6 +87,20 @@ sourceSets {
     }
 }
 
+val jeiMinecraftVersion: String by project
+val jeiVersion: String by project
+val cctMinecraftVersion: String by project
+val cctVersion: String by project
+val stitchVersion: String by project
+val ae2Version: String by project
+val refinedstorageVersion: String by project
+val jadeFileId: String by project
+val mekanismMinecraftVersion: String by project
+val mekanismVersion: String by project
+val curseforge_laserio_id: String by project
+val curseforge_laserio_file: String by project
+val almostunifiedVersion: String by project
+
 dependencies {
     // Include modules
 //    jarJar(project(":enderio-base"))
@@ -158,6 +159,9 @@ dependencies {
 
     //Laserio
     runtimeOnly("curse.maven:laserio-${curseforge_laserio_id}:${curseforge_laserio_file}")
+
+    // Almost unified
+    compileOnly("com.almostreliable.mods:almostunified-neoforge:1.21.1-${almostunifiedVersion}:api")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")

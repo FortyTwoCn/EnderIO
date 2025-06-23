@@ -76,6 +76,8 @@ repositories {
     }
 }
 
+val regiliteVersion: String by project
+
 dependencies {
     // TODO: Once EnderCore moves out, put common mods that we test alongside in here?
     add("compileOnly", "org.jetbrains:annotations:23.0.0")
@@ -86,8 +88,12 @@ dependencies {
         add("testCompileOnly", project(":ensure_plugin"))
         add("testAnnotationProcessor", project(":ensure_plugin"))
 
-        if (project.name != "endercore") {
+        if (project.name != "endercore" && project.name != "enderio") {
             add("api", project(":endercore"))
+        }
+
+        if (project.name == "enderio") {
+            add("api", "com.enderio:Regilite:${regiliteVersion}")
         }
     }
 }

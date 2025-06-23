@@ -1,8 +1,8 @@
 package com.enderio.enderio.common.features.equipment;
 
-import com.enderio.core.common.util.AttractionUtil;
 import com.enderio.enderio.api.EnderIOTags;
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.foundation.utils.AttractionUtil;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.item.ItemEntity;

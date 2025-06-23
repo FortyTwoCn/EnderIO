@@ -1,7 +1,7 @@
 package com.enderio.enderio.client;
 
-import com.enderio.core.client.item.FluidBarDecorator;
 import com.enderio.enderio.api.soul.SoulBoundUtils;
+import com.enderio.enderio.client.core_to_sort.item.FluidBarDecorator;
 import com.enderio.enderio.client.features.decoration.EnderSkullRenderer;
 import com.enderio.enderio.client.features.decoration.glass.GlassIconDecorator;
 import com.enderio.enderio.client.features.decoration.paint.model.PaintedBlockGeometry;

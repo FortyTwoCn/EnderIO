@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.features.equipment.coordinate_selector;
 
-import com.enderio.core.common.network.CustomMenuPacketPayload;
 import com.enderio.enderio.common.EnderIO;
+import com.enderio.enderio.common.foundation.network.CustomMenuPacketPayload;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;

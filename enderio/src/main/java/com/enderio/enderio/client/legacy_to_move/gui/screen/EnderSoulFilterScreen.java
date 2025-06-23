@@ -1,9 +1,9 @@
 package com.enderio.enderio.client.legacy_to_move.gui.screen;
 
-import com.enderio.core.client.gui.screen.EnderContainerScreen;
-import com.enderio.core.client.gui.widgets.IconButton;
-import com.enderio.core.client.gui.widgets.ToggleIconButton;
 import com.enderio.enderio.api.soul.Soul;
+import com.enderio.enderio.client.core_to_sort.gui.screen.EnderContainerScreen;
+import com.enderio.enderio.client.core_to_sort.gui.widgets.IconButton;
+import com.enderio.enderio.client.core_to_sort.gui.widgets.ToggleIconButton;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.common.features.filters.AbstractFilterMenu;
 import com.enderio.enderio.common.features.filters.soul.EnderSoulFilterMenu;

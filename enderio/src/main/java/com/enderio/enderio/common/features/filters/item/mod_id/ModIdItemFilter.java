@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.features.filters.item.mod_id;
 
-import com.enderio.core.common.serialization.OrderedListCodec;
 import com.enderio.enderio.api.filter.ItemFilter;
+import com.enderio.enderio.common.foundation.serialization.OrderedListCodec;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.NonNullList;

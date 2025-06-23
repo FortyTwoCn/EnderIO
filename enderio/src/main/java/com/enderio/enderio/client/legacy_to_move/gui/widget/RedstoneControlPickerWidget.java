@@ -1,7 +1,7 @@
 package com.enderio.enderio.client.legacy_to_move.gui.widget;
 
-import com.enderio.core.client.gui.widgets.BaseEnumPickerWidget;
 import com.enderio.enderio.api.machine.RedstoneControl;
+import com.enderio.enderio.client.core_to_sort.gui.widgets.BaseEnumPickerWidget;
 import com.enderio.enderio.client.icon.EIOEnumIcons;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOEnumLang;
 import net.minecraft.network.chat.Component;

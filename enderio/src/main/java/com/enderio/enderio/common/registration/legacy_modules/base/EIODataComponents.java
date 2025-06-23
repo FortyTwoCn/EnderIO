@@ -1,6 +1,5 @@
 package com.enderio.enderio.common.registration.legacy_modules.base;
 
-import com.enderio.core.common.util.NamedFluidContents;
 import com.enderio.enderio.api.capacitor.CapacitorData;
 import com.enderio.enderio.api.grindingball.GrindingBallData;
 import com.enderio.enderio.api.soul.Soul;
@@ -10,6 +9,7 @@ import com.enderio.enderio.common.features.decoration.paint.BlockPaintData;
 import com.enderio.enderio.common.features.filters.fluid.EnderFluidFilter;
 import com.enderio.enderio.common.features.filters.item.general.EnderItemFilter;
 import com.enderio.enderio.common.features.filters.soul.EnderSoulFilter;
+import com.enderio.enderio.common.foundation.utils.NamedFluidContents;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.network.codec.ByteBufCodecs;

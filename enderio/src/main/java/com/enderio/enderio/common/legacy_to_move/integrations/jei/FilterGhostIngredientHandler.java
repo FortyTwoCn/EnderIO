@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.legacy_to_move.integrations.jei;
 
-import com.enderio.core.client.gui.screen.EnderContainerScreen;
+import com.enderio.enderio.client.core_to_sort.gui.screen.EnderContainerScreen;
 import com.enderio.enderio.common.features.filters.FilterSlot;
 import com.enderio.enderio.common.features.filters.fluid.C2SSetFluidFilterSlot;
 import com.enderio.enderio.common.features.filters.fluid.FluidFilterSlot;

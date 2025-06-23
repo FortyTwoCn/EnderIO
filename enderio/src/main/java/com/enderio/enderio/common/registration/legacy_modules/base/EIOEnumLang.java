@@ -1,10 +1,10 @@
 package com.enderio.enderio.common.registration.legacy_modules.base;
 
-import com.enderio.core.common.lang.EnumTranslationMap;
 import com.enderio.enderio.api.machine.RedstoneControl;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.api.glass.GlassCollisionPredicate;
 import com.enderio.enderio.common.features.filters.item.general.DamageFilterMode;
+import com.enderio.enderio.common.temp_data.lang.EnumTranslationMap;
 import com.enderio.regilite.Regilite;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

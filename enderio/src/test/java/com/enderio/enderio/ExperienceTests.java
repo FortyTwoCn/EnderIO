@@ -1,6 +1,6 @@
 package com.enderio.enderio;
 
-import com.enderio.core.common.util.ExperienceUtil;
+import com.enderio.enderio.common.foundation.utils.ExperienceUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

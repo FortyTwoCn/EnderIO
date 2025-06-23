@@ -1,8 +1,8 @@
 package com.enderio.enderio.common.legacy_to_move.integrations.jei.category;
 
-import com.enderio.core.common.util.TooltipUtil;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.common.features.fire_crafting.FireCraftingRecipe;
+import com.enderio.enderio.common.foundation.utils.TooltipUtil;
 import com.enderio.enderio.common.legacy_to_move.integrations.jei.JEIUtils;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOFluids;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOLang;

@@ -1,9 +1,9 @@
 package com.enderio.enderio.common.features.filters.item.general;
 
-import com.enderio.core.common.network.menu.BoolSyncSlot;
-import com.enderio.core.common.network.menu.EnumSyncSlot;
 import com.enderio.enderio.common.features.filters.AbstractFilterMenu;
 import com.enderio.enderio.common.features.filters.item.ItemFilterSlot;
+import com.enderio.enderio.common.foundation.network.menu.BoolSyncSlot;
+import com.enderio.enderio.common.foundation.network.menu.EnumSyncSlot;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import me.liliandev.ensure.ensures.EnsureSide;
 import net.minecraft.core.NonNullList;

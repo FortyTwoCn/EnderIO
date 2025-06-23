@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.features.decoration;
 
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;

@@ -1,9 +1,9 @@
 package com.enderio.enderio.common.registration.legacy_modules.base;
 
-import com.enderio.core.common.util.TooltipUtil;
 import com.enderio.enderio.api.capacitor.CapacitorModifier;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.api.glass.GlassLighting;
+import com.enderio.enderio.common.foundation.utils.TooltipUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -15,13 +15,6 @@ import java.util.Locale;
 public class EIOLang {
     public static final Component BLOCK_BLAST_RESISTANT = TooltipUtil
             .style(addTranslation("tooltip", EnderIO.rl("block.blast_resistant"), "Blast resistant"));
-
-    // region GUI Interactions
-
-    public static final Component OK = addTranslation("gui", EnderIO.rl("ok"), "Ok");
-    public static final Component CANCEL = addTranslation("gui", EnderIO.rl("cancel"), "Cancel");
-
-    // endregion
 
     // region Fused Quartz
 

@@ -1,7 +1,5 @@
 package com.enderio.enderio.common;
 
-import com.enderio.core.CoreNBTKeys;
-
 /**
  * Common NBT Keys.
  * This helps us keep consistency.
@@ -9,7 +7,26 @@ import com.enderio.core.CoreNBTKeys;
  * NOTE: If you have a highly specific NBT tag, store the keys in the class.
  * For example LootCapacitorData does this.
  */
-public class EIONBTKeys extends CoreNBTKeys {
+public class EIONBTKeys {
+
+    // region Standard Keys
+
+    public static final String BLOCK_POS = "BlockPos";
+    public static final String ITEM = "Item";
+    public static final String ITEMS = "Items";
+    public static final String FLUID = "Fluid";
+    public static final String FLUIDS = "Fluids";
+    public static final String TANKS = "Tanks";
+    public static final String ENERGY = "Energy";
+
+    // endregion
+
+    // region Energy Storage
+
+    public static final String ENERGY_STORED = "EnergyStored";
+    public static final String ENERGY_MAX_STORED = "MaxEnergyStored";
+
+    // endregion
 
     // region Capability Serialized Names
 

@@ -1,10 +1,10 @@
 package com.enderio.enderio.common.features.travel;
 
-import com.enderio.core.common.energy.ItemStackEnergy;
 import com.enderio.enderio.api.integration.IntegrationManager;
 import com.enderio.enderio.api.travel.TravelTarget;
 import com.enderio.enderio.api.travel.TravelTargetApi;
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.foundation.resources.energy.ItemStackEnergy;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import com.enderio.enderio.common.features.travel.network.RequestTravelPacket;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import net.minecraft.core.BlockPos;

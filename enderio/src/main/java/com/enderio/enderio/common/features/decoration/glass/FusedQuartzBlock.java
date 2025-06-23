@@ -3,7 +3,7 @@ package com.enderio.enderio.common.features.decoration.glass;
 import com.enderio.enderio.api.glass.GlassCollisionPredicate;
 import com.enderio.enderio.api.glass.GlassIdentifier;
 import com.enderio.enderio.api.glass.GlassLighting;
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOEnumLang;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOLang;
 import net.minecraft.core.BlockPos;

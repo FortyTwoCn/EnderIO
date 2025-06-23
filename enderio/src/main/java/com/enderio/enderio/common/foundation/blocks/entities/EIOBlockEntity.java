@@ -1,6 +1,5 @@
 package com.enderio.enderio.common.foundation.blocks.entities;
 
-import com.enderio.core.common.blockentity.EnderBlockEntity;
 import com.enderio.enderio.common.foundation.blocks.EIOEntityBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.Block;

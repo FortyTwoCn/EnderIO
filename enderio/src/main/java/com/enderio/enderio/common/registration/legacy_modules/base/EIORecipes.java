@@ -1,10 +1,10 @@
 package com.enderio.enderio.common.registration.legacy_modules.base;
 
-import com.enderio.core.common.recipes.RecipeTypeSerializerPair;
-import com.enderio.core.common.recipes.WrappedShapedRecipe;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.common.features.fire_crafting.FireCraftingRecipe;
 import com.enderio.enderio.common.features.souls.ShapedEntityStorageRecipe;
+import com.enderio.enderio.common.foundation.recipe.RecipeTypeSerializerPair;
+import com.enderio.enderio.common.foundation.recipe.WrappedShapedRecipe;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;

@@ -1,6 +1,5 @@
 package com.enderio.enderio.common.registration.legacy_modules.base;
 
-import com.enderio.core.data.model.ModelHelper;
 import com.enderio.enderio.api.EnderIOCapabilities;
 import com.enderio.enderio.api.EnderIOTags;
 import com.enderio.enderio.api.capacitor.CapacitorData;
@@ -30,6 +29,7 @@ import com.enderio.enderio.common.foundation.items.EnderiosItem;
 import com.enderio.enderio.common.foundation.items.LocationPrintoutItem;
 import com.enderio.enderio.common.foundation.items.LoreItem;
 import com.enderio.enderio.common.foundation.items.MaterialItem;
+import com.enderio.enderio.common.temp_data.model.ModelHelper;
 import com.enderio.regilite.holder.RegiliteItem;
 import com.enderio.regilite.registry.ItemRegistry;
 import net.minecraft.network.chat.Component;

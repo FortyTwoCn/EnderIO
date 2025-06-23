@@ -1,8 +1,8 @@
 package com.enderio.enderio.common.features.filters.fluid;
 
-import com.enderio.core.common.network.menu.BoolSyncSlot;
-import com.enderio.core.common.network.menu.FluidStackSyncSlot;
 import com.enderio.enderio.common.features.filters.AbstractFilterMenu;
+import com.enderio.enderio.common.foundation.network.menu.BoolSyncSlot;
+import com.enderio.enderio.common.foundation.network.menu.FluidStackSyncSlot;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import me.liliandev.ensure.ensures.EnsureSide;
 import net.minecraft.core.NonNullList;

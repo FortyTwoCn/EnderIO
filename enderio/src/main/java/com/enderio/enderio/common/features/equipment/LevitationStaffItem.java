@@ -1,8 +1,8 @@
 package com.enderio.enderio.common.features.equipment;
 
-import com.enderio.core.common.capability.StrictFluidHandlerItemStack;
 import com.enderio.enderio.api.EnderIOTags;
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.foundation.resources.fluids.StrictFluidHandlerItemStack;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOFluids;
 import net.minecraft.world.effect.MobEffectInstance;

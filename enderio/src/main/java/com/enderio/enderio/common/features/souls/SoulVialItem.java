@@ -1,12 +1,12 @@
 package com.enderio.enderio.common.features.souls;
 
-import com.enderio.core.client.item.AdvancedTooltipProvider;
-import com.enderio.core.common.util.TooltipUtil;
 import com.enderio.enderio.api.soul.Soul;
 import com.enderio.enderio.api.soul.SoulBoundUtils;
 import com.enderio.enderio.api.soul.capture.SoulCaptureStatus;
 import com.enderio.enderio.api.soul.capture.SoulCaptureUtil;
+import com.enderio.enderio.client.core_to_sort.item.AdvancedTooltipProvider;
 import com.enderio.enderio.common.EnderIO;
+import com.enderio.enderio.common.foundation.utils.TooltipUtil;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOItems;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOLang;

@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.features.fire_crafting;
 
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIORecipes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;

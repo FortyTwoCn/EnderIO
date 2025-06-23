@@ -1,7 +1,7 @@
 package com.enderio.enderio.client.icon;
 
-import com.enderio.core.client.icon.EnumIconMap;
 import com.enderio.enderio.api.machine.RedstoneControl;
+import com.enderio.enderio.client.core_to_sort.icon.EnumIconMap;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.api.glass.GlassCollisionPredicate;
 import com.enderio.enderio.api.glass.GlassLighting;

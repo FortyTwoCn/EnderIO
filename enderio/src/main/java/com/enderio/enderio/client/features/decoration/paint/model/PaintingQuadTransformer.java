@@ -1,7 +1,7 @@
 package com.enderio.enderio.client.features.decoration.paint.model;
 
-import com.enderio.core.client.RenderUtil;
-import com.enderio.core.data.model.ModelHelper;
+import com.enderio.enderio.client.core_to_sort.RenderUtil;
+import com.enderio.enderio.common.temp_data.model.ModelHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;

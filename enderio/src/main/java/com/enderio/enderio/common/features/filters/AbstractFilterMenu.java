@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.features.filters;
 
-import com.enderio.core.common.menu.BaseEnderMenu;
-import com.enderio.core.common.network.menu.IntSyncSlot;
+import com.enderio.enderio.common.foundation.menu.BaseEnderMenu;
+import com.enderio.enderio.common.foundation.network.menu.IntSyncSlot;
 import me.liliandev.ensure.ensures.EnsureSide;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.world.entity.EquipmentSlot;

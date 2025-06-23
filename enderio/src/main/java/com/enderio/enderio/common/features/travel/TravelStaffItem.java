@@ -1,11 +1,11 @@
 package com.enderio.enderio.common.features.travel;
 
-import com.enderio.core.client.item.AdvancedTooltipProvider;
-import com.enderio.core.client.item.EnergyBarDecorator;
-import com.enderio.core.common.energy.ItemStackEnergy;
-import com.enderio.core.common.item.CreativeTabVariants;
-import com.enderio.core.common.util.TooltipUtil;
-import com.enderio.enderio.common.legacy_to_move.config.BaseConfig;
+import com.enderio.enderio.client.core_to_sort.item.AdvancedTooltipProvider;
+import com.enderio.enderio.client.core_to_sort.item.EnergyBarDecorator;
+import com.enderio.enderio.common.foundation.items.CreativeTabVariants;
+import com.enderio.enderio.common.foundation.resources.energy.ItemStackEnergy;
+import com.enderio.enderio.common.foundation.utils.TooltipUtil;
+import com.enderio.enderio.common.legacy_to_move.config.base.BaseConfig;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIODataComponents;
 import com.enderio.enderio.common.registration.legacy_modules.base.EIOLang;
 import net.minecraft.network.chat.Component;
