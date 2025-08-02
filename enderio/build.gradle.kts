@@ -1,5 +1,7 @@
 import com.hypherionmc.modpublisher.properties.ModLoader
 import java.net.URI
+import java.text.SimpleDateFormat
+import java.util.Date
 
 plugins {
     id("net.neoforged.moddev")
@@ -16,6 +18,38 @@ java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 
 println("Building Ender IO version ${project.version}")
 
+configurations {
+    create("gametestAnnotationProcessor") {
+        extendsFrom(annotationProcessor.get())
+    }
+    create("gametestCompileOnly") {
+        extendsFrom(compileOnly.get())
+    }
+    create("gametestImplementation") {
+        extendsFrom(implementation.get())
+    }
+    create("gametestRuntimeOnly") {
+        extendsFrom(runtimeOnly.get())
+    }
+    create("gametestLocalRuntime") {
+        extendsFrom(runtimeOnly.get())
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir("src/generated/resources")
+        }
+    }
+
+    create("gametest") {
+        compileClasspath += sourceSets.main.get().output
+        runtimeClasspath += configurations.getByName("gametestLocalRuntime")
+    }
+}
+
+val regiliteVersion: String by project
 val jeiMinecraftVersion: String by project
 val jeiVersion: String by project
 val cctMinecraftVersion: String by project
@@ -28,36 +62,42 @@ val mekanismMinecraftVersion: String by project
 val mekanismVersion: String by project
 val curseforge_laserio_id: String by project
 val curseforge_laserio_file: String by project
+val graphlibVersion: String by project
+val graphlibVersionRange: String by project
+
+configurations {
+    runtimeClasspath.get().extendsFrom(create("localRuntime"))
+}
 
 dependencies {
-    // Include modules
-    jarJar(project(":enderio-base"))
-    jarJar(project(":enderio-machines"))
-    jarJar(project(":enderio-conduits"))
-    jarJar(project(":enderio-conduits-modded"))
-    jarJar(project(":enderio-armory"))
-    implementation(project(":enderio-base"))
-    implementation(project(":enderio-machines"))
-    implementation(project(":enderio-conduits"))
-    implementation(project(":enderio-conduits-modded"))
-    implementation(project(":enderio-armory"))
+    api("com.enderio:Regilite:$regiliteVersion")
+
+    // EnderIO Base will bundle Regilite and EnderCore in production.
+    jarJar("com.enderio:Regilite:$regiliteVersion")
+    jarJar(project(":endercore"))
 
     // JEI
+    compileOnly("mezz.jei:jei-$jeiMinecraftVersion-common-api:$jeiVersion")
+    compileOnly("mezz.jei:jei-$jeiMinecraftVersion-neoforge-api:$jeiVersion")
     runtimeOnly("mezz.jei:jei-$jeiMinecraftVersion-common:$jeiVersion")
     runtimeOnly("mezz.jei:jei-$jeiMinecraftVersion-neoforge:$jeiVersion")
 
     // CC: Tweaked
+    compileOnly("cc.tweaked:cc-tweaked-$cctMinecraftVersion-core-api:$cctVersion")
+    compileOnly("cc.tweaked:cc-tweaked-$cctMinecraftVersion-forge-api:$cctVersion")
     // TODO: Does not start on latest NeoForge
 //    runtimeOnly("cc.tweaked:cc-tweaked-$cctMinecraftVersion-forge:$cctVersion")
+
+    // Jade for conduit addon
+    compileOnly("curse.maven:jade-324717:${jadeFileId}")
+    runtimeOnly("curse.maven:jade-324717:${jadeFileId}")
 
     //Athena ctm
     runtimeOnly("maven.modrinth:stitch:${stitchVersion}")
 
     // AE2
+    compileOnly("appeng:appliedenergistics2:${ae2Version}:api")
     runtimeOnly("appeng:appliedenergistics2:${ae2Version}")
-
-    // Refined storage
-    runtimeOnly("com.refinedmods.refinedstorage:refinedstorage-neoforge:${refinedstorageVersion}")
 
     // Enchantment descriptions
     //runtimeOnly("net.darkhax.bookshelf:Bookshelf-NeoForge-${minecraft_version}:${bookshelf_version}")
@@ -71,9 +111,6 @@ dependencies {
     //    transitive = false
     //}
 
-    // Jade
-    runtimeOnly("curse.maven:jade-324717:${jadeFileId}")
-
     //fluxnetworks
     ////runtimeOnly("curse.maven:fluxnetworks-248020:4651164")
 
@@ -81,14 +118,54 @@ dependencies {
     //runtimeOnly("vazkii.patchouli:Patchouli:${patchouli_version}")
 
     // Mekanism
+    compileOnly("mekanism:Mekanism:${mekanismMinecraftVersion}-${mekanismVersion}:api")
     runtimeOnly("mekanism:Mekanism:${mekanismMinecraftVersion}-${mekanismVersion}")
 
+    // Refined Storage
+    compileOnly("com.refinedmods.refinedstorage:refinedstorage-neoforge:${refinedstorageVersion}")
+    runtimeOnly("com.refinedmods.refinedstorage:refinedstorage-neoforge:${refinedstorageVersion}")
+
     //Laserio
+    compileOnly("curse.maven:laserio-${curseforge_laserio_id}:${curseforge_laserio_file}")
     runtimeOnly("curse.maven:laserio-${curseforge_laserio_id}:${curseforge_laserio_file}")
+
+    // Graphlib
+    api("dev.gigaherz.graph:GraphLib3:$graphlibVersion")
+    jarJar("dev.gigaherz.graph:GraphLib3:$graphlibVersion") {
+        version {
+            strictly(graphlibVersionRange)
+            prefer(graphlibVersion)
+        }
+    }
+
+    // Unit tests
+    testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    // Setup gametests
+    add("gametestImplementation", "net.neoforged:testframework:$neoForgeVersion") {
+        isTransitive = false
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 neoForge {
     version = neoForgeVersion
+
+    addModdingDependenciesTo(sourceSets.getByName("gametest"))
+
+    mods {
+        create("enderio") {
+            sourceSet(sourceSets.getByName("main"))
+        }
+
+        create("enderio_tests") {
+            sourceSet(sourceSets.getByName("gametest"))
+        }
+    }
 
     runs {
         configureEach {
@@ -97,27 +174,70 @@ neoForge {
 
         create("client") {
             client()
+
+            loadedMods.set(listOf(mods.getByName("enderio")))
         }
 
         create("server") {
             server()
             gameDirectory = project.file("run/server")
+
+            loadedMods.set(listOf(mods.getByName("enderio")))
         }
+
+        create("data") {
+            data()
+
+            programArguments.addAll(
+                    "--mod", "enderio_base",
+                    "--mod", "enderio_armory",
+                    "--mod", "enderio_conduits",
+                    "--mod", "enderio_conduits_modded",
+                    "--mod", "enderio_machines",
+                    // TODO: Fix missing models...
+                    //"--all",
+                    "--server", "--client",
+                    "--output", file("src/generated/resources").absolutePath,
+                    "--existing", file("src/main/resources").absolutePath,
+            )
+
+            loadedMods.set(listOf(mods.getByName("enderio")))
+        }
+
+        create("gameTestServer") {
+            type = "gameTestServer"
+
+            sourceSet = sourceSets.getByName("gametest")
+            loadedMods.set(listOf(mods.getByName("enderio"), mods.getByName("enderio_tests")))
+        }
+    }
+
+    /*unitTest {
+        enable()
+        testedMod = mods["enderio_base"]
+    }*/
+}
+
+tasks.withType<Jar> {
+    manifest {
+        attributes(mapOf(
+                "Specification-Title" to "Ender IO Base",
+                "Specification-Vendor" to "Team Ender IO",
+                "Specification-Version" to "1",
+                "Implementation-Title" to project.name,
+                "Implementation-Version" to project.version,
+                "Implementation-Vendor" to "Team Ender IO",
+                "Implementation-Timestamp" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date()),
+                "MixinConfigs" to "enderiobase.mixins.json"
+        ))
     }
 }
 
-// Collect all API packages from all modules.
 tasks.register<Jar>("apiJar") {
     archiveClassifier.set("api")
 
-    from(project(":enderio-armory").sourceSets["main"].output)
-    from(project(":enderio-armory").sourceSets["main"].allJava)
-    from(project(":enderio-base").sourceSets["main"].output)
-    from(project(":enderio-base").sourceSets["main"].allJava)
-    from(project(":enderio-conduits").sourceSets["main"].output)
-    from(project(":enderio-conduits").sourceSets["main"].allJava)
-    from(project(":enderio-machines").sourceSets["main"].output)
-    from(project(":enderio-machines").sourceSets["main"].allJava)
+    from(sourceSets["main"].output)
+    from(sourceSets["main"].allJava)
 
     include("com/enderio/api/**")
     include("com/enderio/*/api/**")
@@ -125,11 +245,7 @@ tasks.register<Jar>("apiJar") {
 
 tasks.register<Jar>("sourcesJar") {
     archiveClassifier.set("sources")
-
-    from(project(":enderio-armory").sourceSets["main"].allJava)
-    from(project(":enderio-base").sourceSets["main"].allJava)
-    from(project(":enderio-conduits").sourceSets["main"].allJava)
-    from(project(":enderio-machines").sourceSets["main"].allJava)
+    from(sourceSets["main"].allJava)
 }
 
 tasks.build {
@@ -196,4 +312,35 @@ fun getReleaseType(): String? {
     }
 
     return "dev"
+}
+
+publishing {
+    publications {
+        create<MavenPublication>(project.name) {
+            groupId = "com.enderio"
+            artifactId = project.name
+            version = "${project.version}"
+
+            from(components["java"])
+            artifact(tasks["apiJar"])
+            artifact(tasks["sourcesJar"])
+
+            pom {
+                name.set("EnderIO Base")
+                description.set("The base module of Ender IO")
+                url.set("https://github.com/Team-EnderIO/EnderIO")
+
+                licenses {
+                    license {
+                        name.set("Unlicense")
+                        url.set("https://github.com/Team-EnderIO/EnderIO/blob/dev/1.21/LICENSE.txt")
+                    }
+                }
+
+                scm {
+                    url.set("https://github.com/Team-EnderIO/EnderIO.git")
+                }
+            }
+        }
+    }
 }
