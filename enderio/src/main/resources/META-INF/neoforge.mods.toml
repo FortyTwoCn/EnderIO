@@ -12,6 +12,9 @@ description="Compact conduits, painted things and all sorts of stuff and bling. 
 displayURL="https://enderio.com/"
 logoFile="logo.png"
 
+[[mixins]]
+config="enderio.mixins.json"
+
 [[dependencies.enderio]]
 modId="minecraft"
 type="required"
@@ -58,78 +61,6 @@ type="required"
 versionRange="${mod_version}"
 side="BOTH"
 
-[[dependencies.enderio_armory]]
-modId="enderio_base"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"
-
-[[mods]]
-modId="enderio_base"
-version="${mod_version}"
-displayName="Ender IO Base"
-authors="CrazyPants, tterrag, HenryLoenwind, MatthiasM, CyanideX, EpicSquid, Rover656, HypherionSA, liliandev, Ferri_Arnus, dphaldes"
-description="The base items and materials for the Ender IO Mods."
-displayURL="https://enderio.com/"
-logoFile="logo.png"
-
-[[mixins]]
-config="enderiobase.mixins.json"
-
-[[dependencies.enderio_base]]
-modId="minecraft"
-type="required"
-versionRange="${mcversion}"
-side="BOTH"
-
-[[dependencies.enderio_base]]
-modId="neoforge"
-type="required"
-versionRange="${neo_version}"
-side="BOTH"
-
-[[dependencies.enderio_base]]
-modId="endercore"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"
-
-[[mods]]
-modId="enderio_conduits"
-version="${mod_version}"
-displayName="Ender IO Conduits"
-authors="CrazyPants, tterrag, HenryLoenwind, MatthiasM, CyanideX, EpicSquid, Rover656, HypherionSA, liliandev, Ferri_Arnus, dphaldes"
-description="The conduits module for Ender IO"
-displayURL="https://enderio.com/"
-logoFile="logo.png"
-
-[[mixins]]
-config="enderioconduits.mixins.json"
-
-[[dependencies.enderio_conduits]]
-modId="minecraft"
-type="required"
-versionRange="${mcversion}"
-side="BOTH"
-
-[[dependencies.enderio_conduits]]
-modId="neoforge"
-type="required"
-versionRange="${neo_version}"
-side="BOTH"
-
-[[dependencies.enderio_conduits]]
-modId="endercore"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"
-
-[[dependencies.enderio_conduits]]
-modId="enderio_base"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"
-
 [[mods]]
 modId="enderio_conduits_modded"
 version="${mod_version}"
@@ -153,18 +84,6 @@ side="BOTH"
 
 [[dependencies.enderio_conduits_modded]]
 modId="endercore"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"
-
-[[dependencies.enderio_conduits_modded]]
-modId="enderio_base"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"
-
-[[dependencies.enderio_conduits_modded]]
-modId="enderio_conduits"
 type="required"
 versionRange="${mod_version}"
 side="BOTH"
@@ -214,12 +133,6 @@ side="BOTH"
 
 [[dependencies.enderio_machines]]
 modId="endercore"
-type="required"
-versionRange="${mod_version}"
-side="BOTH"
-
-[[dependencies.enderio_machines]]
-modId="enderio_base"
 type="required"
 versionRange="${mod_version}"
 side="BOTH"

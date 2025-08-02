@@ -1,0 +1,35 @@
+package com.enderio.enderio.common.compat.jade;
+
+import com.enderio.enderio.api.conduits.bundle.ConduitBundle;
+import com.enderio.enderio.client.content.conduits.model.conduit.facades.FacadeUtil;
+import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
+import snownee.jade.api.BlockAccessor;
+import snownee.jade.api.IWailaClientRegistration;
+import snownee.jade.api.IWailaPlugin;
+import snownee.jade.api.WailaPlugin;
+
+@WailaPlugin
+public class EnderIOJadePlugin implements IWailaPlugin {
+
+    // TODO: Could implement stuff like a waila tooltip for bound souls.
+
+    @Override
+    public void registerClient(IWailaClientRegistration registration) {
+        // Show the correct conduit (or facade item)
+        registration.usePickedResult(ConduitBlocks.CONDUIT.get());
+
+        // Completely replace the block accessor with the facade block if it exists
+        registration.addRayTraceCallback((hitResult, accessor, originalAccessor) -> {
+            if (accessor instanceof BlockAccessor blockAccessor) {
+                if (blockAccessor.getBlockEntity() instanceof ConduitBundle conduitBundle && conduitBundle.hasFacade()
+                        && FacadeUtil.areFacadesVisible(blockAccessor.getPlayer())) {
+                    return registration.blockAccessor()
+                            .from(blockAccessor)
+                            .blockState(conduitBundle.getFacadeBlock().defaultBlockState())
+                            .build();
+                }
+            }
+            return accessor;
+        });
+    }
+}

@@ -1,0 +1,165 @@
+package com.enderio.legacy_layout.modconduits.common.modules.appeng;
+
+import appeng.api.AECapabilities;
+import appeng.api.ids.AEItemIds;
+import appeng.api.util.AEColor;
+import com.enderio.enderio.api.EnderIOAPI;
+import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.api.conduits.Conduit;
+import com.enderio.enderio.api.conduits.ConduitApi;
+import com.enderio.enderio.api.conduits.ConduitCapabilities;
+import com.enderio.enderio.api.conduits.ConduitType;
+import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
+import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
+import com.enderio.enderio.api.conduits.network.node.NodeDataType;
+import com.enderio.enderio.api.conduits.network.node.legacy.ConduitDataType;
+import com.enderio.legacy_layout.modconduits.common.ModdedConduits;
+import com.enderio.legacy_layout.modconduits.common.modules.ConduitCommonModule;
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.data.recipes.RecipeCategory;
+import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.common.conditions.ICondition;
+import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+public class AE2ConduitsModule implements ConduitCommonModule {
+
+    public static final AE2ConduitsModule INSTANCE = new AE2ConduitsModule();
+
+    private static final ModLoadedCondition CONDITION = new ModLoadedCondition("ae2");
+
+    public static final DeferredRegister<ConduitType<?>> CONDUIT_TYPES = DeferredRegister
+            .create(EnderIOConduitsRegistries.CONDUIT_TYPE, EnderIOAPI.NAMESPACE);
+
+    public static final DeferredRegister<ConnectionConfigType<?>> CONDUIT_CONNECTION_CONFIG_TYPES = DeferredRegister
+            .create(EnderIOConduitsRegistries.CONDUIT_CONNECTION_CONFIG_TYPE, EnderIOAPI.NAMESPACE);
+
+    public static final DeferredRegister<ConduitDataType<?>> CONDUIT_DATA_TYPES = DeferredRegister
+            .create(EnderIOConduitsRegistries.CONDUIT_DATA_TYPE, EnderIOAPI.NAMESPACE);
+
+    public static final DeferredRegister<NodeDataType<?>> CONDUIT_NODE_DATA_TYPES = DeferredRegister
+            .create(EnderIOConduitsRegistries.CONDUIT_NODE_DATA_TYPE, EnderIOAPI.NAMESPACE);
+
+    public static final DeferredHolder<ConduitType<?>, ConduitType<MEConduit>> AE2_CONDUIT = CONDUIT_TYPES.register(
+            "me",
+            () -> ConduitType.builder(MEConduit.CODEC)
+                    .exposeCapability(AECapabilities.IN_WORLD_GRID_NODE_HOST)
+                    .build());
+
+    public static Supplier<ConnectionConfigType<MEConduitConnectionConfig>> CONNECTION_CONFIG = CONDUIT_CONNECTION_CONFIG_TYPES
+            .register("me", () -> MEConduitConnectionConfig.TYPE);
+
+    public static final Supplier<ConduitDataType<ConduitInWorldGridNodeHost>> DATA = CONDUIT_DATA_TYPES.register("me",
+            () -> new ConduitDataType<>(ConduitInWorldGridNodeHost.CODEC, ConduitInWorldGridNodeHost.STREAM_CODEC,
+                    ConduitInWorldGridNodeHost::new));
+
+    public static final Supplier<NodeDataType<MEConduitNodeData>> ME_NODE_DATA = CONDUIT_NODE_DATA_TYPES.register("me",
+            () -> MEConduitNodeData.TYPE);
+
+    private static final Component LANG_ME_CONDUIT = addTranslation("item", EnderIOAPI.loc("conduit.me"), "ME Conduit");
+    private static final Component LANG_DENSE_ME_CONDUIT = addTranslation("item", EnderIOAPI.loc("conduit.dense_me"),
+            "Dense ME Conduit");
+
+    private static MutableComponent addTranslation(String prefix, ResourceLocation id, String translation) {
+        return ModdedConduits.REGILITE.addTranslation(prefix, id, translation);
+    }
+
+    public static final ResourceKey<Conduit<?, ?>> NORMAL = ResourceKey.create(EnderIOConduitsRegistries.Keys.CONDUIT,
+            EnderIOAPI.loc("me"));
+    public static final ResourceKey<Conduit<?, ?>> DENSE = ResourceKey.create(EnderIOConduitsRegistries.Keys.CONDUIT,
+            EnderIOAPI.loc("dense_me"));
+
+    private static final TagKey<Item> COVERED_DENSE_CABLE = ItemTags
+            .create(ResourceLocation.fromNamespaceAndPath("ae2", "covered_dense_cable"));
+    private static final TagKey<Item> COVERED_CABLE = ItemTags
+            .create(ResourceLocation.fromNamespaceAndPath("ae2", "covered_cable"));
+    private static final TagKey<Item> GLASS_CABLE = ItemTags
+            .create(ResourceLocation.fromNamespaceAndPath("ae2", "glass_cable"));
+
+    static {
+        // TODO: 1.22 - remove backward compatibility.
+        CONDUIT_TYPES.addAlias(EnderIOAPI.loc("ae2"), AE2_CONDUIT.getId());
+    }
+
+    @Override
+    public void initialize(IEventBus modEventBus) {
+        CONDUIT_TYPES.register(modEventBus);
+        CONDUIT_CONNECTION_CONFIG_TYPES.register(modEventBus);
+        CONDUIT_DATA_TYPES.register(modEventBus);
+        CONDUIT_NODE_DATA_TYPES.register(modEventBus);
+
+        modEventBus.addListener(this::registerFacadeCapability);
+    }
+
+    private void registerFacadeCapability(RegisterCapabilitiesEvent event) {
+        Item facadeItem = BuiltInRegistries.ITEM.get(AEItemIds.FACADE);
+        event.registerItem(ConduitCapabilities.CONDUIT_FACADE_PROVIDER, AE2ConduitFacadeProvider.PROVIDER, facadeItem);
+    }
+
+    @Override
+    public void bootstrapConduits(BootstrapContext<Conduit<?, ?>> context) {
+        context.register(NORMAL,
+                new MEConduit(EnderIOAPI.loc("block/conduit/me"), LANG_ME_CONDUIT, AEColor.TRANSPARENT, false));
+        context.register(DENSE,
+                new MEConduit(EnderIOAPI.loc("block/conduit/dense_me"), LANG_DENSE_ME_CONDUIT, AEColor.TRANSPARENT, true));
+
+        // TODO: Colored ME conduit.
+    }
+
+    @Override
+    public void buildConduitConditions(BiConsumer<ResourceKey<?>, ICondition> conditions) {
+        conditions.accept(NORMAL, CONDITION);
+        conditions.accept(DENSE, CONDITION);
+    }
+
+    @Override
+    public void buildRecipes(HolderLookup.Provider lookupProvider, RecipeOutput recipeOutput) {
+        var ae2RecipeOutput = recipeOutput.withConditions(CONDITION);
+
+        var normalConduit = lookupProvider.holderOrThrow(NORMAL);
+        var denseConduit = lookupProvider.holderOrThrow(DENSE);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ConduitApi.INSTANCE.getConduitItem(normalConduit, 3))
+                .pattern("BBB")
+                .pattern("III")
+                .pattern("BBB")
+                .define('B', EIOItems.CONDUIT_BINDER)
+                .define('I', COVERED_CABLE)
+                .unlockedBy("has_ingredient", InventoryChangeTrigger.TriggerInstance.hasItems(EIOItems.CONDUIT_BINDER))
+                .save(ae2RecipeOutput, EnderIOAPI.loc("ae_covered_cable"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ConduitApi.INSTANCE.getConduitItem(normalConduit, 3))
+                .pattern("BBB")
+                .pattern("III")
+                .pattern("BBB")
+                .define('B', EIOItems.CONDUIT_BINDER)
+                .define('I', GLASS_CABLE)
+                .unlockedBy("has_ingredient", InventoryChangeTrigger.TriggerInstance.hasItems(EIOItems.CONDUIT_BINDER))
+                .save(ae2RecipeOutput, EnderIOAPI.loc("ae_glass_cable"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ConduitApi.INSTANCE.getConduitItem(denseConduit, 3))
+                .pattern("BBB")
+                .pattern("III")
+                .pattern("BBB")
+                .define('B', EIOItems.CONDUIT_BINDER)
+                .define('I', COVERED_DENSE_CABLE)
+                .unlockedBy("has_ingredient", InventoryChangeTrigger.TriggerInstance.hasItems(EIOItems.CONDUIT_BINDER))
+                .save(ae2RecipeOutput, EnderIOAPI.loc("ae_covered_dense_cable"));
+    }
+}

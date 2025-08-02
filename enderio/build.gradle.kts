@@ -189,11 +189,10 @@ neoForge {
             data()
 
             programArguments.addAll(
-                    "--mod", "enderio_base",
-                    "--mod", "enderio_armory",
-                    "--mod", "enderio_conduits",
-                    "--mod", "enderio_conduits_modded",
-                    "--mod", "enderio_machines",
+                    "--mod", "enderio",
+                    //"--mod", "enderio_armory",
+                    //"--mod", "enderio_conduits_modded",
+                    //"--mod", "enderio_machines",
                     // TODO: Fix missing models...
                     //"--all",
                     "--server", "--client",
@@ -212,23 +211,22 @@ neoForge {
         }
     }
 
-    /*unitTest {
+    unitTest {
         enable()
-        testedMod = mods["enderio_base"]
-    }*/
+        testedMod = mods["enderio"]
+    }
 }
 
 tasks.withType<Jar> {
     manifest {
         attributes(mapOf(
-                "Specification-Title" to "Ender IO Base",
-                "Specification-Vendor" to "Team Ender IO",
-                "Specification-Version" to "1",
-                "Implementation-Title" to project.name,
-                "Implementation-Version" to project.version,
-                "Implementation-Vendor" to "Team Ender IO",
-                "Implementation-Timestamp" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date()),
-                "MixinConfigs" to "enderiobase.mixins.json"
+            "Specification-Title" to "Ender IO Base",
+            "Specification-Vendor" to "Team Ender IO",
+            "Specification-Version" to "1",
+            "Implementation-Title" to project.name,
+            "Implementation-Version" to project.version,
+            "Implementation-Vendor" to "Team Ender IO",
+            "Implementation-Timestamp" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date())
         ))
     }
 }
