@@ -16,8 +16,8 @@ import com.enderio.enderio.client.content.conduits.model.conduit.modifier.Condui
 import com.enderio.enderio.client.content.conduits.model.conduit.modifier.FluidConduitModelModifier;
 import com.enderio.enderio.client.content.conduits.model.conduit.modifier.RedstoneConduitModelModifier;
 import com.enderio.enderio.common.EnderIO;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
-import com.enderio.legacy_layout.conduits.common.init.ConduitTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitTypes;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

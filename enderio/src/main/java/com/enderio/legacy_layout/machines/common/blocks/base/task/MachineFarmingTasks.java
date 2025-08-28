@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.blocks.base.task;
 
-import com.enderio.legacy_layout.base.api.farm.FarmInteraction;
-import com.enderio.legacy_layout.base.api.farm.FarmTask;
+import com.enderio.enderio.api.farm.FarmInteraction;
+import com.enderio.enderio.api.farm.FarmTask;
 import com.enderio.legacy_layout.machines.common.utility.TreeHelper;
 import java.util.Optional;
 import java.util.Set;

@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.base.common.particle;
 
-import com.enderio.legacy_layout.base.common.init.EIOParticles;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOParticles;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

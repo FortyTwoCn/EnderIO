@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.integrations.jei.transfer;
 
 import com.enderio.legacy_layout.machines.common.blocks.vat.FermentingRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.vat.VatMenu;
-import com.enderio.legacy_layout.machines.common.init.MachineMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import com.enderio.legacy_layout.machines.common.integrations.jei.category.VATCategory;
 import com.enderio.legacy_layout.machines.common.network.TransferItemsPacket;
 import mezz.jei.api.gui.ingredient.IRecipeSlotView;

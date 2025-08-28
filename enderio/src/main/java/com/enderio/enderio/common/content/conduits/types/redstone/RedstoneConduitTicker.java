@@ -3,7 +3,7 @@ package com.enderio.enderio.common.content.conduits.types.redstone;
 import com.enderio.enderio.api.conduits.ConduitCapabilities;
 import com.enderio.enderio.api.conduits.network.IConduitNetwork;
 import com.enderio.enderio.api.conduits.ticker.ConduitTicker;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
 import net.minecraft.server.level.ServerLevel;
 
 public class RedstoneConduitTicker implements ConduitTicker<RedstoneConduit> {

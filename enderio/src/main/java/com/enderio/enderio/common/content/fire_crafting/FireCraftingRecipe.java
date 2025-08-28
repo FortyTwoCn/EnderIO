@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.content.fire_crafting;
 
-import com.enderio.legacy_layout.base.common.init.EIORecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIORecipes;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

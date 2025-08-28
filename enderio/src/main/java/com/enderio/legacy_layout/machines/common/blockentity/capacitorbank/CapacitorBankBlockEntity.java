@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.blockentity.capacitorbank;
 
 import com.enderio.enderio.api.capacitor.FixedScalable;
 import com.enderio.legacy_layout.base.api.io.energy.EnergyIOMode;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.core.common.network.NetworkDataSlot;
 import com.enderio.legacy_layout.machines.common.blockentity.base.LegacyPoweredMachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.blockentity.base.MultiConfigurable;
@@ -10,7 +10,7 @@ import com.enderio.legacy_layout.machines.common.blockentity.multienergy.Capacit
 import com.enderio.legacy_layout.machines.common.blockentity.multienergy.MultiEnergyNode;
 import com.enderio.legacy_layout.machines.common.blockentity.multienergy.MultiEnergyStorageWrapper;
 import com.enderio.legacy_layout.machines.common.blockentity.sync.LargeEnergyData;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.enderio.legacy_layout.machines.common.io.energy.ILargeMachineEnergyStorage;
 import com.enderio.legacy_layout.machines.common.io.energy.MachineEnergyStorage;
 import com.enderio.legacy_layout.machines.common.menu.CapacitorBankMenu;

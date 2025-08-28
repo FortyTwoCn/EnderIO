@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.data.loot;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.machines.common.init.MachineDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineDataComponents;
 import com.enderio.regilite.data.RegiliteBlockLootProvider;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;

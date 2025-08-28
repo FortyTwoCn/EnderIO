@@ -1,13 +1,13 @@
 package com.enderio.legacy_layout.machines.common.blocks.vacuum.xp;
 
-import static com.enderio.legacy_layout.base.common.util.ExperienceUtil.EXP_TO_FLUID;
+import static com.enderio.enderio.common.foundation.util.ExperienceUtil.EXP_TO_FLUID;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
 import com.enderio.legacy_layout.machines.common.attachment.FluidTankUser;
 import com.enderio.legacy_layout.machines.common.blocks.vacuum.VacuumMachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidHandler;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineTankLayout;

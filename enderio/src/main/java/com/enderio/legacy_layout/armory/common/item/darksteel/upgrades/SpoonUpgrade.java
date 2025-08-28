@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
-import com.enderio.legacy_layout.armory.common.init.ArmoryItems;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryItems;
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.conduits.common.menu;
 
 import com.enderio.enderio.api.conduits.ConduitCapabilities;
-import com.enderio.legacy_layout.conduits.common.init.ConduitMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitMenus;
 import com.enderio.legacy_layout.conduits.common.network.CountFilterPacket;
 import com.enderio.legacy_layout.conduits.common.redstone.RedstoneCountFilter;
 import net.minecraft.network.RegistryFriendlyByteBuf;

@@ -1,6 +1,6 @@
 package com.enderio.enderio.client.content.conduits;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.enderio.client.content.conduits.model.conduit.facades.ClientFacadeVisibility;
 import com.enderio.enderio.common.content.conduits.bundle.ConduitBundleBlockEntity;
 import net.minecraft.client.Minecraft;

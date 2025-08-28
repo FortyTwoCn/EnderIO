@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.base.api.travel;
 
-import com.enderio.legacy_layout.base.api.registry.EnderIORegistries;
+import com.enderio.enderio.api.EnderIORegistries;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.RegistryFriendlyByteBuf;

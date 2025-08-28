@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
-import com.enderio.legacy_layout.armory.api.capability.IUpgradeTier;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
+import com.enderio.enderio.api.dark_steel.IUpgradeTier;
 import java.util.Optional;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;

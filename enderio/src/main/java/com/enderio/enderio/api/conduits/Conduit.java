@@ -1,5 +1,6 @@
 package com.enderio.enderio.api.conduits;
 
+import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
 import com.enderio.enderio.api.conduits.bundle.ConduitBundle;
 import com.enderio.enderio.api.conduits.bundle.SlotType;
@@ -41,13 +42,13 @@ import org.joml.Vector2i;
 public interface Conduit<TConduit extends Conduit<TConduit, TConnectionConfig>, TConnectionConfig extends ConnectionConfig>
         extends Comparable<TConduit>, TooltipProvider {
 
-    Codec<Conduit<?, ?>> DIRECT_CODEC = EnderIOConduitsRegistries.CONDUIT_TYPE.byNameCodec()
+    Codec<Conduit<?, ?>> DIRECT_CODEC = EnderIORegistries.CONDUIT_TYPE.byNameCodec()
             .dispatch(Conduit::type, ConduitType::codec);
 
-    Codec<Holder<Conduit<?, ?>>> CODEC = RegistryFixedCodec.create(EnderIOConduitsRegistries.Keys.CONDUIT);
+    Codec<Holder<Conduit<?, ?>>> CODEC = RegistryFixedCodec.create(EnderIORegistries.Keys.CONDUIT);
 
     StreamCodec<RegistryFriendlyByteBuf, Holder<Conduit<?, ?>>> STREAM_CODEC = ByteBufCodecs
-            .holderRegistry(EnderIOConduitsRegistries.Keys.CONDUIT);
+            .holderRegistry(EnderIORegistries.Keys.CONDUIT);
 
     /**
      * Gets the default conduit texture.

@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.conduits.common.redstone;
 
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;

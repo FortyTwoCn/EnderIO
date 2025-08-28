@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.conduits.data;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
-import com.enderio.legacy_layout.conduits.common.tag.ConduitTags;
+import com.enderio.enderio.common.registration.EIOTags;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -20,7 +20,7 @@ public class ConduitTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        tag(ConduitTags.Blocks.REDSTONE_CONNECTABLE)
+        tag(EIOTags.Blocks.REDSTONE_CONNECTABLE)
                 .add(Blocks.PISTON, Blocks.STICKY_PISTON, Blocks.REDSTONE_LAMP, Blocks.NOTE_BLOCK, Blocks.DISPENSER,
                         Blocks.DROPPER, Blocks.POWERED_RAIL, Blocks.ACTIVATOR_RAIL, Blocks.MOVING_PISTON,
                         Blocks.COPPER_BULB, Blocks.EXPOSED_COPPER_BULB, Blocks.WEATHERED_COPPER_BULB,
@@ -28,6 +28,6 @@ public class ConduitTagProvider extends BlockTagsProvider {
                         Blocks.WAXED_WEATHERED_COPPER_BULB, Blocks.WAXED_OXIDIZED_COPPER_BULB, Blocks.CRAFTER)
                 .addTags(BlockTags.DOORS, BlockTags.TRAPDOORS, BlockTags.REDSTONE_ORES);
 
-        tag(ConduitTags.Blocks.RELOCATION_NOT_SUPPORTED).add(ConduitBlocks.CONDUIT.get());
+        tag(EIOTags.Blocks.RELOCATION_NOT_SUPPORTED).add(ConduitBlocks.CONDUIT.get());
     }
 }

@@ -5,10 +5,10 @@ import com.enderio.enderio.api.capacitor.CapacitorModifier;
 import com.enderio.enderio.api.capacitor.FixedScalable;
 import com.enderio.enderio.api.capacitor.LinearScalable;
 import com.enderio.enderio.api.capacitor.QuadraticScalable;
+import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.api.io.energy.EnergyIOMode;
 import com.enderio.enderio.api.soul.binding.ISoulBindable;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.legacy_layout.machines.common.MachineNBTKeys;
 import com.enderio.legacy_layout.machines.common.attachment.FluidTankUser;
 import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.PoweredMachineBlockEntity;
@@ -16,7 +16,7 @@ import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.flags.C
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventoryLayout;
 import com.enderio.legacy_layout.machines.common.blocks.base.state.MachineState;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidHandler;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineTankLayout;
@@ -52,7 +52,7 @@ import net.neoforged.neoforge.fluids.SimpleFluidContent;
 import net.neoforged.neoforge.fluids.capability.IFluidHandler;
 import org.jetbrains.annotations.Nullable;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class SoulEngineBlockEntity extends PoweredMachineBlockEntity implements FluidTankUser, ISoulBindable {
 
     private static final QuadraticScalable CAPACITY = new QuadraticScalable(CapacitorModifier.ENERGY_CAPACITY,

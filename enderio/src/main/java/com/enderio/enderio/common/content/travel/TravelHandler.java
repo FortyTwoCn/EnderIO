@@ -4,7 +4,7 @@ import com.enderio.legacy_layout.base.api.integration.IntegrationManager;
 import com.enderio.legacy_layout.base.api.travel.TravelTarget;
 import com.enderio.legacy_layout.base.api.travel.TravelTargetApi;
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.enderio.common.content.travel.packets.RequestTravelPacket;
 import com.enderio.core.common.energy.ItemStackEnergy;
 import java.util.Comparator;

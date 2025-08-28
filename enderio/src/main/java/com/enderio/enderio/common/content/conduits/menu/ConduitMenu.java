@@ -1,12 +1,12 @@
 package com.enderio.enderio.common.content.conduits.menu;
 
 import com.enderio.legacy_layout.base.api.UseOnly;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.connection.config.ConnectionConfig;
 import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
 import com.enderio.enderio.common.content.conduits.bundle.ConduitBundleBlockEntity;
-import com.enderio.legacy_layout.conduits.common.init.ConduitMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitMenus;
 import com.enderio.enderio.common.content.conduits.packets.C2SOpenConduitFilterMenu;
 import com.enderio.enderio.common.content.conduits.packets.S2CConduitExtraGuiDataPacket;
 import com.enderio.enderio.common.content.conduits.packets.S2CConduitListPacket;

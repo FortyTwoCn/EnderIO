@@ -5,10 +5,10 @@ import appeng.api.networking.GridFlags;
 import appeng.api.networking.GridHelper;
 import appeng.api.networking.IManagedGridNode;
 import appeng.api.util.AEColor;
+import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitType;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
 import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
 import com.enderio.enderio.api.conduits.network.node.IConduitNode;
 import com.enderio.enderio.api.conduits.ticker.ConduitTicker;
@@ -118,7 +118,7 @@ public record MEConduit(ResourceLocation texture, Component description, AEColor
         }
 
         Holder<Conduit<?, ?>> asHolder = level.registryAccess()
-                .registryOrThrow(EnderIOConduitsRegistries.Keys.CONDUIT)
+                .registryOrThrow(EnderIORegistries.Keys.CONDUIT)
                 .wrapAsHolder(this);
 
         mainNode = GridHelper.createManagedNode(nodeHost, GridNodeListener.INSTANCE)

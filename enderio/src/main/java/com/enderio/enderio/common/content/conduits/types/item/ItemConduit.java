@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.content.conduits.types.item;
 
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitType;
 import com.enderio.enderio.api.conduits.bundle.ConduitBundle;
@@ -11,8 +11,8 @@ import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
 import com.enderio.enderio.api.conduits.network.ConduitBlockConnection;
 import com.enderio.enderio.api.conduits.network.node.IConduitNode;
 import com.enderio.enderio.api.conduits.network.node.legacy.ConduitDataAccessor;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
-import com.enderio.legacy_layout.conduits.common.init.ConduitTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitTypes;
 import com.enderio.core.common.util.TooltipUtil;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

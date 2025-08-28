@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.base.api.integration;
 
-import com.enderio.legacy_layout.base.api.farm.FarmTaskManager;
-import com.enderio.legacy_layout.base.api.glider.GliderMovementInfo;
+import com.enderio.enderio.api.farm.FarmTaskManager;
+import com.enderio.enderio.api.glider.GliderMovementInfo;
 import java.util.Optional;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;

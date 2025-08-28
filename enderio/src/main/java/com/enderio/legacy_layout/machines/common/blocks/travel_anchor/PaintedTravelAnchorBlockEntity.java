@@ -1,10 +1,10 @@
 package com.enderio.legacy_layout.machines.common.blocks.travel_anchor;
 
 import com.enderio.legacy_layout.base.EIONBTKeys;
-import com.enderio.legacy_layout.base.common.paint.PaintUtils;
-import com.enderio.legacy_layout.base.common.paint.blockentity.PaintedBlockEntity;
-import com.enderio.legacy_layout.base.common.paint.blockentity.SinglePaintedBlockEntity;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.content.decoration.paint.PaintUtils;
+import com.enderio.enderio.common.content.decoration.paint.blockentity.PaintedBlockEntity;
+import com.enderio.enderio.common.content.decoration.paint.blockentity.SinglePaintedBlockEntity;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import java.util.Objects;
 import java.util.Optional;
 import net.minecraft.core.BlockPos;

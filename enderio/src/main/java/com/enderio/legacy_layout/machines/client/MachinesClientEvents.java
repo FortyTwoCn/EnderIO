@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.client;
 
+import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.common.content.travel.TravelHandler;
-import com.enderio.legacy_layout.machines.EnderIOMachines;
 import net.minecraft.client.player.Input;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -13,7 +13,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.MovementInputUpdateEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = EnderIO.MOD_ID, value = Dist.CLIENT)
 public class MachinesClientEvents {
     private static boolean LAST_JUMPING = false;
     private static boolean LAST_SNEAKING = false;

@@ -2,8 +2,8 @@ package com.enderio.legacy_layout.base.client.gui.icon;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
-import com.enderio.legacy_layout.base.common.block.glass.GlassCollisionPredicate;
-import com.enderio.legacy_layout.base.common.block.glass.GlassLighting;
+import com.enderio.enderio.common.content.utility.glass.GlassCollisionPredicate;
+import com.enderio.enderio.common.content.utility.glass.GlassLighting;
 import com.enderio.enderio.common.content.filters.item.general.DamageFilterMode;
 import com.enderio.core.client.icon.EnumIconMap;
 import net.minecraft.world.item.DyeColor;

@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.blocks.enchanter;
 
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.Holder;

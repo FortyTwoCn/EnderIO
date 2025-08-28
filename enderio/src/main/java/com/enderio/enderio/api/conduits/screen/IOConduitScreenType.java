@@ -2,7 +2,7 @@ package com.enderio.enderio.api.conduits.screen;
 
 import com.enderio.enderio.api.conduits.connection.config.IOConnectionConfig;
 import com.enderio.enderio.client.content.conduits.gui.ConduitScreen;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

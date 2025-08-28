@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.base.data.recipe;
 
-import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;

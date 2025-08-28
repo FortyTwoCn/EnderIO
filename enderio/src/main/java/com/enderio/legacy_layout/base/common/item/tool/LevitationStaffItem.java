@@ -1,9 +1,9 @@
 package com.enderio.legacy_layout.base.common.item.tool;
 
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.core.common.capability.StrictFluidHandlerItemStack;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

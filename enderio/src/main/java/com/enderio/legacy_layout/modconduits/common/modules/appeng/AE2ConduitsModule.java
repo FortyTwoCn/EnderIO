@@ -4,12 +4,12 @@ import appeng.api.AECapabilities;
 import appeng.api.ids.AEItemIds;
 import appeng.api.util.AEColor;
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.api.EnderIORegistries;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitApi;
 import com.enderio.enderio.api.conduits.ConduitCapabilities;
 import com.enderio.enderio.api.conduits.ConduitType;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
 import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
 import com.enderio.enderio.api.conduits.network.node.NodeDataType;
 import com.enderio.enderio.api.conduits.network.node.legacy.ConduitDataType;
@@ -45,16 +45,16 @@ public class AE2ConduitsModule implements ConduitCommonModule {
     private static final ModLoadedCondition CONDITION = new ModLoadedCondition("ae2");
 
     public static final DeferredRegister<ConduitType<?>> CONDUIT_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_TYPE, EnderIOAPI.NAMESPACE);
 
     public static final DeferredRegister<ConnectionConfigType<?>> CONDUIT_CONNECTION_CONFIG_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_CONNECTION_CONFIG_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_CONNECTION_CONFIG_TYPE, EnderIOAPI.NAMESPACE);
 
     public static final DeferredRegister<ConduitDataType<?>> CONDUIT_DATA_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_DATA_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_DATA_TYPE, EnderIOAPI.NAMESPACE);
 
     public static final DeferredRegister<NodeDataType<?>> CONDUIT_NODE_DATA_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_NODE_DATA_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_NODE_DATA_TYPE, EnderIOAPI.NAMESPACE);
 
     public static final DeferredHolder<ConduitType<?>, ConduitType<MEConduit>> AE2_CONDUIT = CONDUIT_TYPES.register(
             "me",
@@ -80,9 +80,9 @@ public class AE2ConduitsModule implements ConduitCommonModule {
         return ModdedConduits.REGILITE.addTranslation(prefix, id, translation);
     }
 
-    public static final ResourceKey<Conduit<?, ?>> NORMAL = ResourceKey.create(EnderIOConduitsRegistries.Keys.CONDUIT,
+    public static final ResourceKey<Conduit<?, ?>> NORMAL = ResourceKey.create(EnderIORegistries.Keys.CONDUIT,
             EnderIOAPI.loc("me"));
-    public static final ResourceKey<Conduit<?, ?>> DENSE = ResourceKey.create(EnderIOConduitsRegistries.Keys.CONDUIT,
+    public static final ResourceKey<Conduit<?, ?>> DENSE = ResourceKey.create(EnderIORegistries.Keys.CONDUIT,
             EnderIOAPI.loc("dense_me"));
 
     private static final TagKey<Item> COVERED_DENSE_CABLE = ItemTags

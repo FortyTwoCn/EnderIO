@@ -5,7 +5,7 @@ import com.enderio.legacy_layout.base.common.integrations.jei.JEIUtils;
 import com.enderio.legacy_layout.machines.client.gui.screen.FluidTankScreen;
 import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.FluidTankBlockEntity;
 import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.TankRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import java.util.List;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

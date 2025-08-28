@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.base.common.integrations.jei;
 
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.init.EIORecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIORecipes;
 import com.enderio.legacy_layout.base.common.integrations.jei.helper.FakeGrindingRecipe;
 import com.enderio.enderio.common.content.fire_crafting.FireCraftingRecipe;
 import net.minecraft.client.Minecraft;

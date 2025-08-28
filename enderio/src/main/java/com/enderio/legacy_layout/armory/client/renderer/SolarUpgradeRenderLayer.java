@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.armory.client.renderer;
 
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.solar.SolarUpgrade;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.solar.SolarUpgradeHandler;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import java.util.Optional;

@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.data.datamap;
 
 import com.enderio.legacy_layout.machines.common.datamap.RangeExtender;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.tag.MachineTags;
 import java.util.HashMap;
 import java.util.Map;

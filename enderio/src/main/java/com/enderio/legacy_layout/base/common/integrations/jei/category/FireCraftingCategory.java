@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.base.common.integrations.jei.category;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
 import com.enderio.legacy_layout.base.common.integrations.jei.JEIUtils;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.enderio.common.content.fire_crafting.FireCraftingRecipe;

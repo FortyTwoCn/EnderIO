@@ -2,8 +2,8 @@ package com.enderio.enderio.common.content.conduits;
 
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitApi;
+import com.enderio.enderio.common.content.conduits.crafting.ConduitIngredient;
 import com.enderio.enderio.common.content.conduits.utility.ConduitSorter;
-import com.enderio.legacy_layout.conduits.common.recipe.ConduitIngredient;
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;

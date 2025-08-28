@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.data.recipes;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
 import com.enderio.legacy_layout.machines.common.blocks.obelisks.weather.WeatherChangeRecipe;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;

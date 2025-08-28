@@ -1,15 +1,14 @@
 package com.enderio.legacy_layout.conduits.data.recipe;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.api.EnderIORegistries;
+import com.enderio.enderio.common.content.conduits.crafting.ConduitIngredient;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.enderio.api.conduits.Conduit;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
 import com.enderio.enderio.common.content.conduits.ConduitBlockItem;
-import com.enderio.legacy_layout.conduits.common.init.ConduitItems;
-import com.enderio.legacy_layout.conduits.common.init.Conduits;
-import com.enderio.legacy_layout.conduits.common.recipe.ConduitIngredient;
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitItems;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.Conduits;
 import com.enderio.legacy_layout.machines.common.blocks.painting.PaintingRecipe;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
@@ -41,7 +40,7 @@ public class ConduitRecipes extends RecipeProvider {
         // We know that the registries are now available.
         HolderLookup.Provider lookupProvider = registries.resultNow();
         HolderGetter<Conduit<?, ?>> conduitRegistry = lookupProvider
-                .lookupOrThrow(EnderIOConduitsRegistries.Keys.CONDUIT);
+                .lookupOrThrow(EnderIORegistries.Keys.CONDUIT);
 
         var itemConduit = conduitRegistry.getOrThrow(Conduits.ITEM);
         var fluidConduit = conduitRegistry.getOrThrow(Conduits.FLUID);
@@ -365,7 +364,6 @@ public class ConduitRecipes extends RecipeProvider {
     // TODO: I want to have a builder for all EIO recipes in the API.
     protected void paintingRecipe(ItemLike output, Ingredient input, RecipeOutput recipeOutput) {
         recipeOutput.accept(EnderIOAPI.loc("painting/" + BuiltInRegistries.ITEM.getKey(output.asItem()).getPath()),
-                new PaintingRecipe(input, output.asItem().getDefaultInstance()), null,
-                new ModLoadedCondition(EnderIOMachines.MODULE_MOD_ID));
+                new PaintingRecipe(input, output.asItem().getDefaultInstance()), null);
     }
 }

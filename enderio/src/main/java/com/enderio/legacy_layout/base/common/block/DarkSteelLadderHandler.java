@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.base.common.block;
 
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.MoverType;

@@ -4,8 +4,8 @@ import com.enderio.legacy_layout.machines.common.blocks.base.fluid.FluidStorageI
 import com.enderio.legacy_layout.machines.common.blocks.base.fluid.FluidStorageSyncSlot;
 import com.enderio.legacy_layout.machines.common.blocks.base.menu.MachineMenu;
 import com.enderio.legacy_layout.machines.common.blocks.base.menu.MachineSlot;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
-import com.enderio.legacy_layout.machines.common.init.MachineMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 

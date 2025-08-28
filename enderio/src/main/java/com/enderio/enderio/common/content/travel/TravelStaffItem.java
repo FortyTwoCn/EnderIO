@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.content.travel;
 
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.core.client.item.AdvancedTooltipProvider;
 import com.enderio.core.client.item.EnergyBarDecorator;

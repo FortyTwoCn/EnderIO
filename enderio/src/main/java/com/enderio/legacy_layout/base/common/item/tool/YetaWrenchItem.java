@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.base.common.item.tool;
 
 import com.enderio.legacy_layout.base.api.capability.SideConfig;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.mojang.datafixers.util.Either;
 import java.util.Optional;
 import net.minecraft.core.BlockPos;

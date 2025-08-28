@@ -1,5 +1,6 @@
 package com.enderio.enderio.common.content.conduits.types.redstone;
 
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitCapabilities;
@@ -8,8 +9,7 @@ import com.enderio.enderio.api.conduits.bundle.ConduitBundle;
 import com.enderio.enderio.api.conduits.bundle.SlotType;
 import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
 import com.enderio.enderio.api.conduits.network.node.IConduitNode;
-import com.enderio.legacy_layout.conduits.common.init.ConduitTypes;
-import com.enderio.legacy_layout.conduits.common.tag.ConduitTags;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitTypes;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import java.util.Set;
@@ -67,7 +67,7 @@ public record RedstoneConduit(ResourceLocation texture, ResourceLocation activeT
     public boolean canConnectToBlock(Level level, BlockPos conduitPos, Direction direction) {
         BlockPos neighbor = conduitPos.relative(direction);
         BlockState blockState = level.getBlockState(neighbor);
-        return blockState.is(ConduitTags.Blocks.REDSTONE_CONNECTABLE)
+        return blockState.is(EIOTags.Blocks.REDSTONE_CONNECTABLE)
                 || blockState.canRedstoneConnectTo(level, neighbor, direction.getOpposite());
     }
 

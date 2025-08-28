@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.base.common.integrations.jei.subtype;
 
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import mezz.jei.api.ingredients.subtypes.ISubtypeInterpreter;
 import mezz.jei.api.ingredients.subtypes.UidContext;
 import net.minecraft.world.item.ItemStack;

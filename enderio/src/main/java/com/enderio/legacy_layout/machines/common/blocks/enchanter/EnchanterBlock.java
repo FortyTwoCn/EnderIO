@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.blocks.enchanter;
 
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

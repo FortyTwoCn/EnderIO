@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel;
 
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
-import com.enderio.legacy_layout.armory.common.init.ArmoryArmorMaterials;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryArmorMaterials;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.empowered.EmpoweredUpgrade;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;

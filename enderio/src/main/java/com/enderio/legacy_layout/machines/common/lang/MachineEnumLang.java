@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.lang;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.core.common.lang.EnumTranslationMap;
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmelterMode;
 import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.PoweredSpawnerMode;
 import net.minecraft.network.chat.Component;
@@ -25,7 +25,7 @@ public class MachineEnumLang {
 
     private static Component addTranslation(String prefix, ResourceLocation key, String english) {
         // TODO: Regilite should support a plain string key
-        return EnderIOMachines.REGILITE.addTranslation(prefix, key, english);
+        return EnderIO.REGILITE.addTranslation(prefix, key, english);
     }
 
     public static void register() {

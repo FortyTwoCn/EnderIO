@@ -7,7 +7,7 @@ import com.enderio.legacy_layout.machines.common.blocks.sag_mill.SagMillingRecip
 import com.enderio.legacy_layout.machines.common.blocks.slicer.SlicingRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.soul_binder.SoulBindingRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.vat.FermentingRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.integrations.jei.util.WrappedEnchanterRecipe;
 import com.enderio.legacy_layout.machines.common.souldata.EngineSoul;
 import net.minecraft.client.Minecraft;

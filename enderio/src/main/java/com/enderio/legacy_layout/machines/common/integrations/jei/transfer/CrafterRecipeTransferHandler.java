@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.integrations.jei.transfer;
 
 import com.enderio.legacy_layout.machines.common.blocks.crafter.CrafterMenu;
-import com.enderio.legacy_layout.machines.common.init.MachineMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import com.enderio.legacy_layout.machines.common.network.UpdateCrafterTemplatePacket;
 import com.mojang.logging.LogUtils;
 import mezz.jei.api.constants.RecipeTypes;

@@ -3,7 +3,7 @@ package com.enderio.enderio.common.content.conduits.legacy;
 import com.enderio.enderio.api.conduits.network.node.NodeData;
 import com.enderio.enderio.api.conduits.network.node.legacy.ConduitData;
 import com.enderio.enderio.api.conduits.network.node.legacy.ConduitDataType;
-import com.enderio.legacy_layout.conduits.common.init.ConduitTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitTypes;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

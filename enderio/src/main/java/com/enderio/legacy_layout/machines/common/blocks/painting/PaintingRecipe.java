@@ -1,11 +1,11 @@
 package com.enderio.legacy_layout.machines.common.blocks.painting;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.paint.BlockPaintData;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.content.decoration.paint.BlockPaintData;
 import com.enderio.core.common.recipes.OutputStack;
 import com.enderio.legacy_layout.machines.common.blocks.base.MachineRecipe;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import java.util.ArrayList;

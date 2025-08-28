@@ -1,6 +1,6 @@
 package com.enderio.conduits.tests.conduits;
 
-import com.enderio.legacy_layout.conduits.common.init.Conduits;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.Conduits;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.testframework.DynamicTest;

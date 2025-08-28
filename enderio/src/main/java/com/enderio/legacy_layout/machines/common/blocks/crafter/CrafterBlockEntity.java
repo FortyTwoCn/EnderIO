@@ -9,7 +9,7 @@ import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineIn
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MultiSlotAccess;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.SingleSlotAccess;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import java.util.ArrayDeque;
 import java.util.Optional;
 import java.util.Queue;

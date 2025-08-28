@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.base.common.recipe;
 
 import com.enderio.enderio.api.soul.SoulBoundUtils;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
-import com.enderio.legacy_layout.base.common.init.EIORecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIORecipes;
 import com.enderio.core.common.recipes.WrappedShapedRecipe;
 
 import java.util.Objects;

@@ -8,7 +8,7 @@ import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.flags.C
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventoryLayout;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.SingleSlotAccess;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

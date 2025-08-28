@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.machines.common.blockentity;
 import com.enderio.enderio.api.capacitor.FixedScalable;
 import com.enderio.legacy_layout.base.api.io.energy.EnergyIOMode;
 import com.enderio.legacy_layout.machines.common.blockentity.base.LegacyPoweredMachineBlockEntity;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.enderio.legacy_layout.machines.common.io.energy.MachineEnergyStorage;
 import java.util.function.Supplier;
 import net.minecraft.core.BlockPos;

@@ -1,9 +1,9 @@
 package com.enderio.legacy_layout.base.common.item.tool;
 
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.core.common.capability.StrictFluidHandlerItemStack;
 import com.enderio.core.common.item.CreativeTabVariants;
 import net.minecraft.advancements.CriteriaTriggers;

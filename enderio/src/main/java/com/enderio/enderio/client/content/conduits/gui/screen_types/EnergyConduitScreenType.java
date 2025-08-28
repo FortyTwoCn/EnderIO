@@ -6,7 +6,7 @@ import com.enderio.enderio.api.conduits.screen.ConduitMenuDataAccess;
 import com.enderio.enderio.api.conduits.screen.ConduitScreenHelper;
 import com.enderio.enderio.api.conduits.screen.IOConduitScreenType;
 import com.enderio.enderio.common.content.conduits.types.energy.EnergyConduitConnectionConfig;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;

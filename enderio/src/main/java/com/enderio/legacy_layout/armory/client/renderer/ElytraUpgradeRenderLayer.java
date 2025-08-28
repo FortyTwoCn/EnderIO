@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.armory.client.renderer;
 
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.flight.ElytraUpgrade;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.EntityModelSet;

@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.modconduits.common;
 import static java.util.Map.entry;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
+import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.legacy_layout.modconduits.common.modules.ConduitCommonModule;
 import com.enderio.legacy_layout.modconduits.common.modules.Integrations;
 import com.enderio.legacy_layout.modconduits.common.modules.appeng.AE2ConduitsModule;
@@ -62,7 +62,7 @@ public class ModdedConduits {
     }
 
     private static RegistrySetBuilder createDatapackEntriesBuilder() {
-        return new RegistrySetBuilder().add(EnderIOConduitsRegistries.Keys.CONDUIT,
+        return new RegistrySetBuilder().add(EnderIORegistries.Keys.CONDUIT,
                 (context) -> executeOnLoadedModules(module -> module.bootstrapConduits(context)));
     }
 

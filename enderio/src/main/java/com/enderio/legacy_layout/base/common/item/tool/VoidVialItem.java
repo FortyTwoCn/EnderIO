@@ -1,9 +1,9 @@
 package com.enderio.legacy_layout.base.common.item.tool;
 
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
-import com.enderio.legacy_layout.base.common.util.ExperienceUtil;
+import com.enderio.enderio.common.registration.EIOTags;
+import com.enderio.enderio.common.foundation.util.ExperienceUtil;
 import com.enderio.core.common.network.EmitParticlePacket;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ColorParticleOption;

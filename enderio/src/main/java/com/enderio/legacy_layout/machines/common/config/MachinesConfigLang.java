@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.config;
 
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.EnderIO;
 
 public class MachinesConfigLang {
     public static void register() {
@@ -75,7 +75,6 @@ public class MachinesConfigLang {
         // -- Client --
 
         // Blocks
-        addTranslation("blocks", "Blocks");
         addTranslation("vacuumChestRangeColor", "Vaccum Chest Range Color");
         addTranslation("vacuumXpRangeColor", "XP Vacuum Range Color");
         addTranslation("poweredSpawnerRangeColor", "Powered Spawner Range Color");
@@ -91,7 +90,7 @@ public class MachinesConfigLang {
 
     private static void addTranslation(String key, String translation) {
         // TODO: More translation options in Regilite
-        EnderIOMachines.REGILITE.addTranslation(() -> EnderIOMachines.MODULE_MOD_ID + "." + "configuration" + "." + key,
+        EnderIO.REGILITE.addTranslation(() -> EnderIO.MOD_ID + "." + "configuration" + "." + key,
                 translation);
     }
 }

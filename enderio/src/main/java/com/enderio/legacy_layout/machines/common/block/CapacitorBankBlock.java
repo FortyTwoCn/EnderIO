@@ -1,11 +1,11 @@
 package com.enderio.legacy_layout.machines.common.block;
 
 import com.enderio.enderio.api.EnderIOAPI;
+import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.core.client.item.AdvancedTooltipProvider;
 import com.enderio.core.common.energy.ItemStackEnergy;
 import com.enderio.core.common.util.TooltipUtil;
-import com.enderio.legacy_layout.machines.EnderIOMachines;
 import com.enderio.legacy_layout.machines.common.blockentity.base.LegacyMachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.blockentity.capacitorbank.CapacitorBankBlockEntity;
 import com.enderio.legacy_layout.machines.common.blockentity.capacitorbank.DisplayMode;
@@ -30,7 +30,7 @@ import net.neoforged.neoforge.event.entity.player.AdvancementEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import org.jetbrains.annotations.Nullable;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class CapacitorBankBlock extends LegacyMachineBlock implements AdvancedTooltipProvider {
 
     public CapacityTier getTier() {

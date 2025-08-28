@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.conduits.common.integrations;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.api.integration.IntegrationManager;
 import com.enderio.legacy_layout.base.api.integration.IntegrationWrapper;
-import com.enderio.legacy_layout.conduits.common.integrations.cctweaked.CCIntegration;
+import com.enderio.enderio.common.compat.cc_tweaked.CCIntegration;
 
 public class Integrations {
 

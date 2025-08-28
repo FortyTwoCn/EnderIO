@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.nightvis
 
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
 import com.enderio.legacy_layout.armory.common.config.ArmoryConfig;
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import com.enderio.legacy_layout.armory.common.tag.ArmoryTags;
 import com.enderio.core.common.energy.ItemStackEnergy;
 import java.util.HashSet;

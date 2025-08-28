@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.content.filters.soul;
 
 import com.enderio.enderio.api.soul.Soul;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.enderio.common.content.filters.FilterSlot;
 
 import java.util.Optional;

@@ -8,7 +8,7 @@ import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.flags.C
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventoryLayout;
 import com.enderio.legacy_layout.machines.common.blocks.obelisks.ObeliskBlockEntity;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.enderio.legacy_layout.machines.common.obelisk.InhibitorObeliskManager;
 import com.enderio.legacy_layout.machines.common.obelisk.ObeliskAreaManager;
 import net.minecraft.core.BlockPos;

@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.conduits.client.gui.screen.filter;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.client.gui.widget.DyeColorPickerWidget;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
 import com.enderio.legacy_layout.conduits.common.menu.RedstoneCountFilterMenu;
 import com.enderio.core.client.gui.screen.EIOScreen;
 import net.minecraft.client.gui.components.Button;

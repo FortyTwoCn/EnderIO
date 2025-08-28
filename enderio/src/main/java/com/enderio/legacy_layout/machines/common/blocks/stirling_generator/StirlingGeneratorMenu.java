@@ -3,8 +3,8 @@ package com.enderio.legacy_layout.machines.common.blocks.stirling_generator;
 import com.enderio.core.common.network.menu.FloatSyncSlot;
 import com.enderio.legacy_layout.machines.common.blocks.base.menu.MachineSlot;
 import com.enderio.legacy_layout.machines.common.blocks.base.menu.PoweredMachineMenu;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
-import com.enderio.legacy_layout.machines.common.init.MachineMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 

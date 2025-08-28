@@ -1,9 +1,9 @@
 package com.enderio.legacy_layout.base.common.integrations.jei;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.block.glass.GlassBlocks;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.common.content.utility.glass.GlassBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.legacy_layout.base.common.integrations.jei.category.FireCraftingCategory;
 import com.enderio.legacy_layout.base.common.integrations.jei.extension.ShapedEntityStorageCategoryExtension;
 import com.enderio.legacy_layout.base.common.integrations.jei.subtype.SoulBindableSubtypeInterpreter;

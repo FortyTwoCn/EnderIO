@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.blocks.vat;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.api.UseOnly;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.core.common.recipes.OutputStack;
 import com.enderio.core.common.util.NamedFluidContents;
 import com.enderio.legacy_layout.machines.common.attachment.FluidTankUser;
@@ -13,8 +13,8 @@ import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MultiSlot
 import com.enderio.legacy_layout.machines.common.blocks.base.state.MachineState;
 import com.enderio.legacy_layout.machines.common.blocks.base.task.CraftingMachineTask;
 import com.enderio.legacy_layout.machines.common.blocks.base.task.host.CraftingMachineTaskHost;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.io.fluid.FluidItemInteractive;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidHandler;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;

@@ -2,7 +2,7 @@ package com.enderio.enderio.common.content.conduits;
 
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.common.EnderIO;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;

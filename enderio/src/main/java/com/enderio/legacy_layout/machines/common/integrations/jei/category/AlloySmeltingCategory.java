@@ -4,7 +4,7 @@ import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.common.integrations.jei.JEIUtils;
 import com.enderio.legacy_layout.machines.client.gui.screen.StirlingGeneratorScreen;
 import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmeltingRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.integrations.jei.util.MachineRecipeCategory;
 import com.enderio.legacy_layout.machines.common.integrations.jei.util.RecipeUtil;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;

@@ -2,32 +2,40 @@ package com.enderio.enderio.common;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.api.conduits.Conduit;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
-import com.enderio.legacy_layout.base.api.registry.EnderIORegistries;
+import com.enderio.enderio.common.registration.EIONetworkPackets;
+import com.enderio.enderio.api.EnderIORegistries;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineAttachments;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineTravelTargets;
+import com.enderio.legacy_layout.base.api.integration.IntegrationManager;
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
 import com.enderio.legacy_layout.base.common.config.BaseConfigLang;
 import com.enderio.enderio.common.content.filters.fluid.FluidFilterSlot;
 import com.enderio.enderio.common.content.filters.item.ItemFilterSlot;
-import com.enderio.legacy_layout.base.common.hangglider.PlayerMovementHandler;
-import com.enderio.legacy_layout.base.common.init.EIOAttachments;
-import com.enderio.legacy_layout.base.common.init.EIOBlockEntities;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIOCreativeTabs;
-import com.enderio.legacy_layout.base.common.init.EIOCriterions;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.init.EIOEntities;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
-import com.enderio.legacy_layout.base.common.init.EIOIngredientTypes;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.init.EIOLootModifiers;
-import com.enderio.legacy_layout.base.common.init.EIOMenus;
-import com.enderio.legacy_layout.base.common.init.EIOParticles;
-import com.enderio.legacy_layout.base.common.init.EIORecipes;
+import com.enderio.enderio.common.content.utility.glider.PlayerMovementHandler;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOAttachments;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCreativeTabs;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCriterions;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOIngredientTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOLootModifiers;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOParticles;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIORecipes;
 import com.enderio.legacy_layout.base.common.integrations.Integrations;
 import com.enderio.legacy_layout.base.common.item.tool.SoulVialItem;
 import com.enderio.legacy_layout.base.common.lang.EIOEnumLang;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.base.data.EIODataProvider;
 import com.enderio.legacy_layout.base.data.advancement.EIOAdvancementGenerator;
 import com.enderio.legacy_layout.base.data.loot.ChestLootProvider;
@@ -42,23 +50,54 @@ import com.enderio.legacy_layout.base.data.tags.EIOBlockTagsProvider;
 import com.enderio.legacy_layout.base.data.tags.EIOEntityTagsProvider;
 import com.enderio.legacy_layout.base.data.tags.EIOFluidTagsProvider;
 import com.enderio.legacy_layout.base.data.tags.EIOItemTagsProvider;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlockEntities;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
-import com.enderio.legacy_layout.conduits.common.init.ConduitIngredientTypes;
-import com.enderio.legacy_layout.conduits.common.init.ConduitItems;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
-import com.enderio.legacy_layout.conduits.common.init.ConduitMenus;
-import com.enderio.legacy_layout.conduits.common.init.ConduitTypes;
-import com.enderio.legacy_layout.conduits.common.init.Conduits;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitIngredientTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitItems;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.Conduits;
 import com.enderio.legacy_layout.conduits.data.ConduitTagProvider;
 import com.enderio.legacy_layout.conduits.data.recipe.ConduitRecipes;
+import com.enderio.legacy_layout.machines.common.blocks.base.menu.GhostMachineSlot;
+import com.enderio.legacy_layout.machines.common.blocks.base.menu.MachineSlot;
+import com.enderio.legacy_layout.machines.common.blocks.base.menu.PreviewMachineSlot;
+import com.enderio.legacy_layout.machines.common.blocks.enchanter.EnchanterMenu;
+import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
+import com.enderio.legacy_layout.machines.common.config.MachinesConfigLang;
+import com.enderio.legacy_layout.machines.common.integrations.EnderIOMachinesSelfIntegration;
+import com.enderio.legacy_layout.machines.common.lang.MachineEnumLang;
+import com.enderio.legacy_layout.machines.common.lang.MachineLang;
+import com.enderio.legacy_layout.machines.common.tag.MachineTags;
+import com.enderio.legacy_layout.machines.data.advancements.MachinesAdvancementGenerator;
+import com.enderio.legacy_layout.machines.data.datamap.RangeExtenderDataProvider;
+import com.enderio.legacy_layout.machines.data.reagentdata.ReagentProvider;
+import com.enderio.legacy_layout.machines.data.recipes.AlloyRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.EnchanterRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.FermentingRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.MachineRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.PaintingRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.SagMillRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.SlicingRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.SoulBindingRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.TankRecipeProvider;
+import com.enderio.legacy_layout.machines.data.recipes.WeatherChangeRecipeProvider;
+import com.enderio.legacy_layout.machines.data.souldata.SoulDataProvider;
+import com.enderio.legacy_layout.machines.data.tag.MachineBlockTagsProvider;
+import com.enderio.legacy_layout.machines.data.tag.MachineEntityTypeTagsProvider;
+import com.enderio.legacy_layout.machines.data.tag.MachineItemTagsProvider;
 import com.enderio.regilite.Regilite;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.repository.Pack;
+import net.minecraft.server.packs.repository.PackSource;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
@@ -74,6 +113,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.common.data.AdvancementProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.neoforged.neoforge.event.AddPackFindersEvent;
 import net.neoforged.neoforge.registries.DataPackRegistryEvent;
 import net.neoforged.neoforge.registries.NewRegistryEvent;
 
@@ -107,7 +147,11 @@ public class EnderIO {
         // TODO: Config redesign.
         modContainer.registerConfig(ModConfig.Type.COMMON, BaseConfig.COMMON_SPEC, "enderio/base-common.toml");
         modContainer.registerConfig(ModConfig.Type.CLIENT, BaseConfig.CLIENT_SPEC, "enderio/base-client.toml");
+        modContainer.registerConfig(ModConfig.Type.COMMON, MachinesConfig.COMMON_SPEC, "enderio/machines-common.toml");
+        modContainer.registerConfig(ModConfig.Type.CLIENT, MachinesConfig.CLIENT_SPEC, "enderio/machines-client.toml");
+
         BaseConfigLang.register();
+        MachinesConfigLang.register();
 
         // Perform initialization and registration for everything so things are
         // registered.
@@ -131,6 +175,21 @@ public class EnderIO {
         EIOCriterions.register(modEventBus);
         EIOIngredientTypes.register(modEventBus);
 
+        // ==== Machines
+        MachineDataComponents.register(modEventBus);
+        MachineTravelTargets.register(modEventBus);
+        MachineBlocks.register(modEventBus);
+        MachineBlockEntities.register(modEventBus);
+        MachineMenus.register(modEventBus);
+        MachineRecipes.register(modEventBus);
+        MachineAttachments.register(modEventBus);
+
+        MachineLang.register();
+        MachineEnumLang.register();
+        MachineTags.register();
+
+        IntegrationManager.addIntegration(EnderIOMachinesSelfIntegration.INSTANCE);
+
         // ===== Conduits
         Conduits.register();
         ConduitTypes.register(modEventBus);
@@ -145,6 +204,9 @@ public class EnderIO {
 
         REGILITE.register(modEventBus);
 
+        // Register network packets
+        EIONetworkPackets.registerPackets(modEventBus, modContainer);
+
         // Run datagen after registrate is finished.
         modEventBus.addListener(EventPriority.LOWEST, this::onGatherData);
         modEventBus.addListener(SoulVialItem::onCommonSetup);
@@ -157,16 +219,16 @@ public class EnderIO {
     private void registerRegistries(NewRegistryEvent event) {
         event.register(EnderIORegistries.TRAVEL_TARGET_TYPES);
         event.register(EnderIORegistries.TRAVEL_TARGET_SERIALIZERS);
-        event.register(EnderIOConduitsRegistries.CONDUIT_TYPE);
-        event.register(EnderIOConduitsRegistries.CONDUIT_DATA_TYPE);
-        event.register(EnderIOConduitsRegistries.CONDUIT_CONNECTION_CONFIG_TYPE);
-        event.register(EnderIOConduitsRegistries.CONDUIT_NODE_DATA_TYPE);
-        event.register(EnderIOConduitsRegistries.CONDUIT_NETWORK_CONTEXT_TYPE);
+        event.register(EnderIORegistries.CONDUIT_TYPE);
+        event.register(EnderIORegistries.CONDUIT_DATA_TYPE);
+        event.register(EnderIORegistries.CONDUIT_CONNECTION_CONFIG_TYPE);
+        event.register(EnderIORegistries.CONDUIT_NODE_DATA_TYPE);
+        event.register(EnderIORegistries.CONDUIT_NETWORK_CONTEXT_TYPE);
     }
 
     @SubscribeEvent
     private static void registerDatapackRegistries(DataPackRegistryEvent.NewRegistry event) {
-        event.dataPackRegistry(EnderIOConduitsRegistries.Keys.CONDUIT, Conduit.DIRECT_CODEC, Conduit.DIRECT_CODEC);
+        event.dataPackRegistry(EnderIORegistries.Keys.CONDUIT, Conduit.DIRECT_CODEC, Conduit.DIRECT_CODEC);
     }
 
     public void onGatherData(GatherDataEvent event) {
@@ -219,15 +281,66 @@ public class EnderIO {
         event.getGenerator().addProvider(true, conduits);
 
         // endregion
+
+        // region Machines
+
+        EIODataProvider machines = new EIODataProvider("machines");
+
+        machines.addSubProvider(event.includeServer(), new MachineRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new AlloyRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new EnchanterRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new FermentingRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new SagMillRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new SlicingRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new SoulBindingRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new TankRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new PaintingRecipeProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new SoulDataProvider(packOutput));
+        machines.addSubProvider(event.includeServer(),
+            new MachineEntityTypeTagsProvider(packOutput, registries, event.getExistingFileHelper()));
+        var b1 = new MachineBlockTagsProvider(packOutput, registries, event.getExistingFileHelper());
+        machines.addSubProvider(event.includeServer(), b1);
+        machines.addSubProvider(event.includeServer(), new ReagentProvider(packOutput, registries)); // Reagent Data
+                                                                                                     // needs to be
+                                                                                                     // before
+                                                                                                     // ItemTags
+        machines.addSubProvider(event.includeServer(), new MachineItemTagsProvider(packOutput, registries,
+            b1.contentsGetter(), event.getExistingFileHelper()));
+        machines.addSubProvider(event.includeServer(), new RangeExtenderDataProvider(packOutput, registries));
+        machines.addSubProvider(event.includeServer(), new WeatherChangeRecipeProvider(packOutput, registries));
+
+        generator.addProvider(true, machines);
+        machines.addSubProvider(event.includeServer(), new AdvancementProvider(packOutput, event.getLookupProvider(),
+            event.getExistingFileHelper(), List.of(new MachinesAdvancementGenerator())));
+
+        // endregion
     }
 
     private static RegistrySetBuilder createDatapackEntriesBuilder() {
-        return new RegistrySetBuilder().add(EnderIOConduitsRegistries.Keys.CONDUIT, Conduits::bootstrap);
+        return new RegistrySetBuilder().add(EnderIORegistries.Keys.CONDUIT, Conduits::bootstrap);
     }
 
     @SubscribeEvent
     public static void sendIMC(InterModEnqueueEvent event) {
         InterModComms.sendTo("inventorysorter", "slotblacklist", ItemFilterSlot.class::getName);
         InterModComms.sendTo("inventorysorter", "slotblacklist", FluidFilterSlot.class::getName);
+
+        InterModComms.sendTo("inventorysorter", "slotblacklist", MachineSlot.class::getName);
+        InterModComms.sendTo("inventorysorter", "slotblacklist", GhostMachineSlot.class::getName);
+        InterModComms.sendTo("inventorysorter", "slotblacklist", PreviewMachineSlot.class::getName);
+        InterModComms.sendTo("inventorysorter", "slotblacklist",
+            EnchanterMenu.EnchanterOutputMachineSlot.class::getName);
+    }
+
+    @SubscribeEvent
+    public static void addBuiltInPacks(final AddPackFindersEvent event) {
+        event.addPackFinders(
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "data/enderio/datapacks/farming_station"),
+            PackType.SERVER_DATA, MachineLang.FARMING_STATION_EXPERIMENT, PackSource.FEATURE, false,
+            Pack.Position.TOP);
+
+        event.addPackFinders(
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "data/enderio/datapacks/enderface"),
+            PackType.SERVER_DATA, MachineLang.ENDERFACE_EXPERIMENT, PackSource.FEATURE, false, Pack.Position.TOP);
     }
 }

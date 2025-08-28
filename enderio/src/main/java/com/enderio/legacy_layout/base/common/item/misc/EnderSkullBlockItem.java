@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.base.common.item.misc;
 
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraft.world.level.block.Block;

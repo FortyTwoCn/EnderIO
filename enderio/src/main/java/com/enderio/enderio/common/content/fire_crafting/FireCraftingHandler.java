@@ -2,7 +2,7 @@ package com.enderio.enderio.common.content.fire_crafting;
 
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
-import com.enderio.legacy_layout.base.common.init.EIORecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIORecipes;
 
 import java.util.ArrayList;
 import java.util.List;

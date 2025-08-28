@@ -2,8 +2,8 @@ package com.enderio.enderio.common.content.conduits.facades;
 
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.enderio.api.conduits.ConduitCapabilities;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.BlockPos;

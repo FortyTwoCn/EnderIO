@@ -9,7 +9,7 @@ import com.enderio.enderio.api.conduits.connection.config.ConnectionConfig;
 import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
 import com.enderio.enderio.api.conduits.network.node.IConduitNode;
 import com.enderio.enderio.api.conduits.network.node.legacy.ConduitDataAccessor;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
 import com.enderio.core.common.util.TooltipUtil;
 import com.enderio.legacy_layout.modconduits.common.modules.mekanism.MekanismModule;
 import com.mojang.serialization.Codec;

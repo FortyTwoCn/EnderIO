@@ -2,10 +2,10 @@ package com.enderio.legacy_layout.armory;
 
 import com.enderio.legacy_layout.armory.common.config.ArmoryConfig;
 import com.enderio.legacy_layout.armory.common.config.ArmoryConfigLang;
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
-import com.enderio.legacy_layout.armory.common.init.ArmoryItems;
-import com.enderio.legacy_layout.armory.common.init.ArmoryLootModifiers;
-import com.enderio.legacy_layout.armory.common.init.ArmoryRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryItems;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryLootModifiers;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryRecipes;
 import com.enderio.legacy_layout.armory.common.item.darksteel.AnvilRecipeHandler;
 import com.enderio.legacy_layout.armory.common.item.darksteel.DarkSteelSwordItem;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.StepAssistUpgrade;

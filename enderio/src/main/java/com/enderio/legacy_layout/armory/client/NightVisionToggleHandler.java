@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.armory.client;
 
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.nightvision.NightVisionEnabledPacket;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.nightvision.NightVisionHandler;
 import java.util.Optional;

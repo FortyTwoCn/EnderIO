@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.integrations.jei.transfer;
 
 import com.enderio.legacy_layout.machines.common.blocks.obelisks.weather.WeatherChangeRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.obelisks.weather.WeatherObeliskMenu;
-import com.enderio.legacy_layout.machines.common.init.MachineMenus;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import com.enderio.legacy_layout.machines.common.integrations.jei.category.WeatherChangeCategory;
 import com.enderio.legacy_layout.machines.common.network.TransferItemsPacket;
 import mezz.jei.api.gui.ingredient.IRecipeSlotView;

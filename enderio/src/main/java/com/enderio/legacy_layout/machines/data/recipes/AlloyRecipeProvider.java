@@ -1,14 +1,14 @@
 package com.enderio.legacy_layout.machines.data.recipes;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.block.glass.FusedQuartzBlock;
-import com.enderio.legacy_layout.base.common.block.glass.GlassBlocks;
-import com.enderio.legacy_layout.base.common.block.glass.GlassCollisionPredicate;
-import com.enderio.legacy_layout.base.common.block.glass.GlassIdentifier;
-import com.enderio.legacy_layout.base.common.block.glass.GlassLighting;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.content.utility.glass.FusedQuartzBlock;
+import com.enderio.enderio.common.content.utility.glass.GlassBlocks;
+import com.enderio.enderio.common.content.utility.glass.GlassCollisionPredicate;
+import com.enderio.enderio.common.content.utility.glass.GlassIdentifier;
+import com.enderio.enderio.common.content.utility.glass.GlassLighting;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmeltingRecipe;
 import java.util.List;
 import java.util.Map;

@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.client.gui.screen;
 
 import com.enderio.legacy_layout.base.client.gui.widget.EIOCommonWidgets;
 import com.enderio.legacy_layout.base.client.gui.widget.RedstoneControlPickerWidget;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.core.common.util.TooltipUtil;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;

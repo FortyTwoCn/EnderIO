@@ -1,7 +1,7 @@
 package com.enderio.enderio.client.content.conduits.model.conduit;
 
 import com.enderio.enderio.api.conduits.Conduit;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
 import com.enderio.core.client.RenderUtil;
 import java.util.Arrays;
 import java.util.HashMap;

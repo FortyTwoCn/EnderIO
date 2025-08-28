@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.client.rendering.travel;
 
 import com.enderio.legacy_layout.base.api.travel.TravelTarget;
 import com.enderio.enderio.common.content.travel.TravelHandler;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.travel.AnchorTravelTarget;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;

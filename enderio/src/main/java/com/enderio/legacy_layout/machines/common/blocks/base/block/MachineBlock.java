@@ -4,7 +4,7 @@ import com.enderio.enderio.api.soul.Soul;
 import com.enderio.enderio.api.soul.binding.ISoulBindable;
 import com.enderio.enderio.api.soul.storage.ISoulHandler;
 import com.enderio.enderio.common.foundation.block.EIOEntityBlock;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.MachineBlockEntity;
 import com.mojang.serialization.MapCodec;
 import java.util.function.Supplier;

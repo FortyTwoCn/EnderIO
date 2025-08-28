@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.armory.common.item.darksteel;
 
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
 import com.enderio.legacy_layout.armory.common.config.ArmoryConfig;
-import com.enderio.legacy_layout.armory.common.init.ArmoryItems;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryItems;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.DarkSteelUpgradeRegistry;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.ForkUpgrade;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.direct.DirectUpgrade;

@@ -1,9 +1,9 @@
 package com.enderio.legacy_layout.machines.data.recipes;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
 import com.enderio.legacy_layout.machines.common.blocks.painting.PaintingRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;

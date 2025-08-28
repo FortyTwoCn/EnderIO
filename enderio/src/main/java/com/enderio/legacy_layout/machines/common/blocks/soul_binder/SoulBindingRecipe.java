@@ -2,13 +2,13 @@ package com.enderio.legacy_layout.machines.common.blocks.soul_binder;
 
 import com.enderio.legacy_layout.base.api.network.MassiveStreamCodec;
 import com.enderio.enderio.api.soul.binding.ingredients.FilledSoulStorageIngredient;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.legacy_layout.base.common.recipe.FluidRecipeInput;
-import com.enderio.legacy_layout.base.common.util.ExperienceUtil;
+import com.enderio.enderio.common.foundation.util.ExperienceUtil;
 import com.enderio.core.common.recipes.OutputStack;
 import com.enderio.legacy_layout.machines.common.blocks.base.MachineRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.souldata.SoulDataReloadListener;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

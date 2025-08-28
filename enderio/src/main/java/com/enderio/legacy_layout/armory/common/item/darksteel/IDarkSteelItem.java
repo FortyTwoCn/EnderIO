@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
-import com.enderio.legacy_layout.armory.common.init.ArmoryFeatureFlags;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryFeatureFlags;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.DarkSteelUpgradeRegistry;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.empowered.EmpoweredUpgrade;
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;

@@ -6,7 +6,7 @@ import com.enderio.enderio.common.content.conduits.menu.ConduitMenu;
 import com.enderio.enderio.common.content.conduits.packets.C2SOpenConduitFilterMenu;
 import com.enderio.enderio.common.content.conduits.types.fluid.FluidConduitNetworkContext;
 import com.enderio.enderio.common.content.conduits.types.fluid.packets.C2SClearLockedFluidPacket;
-import com.enderio.legacy_layout.conduits.common.init.ConduitTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitTypes;
 import com.enderio.legacy_layout.conduits.common.redstone.DoubleRedstoneChannel;
 import com.enderio.legacy_layout.conduits.common.redstone.RedstoneCountFilter;
 import com.enderio.legacy_layout.conduits.common.redstone.RedstoneTimerFilter;

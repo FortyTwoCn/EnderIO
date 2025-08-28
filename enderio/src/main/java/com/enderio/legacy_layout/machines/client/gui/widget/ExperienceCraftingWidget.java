@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.client.gui.widget;
 
-import com.enderio.legacy_layout.base.common.util.ExperienceUtil;
+import com.enderio.enderio.common.foundation.util.ExperienceUtil;
 import com.enderio.core.client.gui.widgets.EIOWidget;
 import com.enderio.legacy_layout.machines.common.blocks.base.fluid.FluidStorageInfo;
 import com.mojang.blaze3d.systems.RenderSystem;

@@ -1,13 +1,13 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.travel;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.DarkSteelUpgradeRegistry;
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;
 import com.enderio.legacy_layout.base.api.travel.TravelTarget;
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
 import com.enderio.enderio.common.content.travel.TravelHandler;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;

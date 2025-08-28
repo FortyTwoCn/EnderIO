@@ -13,8 +13,8 @@ import com.enderio.legacy_layout.machines.common.blocks.base.task.CraftingMachin
 import com.enderio.legacy_layout.machines.common.blocks.base.task.PoweredCraftingMachineTask;
 import com.enderio.legacy_layout.machines.common.blocks.base.task.host.CraftingMachineTaskHost;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;

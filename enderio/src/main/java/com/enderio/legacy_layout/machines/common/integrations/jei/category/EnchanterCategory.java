@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.integrations.jei.category;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.machines.client.gui.screen.EnchanterScreen;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.integrations.jei.util.MachineRecipeCategory;
 import com.enderio.legacy_layout.machines.common.integrations.jei.util.WrappedEnchanterRecipe;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;

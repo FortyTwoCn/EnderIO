@@ -2,9 +2,9 @@ package com.enderio.enderio.common.content.conduits.crafting;
 
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.common.content.conduits.ConduitBlockItem;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
-import com.enderio.legacy_layout.conduits.common.init.ConduitIngredientTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitIngredientTypes;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.Holder;

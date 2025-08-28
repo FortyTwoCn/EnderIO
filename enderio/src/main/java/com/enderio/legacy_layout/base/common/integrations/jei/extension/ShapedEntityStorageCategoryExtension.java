@@ -5,10 +5,10 @@ import static mezz.jei.api.recipe.RecipeIngredientRole.OUTPUT;
 
 import com.enderio.enderio.api.soul.Soul;
 import com.enderio.enderio.api.soul.SoulBoundUtils;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.legacy_layout.base.common.integrations.jei.EnderIOJEI;
 import com.enderio.legacy_layout.base.common.recipe.ShapedEntityStorageRecipe;
-import com.enderio.legacy_layout.base.common.util.EntityCaptureUtils;
+import com.enderio.enderio.common.foundation.util.EntityCaptureUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

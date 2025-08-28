@@ -1,10 +1,10 @@
 package com.enderio.legacy_layout.base.common.integrations;
 
-import com.enderio.legacy_layout.base.api.glider.GliderMovementInfo;
+import com.enderio.enderio.api.glider.GliderMovementInfo;
 import com.enderio.legacy_layout.base.api.integration.ClientIntegration;
 import com.enderio.legacy_layout.base.api.integration.Integration;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.EIOTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;

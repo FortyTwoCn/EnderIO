@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.client.gui.widget;
 
-import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.legacy_layout.machines.common.io.energy.IMachineEnergyStorage;
 import com.mojang.blaze3d.systems.RenderSystem;

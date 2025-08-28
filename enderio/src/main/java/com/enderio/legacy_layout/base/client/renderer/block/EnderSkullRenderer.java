@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.base.client.renderer.block;
 
 import com.enderio.legacy_layout.base.common.blockentity.EnderSkullBlockEntity;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.Minecraft;

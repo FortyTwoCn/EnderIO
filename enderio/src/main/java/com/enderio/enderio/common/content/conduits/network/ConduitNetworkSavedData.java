@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.content.conduits.network;
 
+import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.enderio.api.conduits.Conduit;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
 import com.enderio.enderio.api.conduits.network.ConduitNetworkContext;
 import com.enderio.enderio.api.conduits.network.ConduitNetworkContextType;
 import com.enderio.enderio.api.conduits.ticker.ConduitTicker;
@@ -200,7 +200,7 @@ public class ConduitNetworkSavedData extends SavedData {
         }
 
         Registry<Conduit<?, ?>> conduitRegistry = serverLevel.registryAccess()
-                .registryOrThrow(EnderIOConduitsRegistries.Keys.CONDUIT);
+                .registryOrThrow(EnderIORegistries.Keys.CONDUIT);
 
         for (var conduit : networks.keySet()) {
             // Skip non-ticking graphs.
@@ -265,10 +265,10 @@ public class ConduitNetworkSavedData extends SavedData {
         ListTag graphsTag = nbt.getList(KEY_GRAPHS, Tag.TAG_COMPOUND);
         for (Tag tag : graphsTag) {
             CompoundTag typedGraphTag = (CompoundTag) tag;
-            ResourceKey<Conduit<?, ?>> conduitKey = ResourceKey.create(EnderIOConduitsRegistries.Keys.CONDUIT,
+            ResourceKey<Conduit<?, ?>> conduitKey = ResourceKey.create(EnderIORegistries.Keys.CONDUIT,
                     ResourceLocation.parse(typedGraphTag.getString(KEY_TYPE)));
 
-            var registry = lookupProvider.lookupOrThrow(EnderIOConduitsRegistries.Keys.CONDUIT);
+            var registry = lookupProvider.lookupOrThrow(EnderIORegistries.Keys.CONDUIT);
 
             Optional<Holder.Reference<Conduit<?, ?>>> conduit = registry.get(conduitKey);
 
@@ -347,7 +347,7 @@ public class ConduitNetworkSavedData extends SavedData {
             CompoundTag contextTag) {
         ResourceLocation serializerKey = ResourceLocation.parse(contextTag.getString("Type"));
         ConduitNetworkContextType<?> contextType = Objects.requireNonNull(
-                EnderIOConduitsRegistries.CONDUIT_NETWORK_CONTEXT_TYPE.get(serializerKey),
+            EnderIORegistries.CONDUIT_NETWORK_CONTEXT_TYPE.get(serializerKey),
                 "Unable to find conduit network context type with key " + serializerKey);
 
         if (contextType.codec() == null) {

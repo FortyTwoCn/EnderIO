@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.base.data.advancement;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
-import com.enderio.legacy_layout.base.common.paint.PaintingTrigger;
+import com.enderio.enderio.common.content.decoration.paint.PaintingTrigger;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.advancements.AdvancementType;

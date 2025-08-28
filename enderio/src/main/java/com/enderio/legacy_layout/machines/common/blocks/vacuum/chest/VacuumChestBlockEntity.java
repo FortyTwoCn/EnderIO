@@ -1,11 +1,11 @@
 package com.enderio.legacy_layout.machines.common.blocks.vacuum.chest;
 
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventoryLayout;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventoryLayout.Builder;
 import com.enderio.legacy_layout.machines.common.blocks.vacuum.VacuumMachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import java.util.function.Predicate;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.item.ItemEntity;

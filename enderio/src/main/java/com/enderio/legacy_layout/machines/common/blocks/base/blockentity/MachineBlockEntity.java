@@ -15,8 +15,8 @@ import com.enderio.legacy_layout.machines.common.blocks.base.block.ProgressMachi
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventory;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventoryLayout;
 import com.enderio.legacy_layout.machines.common.blocks.base.state.MachineState;
-import com.enderio.legacy_layout.machines.common.init.MachineAttachments;
-import com.enderio.legacy_layout.machines.common.init.MachineDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineAttachments;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineDataComponents;
 import com.enderio.legacy_layout.machines.common.io.IOConfig;
 import com.enderio.legacy_layout.machines.common.io.SidedIOConfigurable;
 import com.enderio.legacy_layout.machines.common.io.TransferUtil;

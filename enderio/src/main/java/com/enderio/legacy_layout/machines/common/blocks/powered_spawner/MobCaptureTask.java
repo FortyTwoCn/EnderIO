@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.blocks.powered_spawner;
 
 import com.enderio.enderio.api.soul.Soul;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.ItemStack;

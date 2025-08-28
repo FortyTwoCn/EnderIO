@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.conduits.common.integrations.jei;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.ISubtypeRegistration;

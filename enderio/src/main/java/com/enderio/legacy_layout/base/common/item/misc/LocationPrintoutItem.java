@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.base.common.item.misc;
 
 import com.enderio.legacy_layout.base.api.attachment.CoordinateSelection;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.legacy_layout.base.common.menu.CoordinateMenu;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;

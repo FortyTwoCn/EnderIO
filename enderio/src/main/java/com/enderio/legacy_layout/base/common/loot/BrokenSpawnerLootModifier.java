@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.base.common.loot;
 import com.enderio.enderio.api.soul.Soul;
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
 import com.enderio.legacy_layout.base.common.item.misc.BrokenSpawnerItem;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;

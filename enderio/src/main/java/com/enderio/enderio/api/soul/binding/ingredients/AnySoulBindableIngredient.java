@@ -2,8 +2,8 @@ package com.enderio.enderio.api.soul.binding.ingredients;
 
 import com.enderio.enderio.api.soul.Soul;
 import com.enderio.enderio.api.soul.SoulBoundUtils;
-import com.enderio.legacy_layout.base.common.init.EIOIngredientTypes;
-import com.enderio.legacy_layout.base.common.util.EntityCaptureUtils;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOIngredientTypes;
+import com.enderio.enderio.common.foundation.util.EntityCaptureUtils;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.component.DataComponents;

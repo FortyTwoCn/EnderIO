@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.data.souldata;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
 import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.MobSpawnMode;
 import com.enderio.legacy_layout.machines.common.souldata.EngineSoul;
 import com.enderio.legacy_layout.machines.common.souldata.FarmSoul;

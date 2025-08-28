@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.explosive;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
-import com.enderio.legacy_layout.armory.api.capability.IUpgradeTier;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
+import com.enderio.enderio.api.dark_steel.IUpgradeTier;
 import com.enderio.legacy_layout.armory.common.config.ArmoryConfig;
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;
 import java.util.function.Supplier;

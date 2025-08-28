@@ -1,7 +1,7 @@
 package com.enderio.enderio.api.soul;
 
 import com.enderio.enderio.api.soul.binding.ISoulBindable;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import jdk.jfr.Experimental;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.ApiStatus;

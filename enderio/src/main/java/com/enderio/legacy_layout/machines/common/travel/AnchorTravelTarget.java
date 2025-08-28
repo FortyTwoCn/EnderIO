@@ -5,7 +5,7 @@ import com.enderio.legacy_layout.base.api.travel.TravelTargetSerializer;
 import com.enderio.legacy_layout.base.api.travel.TravelTargetType;
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
 import com.enderio.core.common.network.NetworkDataSlot;
-import com.enderio.legacy_layout.machines.common.init.MachineTravelTargets;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineTravelTargets;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

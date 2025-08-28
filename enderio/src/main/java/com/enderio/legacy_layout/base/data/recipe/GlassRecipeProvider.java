@@ -1,11 +1,11 @@
 package com.enderio.legacy_layout.base.data.recipe;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.block.glass.GlassBlocks;
-import com.enderio.legacy_layout.base.common.block.glass.GlassCollisionPredicate;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.content.utility.glass.GlassBlocks;
+import com.enderio.enderio.common.content.utility.glass.GlassCollisionPredicate;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.EIOTags;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;

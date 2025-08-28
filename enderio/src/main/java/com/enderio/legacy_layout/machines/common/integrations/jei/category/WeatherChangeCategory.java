@@ -5,7 +5,7 @@ import com.enderio.legacy_layout.base.common.integrations.jei.JEIUtils;
 import com.enderio.legacy_layout.machines.client.gui.screen.WeatherObeliskScreen;
 import com.enderio.legacy_layout.machines.common.blocks.obelisks.weather.WeatherChangeRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.obelisks.weather.WeatherObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.integrations.jei.util.MachineRecipeCategory;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;

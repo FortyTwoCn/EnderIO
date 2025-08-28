@@ -1,15 +1,15 @@
 package com.enderio.enderio.common.content.conduits;
 
+import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.enderio.common.EnderIO;
-import com.enderio.legacy_layout.base.common.init.EIOCreativeTabs;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCreativeTabs;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitCapabilities;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
 import com.enderio.enderio.common.content.conduits.bundle.ConduitBundleBlockEntity;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlocks;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
 import com.enderio.core.common.util.TooltipUtil;
 import java.util.Comparator;
 import java.util.List;
@@ -146,7 +146,7 @@ public class ConduitBlockItem extends BlockItem {
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void addToCreativeTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == EIOCreativeTabs.CONDUITS_TAB.get()) {
-            var registry = event.getParameters().holders().lookupOrThrow(EnderIOConduitsRegistries.Keys.CONDUIT);
+            var registry = event.getParameters().holders().lookupOrThrow(EnderIORegistries.Keys.CONDUIT);
             var conduitTypes = registry.listElements().toList();
 
             var conduitClassTypes = conduitTypes.stream()

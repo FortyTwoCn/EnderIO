@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.blocks.slicer;
 
 import com.enderio.legacy_layout.machines.EnderIOMachines;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;

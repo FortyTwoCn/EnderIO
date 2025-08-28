@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel;
 
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
-import com.enderio.legacy_layout.armory.common.init.ArmoryFeatureFlags;
-import com.enderio.legacy_layout.armory.common.init.ArmoryItems;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryFeatureFlags;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryItems;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.DarkSteelUpgradeRegistry;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.direct.DirectUpgrade;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.empowered.EmpoweredUpgrade;
@@ -10,8 +10,8 @@ import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.travel.Tr
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;
 import com.enderio.legacy_layout.armory.common.tag.ArmoryTags;
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.core.client.item.AdvancedTooltipProvider;
 import com.enderio.core.common.energy.ItemStackEnergy;
 import com.enderio.core.common.util.TooltipUtil;

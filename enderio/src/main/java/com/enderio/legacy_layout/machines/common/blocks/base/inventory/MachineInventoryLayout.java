@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.blocks.base.inventory;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiPredicate;

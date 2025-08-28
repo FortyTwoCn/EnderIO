@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.armory.common.capability;
 
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import net.minecraft.core.component.DataComponentType;
 import net.neoforged.neoforge.common.MutableDataComponentHolder;
 import net.neoforged.neoforge.energy.ComponentEnergyStorage;

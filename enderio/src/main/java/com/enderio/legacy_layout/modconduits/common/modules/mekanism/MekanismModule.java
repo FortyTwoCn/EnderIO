@@ -1,19 +1,19 @@
 package com.enderio.legacy_layout.modconduits.common.modules.mekanism;
 
 import com.enderio.enderio.api.EnderIOAPI;
+import com.enderio.enderio.api.EnderIORegistries;
+import com.enderio.enderio.common.content.conduits.crafting.ConduitIngredient;
 import com.enderio.enderio.common.content.filters.AbstractFilterItem;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
-import com.enderio.legacy_layout.base.common.init.EIOCreativeTabs;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCreativeTabs;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitType;
-import com.enderio.enderio.api.conduits.EnderIOConduitsRegistries;
 import com.enderio.enderio.api.conduits.bundle.ConduitBundle;
 import com.enderio.enderio.api.conduits.connection.config.ConnectionConfigType;
 import com.enderio.enderio.api.conduits.network.ConduitNetworkContextType;
 import com.enderio.enderio.api.conduits.network.node.legacy.ConduitDataType;
 import com.enderio.enderio.common.content.conduits.ConduitApiImpl;
-import com.enderio.legacy_layout.conduits.common.recipe.ConduitIngredient;
 import com.enderio.legacy_layout.modconduits.client.modules.mekanism.screens.EnderChemicalFilterScreen;
 import com.enderio.legacy_layout.modconduits.common.ModdedConduits;
 import com.enderio.legacy_layout.modconduits.common.modules.ConduitCommonModule;
@@ -77,16 +77,16 @@ public class MekanismModule implements ConduitCommonModule {
     private static final MenuRegistry MENU_REGISTRY = ModdedConduits.REGILITE.menuRegistry();
 
     private static final DeferredRegister<ConduitType<?>> CONDUIT_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_TYPE, EnderIOAPI.NAMESPACE);
 
     public static final DeferredRegister<ConduitDataType<?>> CONDUIT_DATA_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_DATA_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_DATA_TYPE, EnderIOAPI.NAMESPACE);
 
     public static final DeferredRegister<ConnectionConfigType<?>> CONDUIT_CONNECTION_CONFIG_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_CONNECTION_CONFIG_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_CONNECTION_CONFIG_TYPE, EnderIOAPI.NAMESPACE);
 
     public static final DeferredRegister<ConduitNetworkContextType<?>> CONDUIT_NETWORK_CONTEXT_TYPES = DeferredRegister
-            .create(EnderIOConduitsRegistries.CONDUIT_NETWORK_CONTEXT_TYPE, EnderIOAPI.NAMESPACE);
+            .create(EnderIORegistries.CONDUIT_NETWORK_CONTEXT_TYPE, EnderIOAPI.NAMESPACE);
 
     static {
         CONDUIT_CONNECTION_CONFIG_TYPES.register("chemical", () -> ChemicalConduitConnectionConfig.TYPE);
@@ -170,13 +170,13 @@ public class MekanismModule implements ConduitCommonModule {
         return ModdedConduits.REGILITE.addTranslation(prefix, id, translation);
     }
 
-    public static final ResourceKey<Conduit<?, ?>> CHEMICAL = ResourceKey.create(EnderIOConduitsRegistries.Keys.CONDUIT,
+    public static final ResourceKey<Conduit<?, ?>> CHEMICAL = ResourceKey.create(EnderIORegistries.Keys.CONDUIT,
             EnderIOAPI.loc("chemical"));
     public static final ResourceKey<Conduit<?, ?>> PRESSURIZED_CHEMICAL = ResourceKey
-            .create(EnderIOConduitsRegistries.Keys.CONDUIT, EnderIOAPI.loc("pressurized_chemical"));
+            .create(EnderIORegistries.Keys.CONDUIT, EnderIOAPI.loc("pressurized_chemical"));
     public static final ResourceKey<Conduit<?, ?>> ENDER_CHEMICAL = ResourceKey
-            .create(EnderIOConduitsRegistries.Keys.CONDUIT, EnderIOAPI.loc("ender_chemical"));
-    public static final ResourceKey<Conduit<?, ?>> HEAT = ResourceKey.create(EnderIOConduitsRegistries.Keys.CONDUIT,
+            .create(EnderIORegistries.Keys.CONDUIT, EnderIOAPI.loc("ender_chemical"));
+    public static final ResourceKey<Conduit<?, ?>> HEAT = ResourceKey.create(EnderIORegistries.Keys.CONDUIT,
             EnderIOAPI.loc("heat"));
 
     @Override

@@ -1,15 +1,15 @@
 package com.enderio.legacy_layout.machines.client;
 
 import com.enderio.enderio.api.EnderIOAPI;
+import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.api.travel.RegisterTravelRenderersEvent;
-import com.enderio.legacy_layout.machines.EnderIOMachines;
 import com.enderio.legacy_layout.machines.client.rendering.item.FluidTankBEWLR;
 import com.enderio.legacy_layout.machines.client.rendering.model.IOOverlayBakedModel;
 import com.enderio.legacy_layout.machines.client.rendering.travel.EnderfaceRenderer;
 import com.enderio.legacy_layout.machines.client.rendering.travel.TravelAnchorHud;
 import com.enderio.legacy_layout.machines.client.rendering.travel.TravelAnchorRenderer;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
-import com.enderio.legacy_layout.machines.common.init.MachineTravelTargets;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineTravelTargets;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -25,8 +25,8 @@ import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 import net.neoforged.neoforge.common.util.Lazy;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID, value = Dist.CLIENT)
-@Mod(value = EnderIOMachines.MODULE_MOD_ID, dist = Dist.CLIENT)
+@EventBusSubscriber(modid = EnderIO.MOD_ID, value = Dist.CLIENT)
+@Mod(value = EnderIO.MOD_ID, dist = Dist.CLIENT)
 public class EnderIOMachinesClient {
 
     public EnderIOMachinesClient(ModContainer modContainer) {

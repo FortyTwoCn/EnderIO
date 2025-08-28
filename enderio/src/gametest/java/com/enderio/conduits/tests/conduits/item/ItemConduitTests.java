@@ -4,7 +4,7 @@ import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
 import com.enderio.enderio.common.content.conduits.types.item.ItemConduit;
 import com.enderio.enderio.common.content.conduits.types.item.ItemConduitConnectionConfig;
-import com.enderio.legacy_layout.conduits.common.init.Conduits;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.Conduits;
 
 import java.util.function.Supplier;
 

@@ -14,9 +14,9 @@ import com.enderio.legacy_layout.machines.common.blocks.base.inventory.SingleSlo
 import com.enderio.legacy_layout.machines.common.blocks.base.task.PoweredCraftingMachineTask;
 import com.enderio.legacy_layout.machines.common.blocks.base.task.host.CraftingMachineTaskHost;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
-import com.enderio.legacy_layout.machines.common.init.MachineDataComponents;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.io.energy.IMachineEnergyStorage;
 import com.enderio.legacy_layout.machines.common.recipe.RecipeCaches;
 import com.mojang.logging.LogUtils;

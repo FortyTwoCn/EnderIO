@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.flight;
 
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import com.enderio.legacy_layout.armory.common.tag.ArmoryTags;
 import java.util.Optional;
 import net.minecraft.world.entity.EquipmentSlot;

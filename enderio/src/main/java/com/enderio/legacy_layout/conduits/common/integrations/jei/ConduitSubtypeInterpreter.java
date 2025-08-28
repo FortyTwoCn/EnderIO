@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.conduits.common.integrations.jei;
 
 import com.enderio.enderio.api.conduits.Conduit;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
 import mezz.jei.api.ingredients.subtypes.IIngredientSubtypeInterpreter;
 import mezz.jei.api.ingredients.subtypes.UidContext;
 import net.minecraft.core.Holder;

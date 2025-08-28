@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.machines.common.blocks.vat;
 import com.enderio.core.common.recipes.OutputStack;
 import com.enderio.legacy_layout.machines.common.blocks.base.MachineRecipe;
 import com.enderio.legacy_layout.machines.common.datamap.VatReagent;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

@@ -2,9 +2,9 @@ package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.flight;
 
 import com.enderio.legacy_layout.armory.client.renderer.GliderIntegrationClient;
 import com.enderio.legacy_layout.armory.common.capability.DarkSteelHelper;
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import com.enderio.legacy_layout.armory.common.tag.ArmoryTags;
-import com.enderio.legacy_layout.base.api.glider.GliderMovementInfo;
+import com.enderio.enderio.api.glider.GliderMovementInfo;
 import com.enderio.legacy_layout.base.api.integration.ClientIntegration;
 import com.enderio.legacy_layout.base.api.integration.Integration;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;

@@ -4,7 +4,7 @@ import com.enderio.legacy_layout.armory.EnderIOArmory;
 import com.enderio.legacy_layout.armory.client.renderer.ElytraUpgradeRenderLayer;
 import com.enderio.legacy_layout.armory.client.renderer.MultiEnergyBarDecorator;
 import com.enderio.legacy_layout.armory.client.renderer.SolarUpgradeRenderLayer;
-import com.enderio.legacy_layout.armory.common.init.ArmoryItems;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryItems;
 import net.minecraft.client.renderer.entity.player.PlayerRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;

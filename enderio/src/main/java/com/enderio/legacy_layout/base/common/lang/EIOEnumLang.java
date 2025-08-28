@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.base.common.lang;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
-import com.enderio.legacy_layout.base.common.block.glass.GlassCollisionPredicate;
+import com.enderio.enderio.common.content.utility.glass.GlassCollisionPredicate;
 import com.enderio.enderio.common.content.filters.item.general.DamageFilterMode;
 import com.enderio.core.common.lang.EnumTranslationMap;
 import com.enderio.regilite.Regilite;

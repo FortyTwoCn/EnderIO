@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.direct;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.DarkSteelUpgradeRegistry;
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;
 import net.minecraft.network.chat.Component;

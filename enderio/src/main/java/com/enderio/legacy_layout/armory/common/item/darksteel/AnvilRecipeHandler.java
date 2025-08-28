@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelCapability;
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
-import com.enderio.legacy_layout.armory.common.init.ArmoryCapabilities;
+import com.enderio.enderio.api.dark_steel.IDarkSteelCapability;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryCapabilities;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;

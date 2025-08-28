@@ -2,13 +2,13 @@ package com.enderio.legacy_layout.machines.common.integrations.jei.category;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.api.grindingball.GrindingBallData;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.legacy_layout.base.common.integrations.jei.JEIUtils;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.core.common.util.TooltipUtil;
 import com.enderio.legacy_layout.machines.common.blocks.sag_mill.SagMillingRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.integrations.jei.util.MachineRecipeCategory;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import mezz.jei.api.constants.VanillaTypes;

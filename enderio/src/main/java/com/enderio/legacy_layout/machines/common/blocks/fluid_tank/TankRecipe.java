@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.blocks.fluid_tank;
 
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

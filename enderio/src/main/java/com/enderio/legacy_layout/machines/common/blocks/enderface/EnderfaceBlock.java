@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.blocks.enderface;
 
 import com.enderio.legacy_layout.base.api.travel.TravelTargetApi;
 import com.enderio.enderio.common.foundation.block.EIOEntityBlock;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;

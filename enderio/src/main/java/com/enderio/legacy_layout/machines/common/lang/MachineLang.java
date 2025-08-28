@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.lang;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.EnderIO;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
@@ -135,12 +135,12 @@ public class MachineLang {
 
     // TODO: NEO-PORT: Common lang base class?
     private static MutableComponent addTranslation(String prefix, ResourceLocation id, String translation) {
-        return EnderIOMachines.REGILITE.addTranslation(prefix, id, translation);
+        return EnderIO.REGILITE.addTranslation(prefix, id, translation);
     }
 
     private static MutableComponent addTranslation(String prefix, ResourceLocation path, String name,
             String translation) {
-        return EnderIOMachines.REGILITE.addTranslation(prefix,
+        return EnderIO.REGILITE.addTranslation(prefix,
                 ResourceLocation.fromNamespaceAndPath(path.getNamespace(), path.getPath() + "/" + name), translation);
     }
 

@@ -2,14 +2,14 @@ package com.enderio.legacy_layout.machines.common.blocks.vacuum;
 
 import com.enderio.legacy_layout.base.api.UseOnly;
 import com.enderio.legacy_layout.base.api.io.IOMode;
-import com.enderio.legacy_layout.base.common.util.AttractionUtil;
+import com.enderio.enderio.common.foundation.util.AttractionUtil;
 import com.enderio.legacy_layout.machines.common.MachineNBTKeys;
 import com.enderio.legacy_layout.machines.common.attachment.ActionRange;
 import com.enderio.legacy_layout.machines.common.attachment.RangedActor;
 import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.MachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.SingleSlotAccess;
-import com.enderio.legacy_layout.machines.common.init.MachineAttachments;
-import com.enderio.legacy_layout.machines.common.init.MachineDataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineAttachments;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineDataComponents;
 import com.enderio.legacy_layout.machines.common.io.IOConfig;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;

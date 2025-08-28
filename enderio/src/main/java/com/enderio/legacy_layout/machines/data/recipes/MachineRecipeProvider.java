@@ -2,13 +2,13 @@ package com.enderio.legacy_layout.machines.data.recipes;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.api.soul.binding.ingredients.EmptySoulBindableIngredient;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.base.data.recipe.ShapedEntityStorageRecipeBuilder;
 import com.enderio.legacy_layout.machines.common.blockentity.capacitorbank.CapacitorTier;
 import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelTier;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.regilite.holder.RegiliteBlock;
 import net.minecraft.Util;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;

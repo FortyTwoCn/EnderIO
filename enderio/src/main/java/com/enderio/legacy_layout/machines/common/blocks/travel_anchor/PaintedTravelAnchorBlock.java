@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.blocks.travel_anchor;
 
-import com.enderio.legacy_layout.base.common.paint.block.PaintedBlock;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.content.decoration.paint.block.PaintedBlock;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

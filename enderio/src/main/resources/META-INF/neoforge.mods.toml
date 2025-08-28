@@ -11,6 +11,7 @@ authors="CrazyPants, tterrag, HenryLoenwind, MatthiasM, CyanideX, EpicSquid, Rov
 description="Compact conduits, painted things and all sorts of stuff and bling. This is the monolithic jar, containing all core modules."
 displayURL="https://enderio.com/"
 logoFile="logo.png"
+featureFlags="META-INF/feature_flags.json"
 
 [[mixins]]
 config="enderio.mixins.json"
@@ -104,35 +105,4 @@ side="BOTH"
 modId="refinedstorage"
 type="optional"
 versionRange="${refinedstorage_version_range}"
-side="BOTH"
-
-[[mods]]
-modId="enderio_machines"
-version="${mod_version}"
-displayName="Ender IO Machines"
-authors="CrazyPants, tterrag, HenryLoenwind, MatthiasM, CyanideX, EpicSquid, Rover656, HypherionSA, liliandev, Ferri_Arnus, dphaldes"
-description="The machines module for Ender IO"
-displayURL="https://enderio.com/"
-logoFile="logo.png"
-featureFlags="META-INF/machines_feature_flags.json"
-
-[[mixins]]
-config="enderio-machines.mixins.json"
-
-[[dependencies.enderio_machines]]
-modId="minecraft"
-type="required"
-versionRange="${mcversion}"
-side="BOTH"
-
-[[dependencies.enderio_machines]]
-modId="neoforge"
-type="required"
-versionRange="${neo_version}"
-side="BOTH"
-
-[[dependencies.enderio_machines]]
-modId="endercore"
-type="required"
-versionRange="${mod_version}"
 side="BOTH"

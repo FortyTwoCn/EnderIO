@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.base.common.blockentity;
 
-import com.enderio.legacy_layout.base.common.init.EIOBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlockEntities;
 import me.liliandev.ensure.ensures.EnsureSide;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;

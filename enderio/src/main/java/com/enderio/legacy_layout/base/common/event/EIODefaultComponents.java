@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.base.common.event;
 
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.base.api.grindingball.GrindingBallData;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

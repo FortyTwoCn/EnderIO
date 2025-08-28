@@ -1,9 +1,9 @@
 package com.enderio.legacy_layout.base.common.item.misc;
 
 import com.enderio.enderio.api.soul.Soul;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.util.EntityCaptureUtils;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.foundation.util.EntityCaptureUtils;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 

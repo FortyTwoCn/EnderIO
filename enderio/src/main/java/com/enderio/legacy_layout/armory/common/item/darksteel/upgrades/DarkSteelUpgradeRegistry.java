@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelUpgrade;
+import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.direct.DirectUpgrade;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.empowered.EmpoweredUpgrade;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.explosive.ExplosivePenetrationUpgrade;

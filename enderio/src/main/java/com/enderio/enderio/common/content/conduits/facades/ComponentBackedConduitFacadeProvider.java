@@ -1,9 +1,9 @@
 package com.enderio.enderio.common.content.conduits.facades;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.enderio.api.conduits.facade.ConduitFacadeProvider;
 import com.enderio.enderio.api.conduits.facade.FacadeType;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
 import java.util.Objects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;

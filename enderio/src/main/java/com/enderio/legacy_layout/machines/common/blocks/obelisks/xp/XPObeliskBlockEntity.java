@@ -1,12 +1,12 @@
 package com.enderio.legacy_layout.machines.common.blocks.obelisks.xp;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
-import com.enderio.legacy_layout.base.common.util.ExperienceUtil;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
+import com.enderio.enderio.common.registration.EIOTags;
+import com.enderio.enderio.common.foundation.util.ExperienceUtil;
 import com.enderio.legacy_layout.machines.common.attachment.FluidTankUser;
 import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.MachineBlockEntity;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidHandler;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineTankLayout;

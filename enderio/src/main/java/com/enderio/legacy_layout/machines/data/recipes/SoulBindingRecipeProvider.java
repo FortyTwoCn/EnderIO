@@ -2,11 +2,11 @@ package com.enderio.legacy_layout.machines.data.recipes;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.api.soul.binding.ingredients.AnySoulBindableIngredient;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelTier;
 import com.enderio.legacy_layout.machines.common.blocks.soul_binder.SoulBindingRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.souldata.EngineSoul;
 import com.enderio.legacy_layout.machines.common.souldata.FarmSoul;
 

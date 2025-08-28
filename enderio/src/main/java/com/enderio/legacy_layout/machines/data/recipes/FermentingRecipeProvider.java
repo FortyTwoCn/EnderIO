@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.machines.data.recipes;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.machines.common.blocks.vat.FermentingRecipe;
 import com.enderio.legacy_layout.machines.common.tag.MachineTags;
 import net.minecraft.core.HolderLookup;

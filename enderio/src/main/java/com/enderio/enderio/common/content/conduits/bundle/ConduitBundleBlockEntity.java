@@ -24,8 +24,8 @@ import com.enderio.enderio.common.content.conduits.legacy.StaticConnectionStates
 import com.enderio.enderio.common.content.conduits.menu.ConduitMenu;
 import com.enderio.enderio.common.content.conduits.network.ConduitNetworkSavedData;
 import com.enderio.enderio.common.content.conduits.network.ConduitNode;
-import com.enderio.legacy_layout.conduits.common.init.ConduitBlockEntities;
-import com.enderio.legacy_layout.conduits.common.init.ConduitTypes;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitTypes;
 import com.enderio.core.common.blockentity.EnderBlockEntity;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

@@ -2,7 +2,7 @@ package com.enderio.enderio.common.content.filters.item.general;
 
 import com.enderio.enderio.common.content.filters.AbstractFilterMenu;
 import com.enderio.enderio.common.content.filters.item.ItemFilterSlot;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.core.common.network.menu.BoolSyncSlot;
 import com.enderio.core.common.network.menu.EnumSyncSlot;
 import me.liliandev.ensure.ensures.EnsureSide;

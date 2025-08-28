@@ -2,7 +2,7 @@ package com.enderio.enderio.client.content.conduits.model.conduit.facades;
 
 import static com.enderio.legacy_layout.conduits.client.ConduitClientSetup.modelOf;
 
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.legacy_layout.conduits.client.ConduitClientSetup;
 import com.enderio.core.data.model.ModelHelper;
 import java.util.ArrayList;

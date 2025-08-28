@@ -1,17 +1,17 @@
 package com.enderio.legacy_layout.machines.common.blocks.soul_binder;
 
-import static com.enderio.legacy_layout.base.common.util.ExperienceUtil.EXP_TO_FLUID;
+import static com.enderio.enderio.common.foundation.util.ExperienceUtil.EXP_TO_FLUID;
 
 import com.enderio.legacy_layout.base.api.UseOnly;
 import com.enderio.enderio.api.capacitor.CapacitorModifier;
 import com.enderio.enderio.api.capacitor.QuadraticScalable;
 import com.enderio.legacy_layout.base.api.io.energy.EnergyIOMode;
 import com.enderio.enderio.api.soul.SoulBoundUtils;
-import com.enderio.legacy_layout.base.common.init.EIODataComponents;
-import com.enderio.legacy_layout.base.common.init.EIOFluids;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
-import com.enderio.legacy_layout.base.common.util.ExperienceUtil;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.EIOTags;
+import com.enderio.enderio.common.foundation.util.ExperienceUtil;
 import com.enderio.legacy_layout.machines.common.attachment.FluidTankUser;
 import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.PoweredMachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.flags.CapacitorSupport;
@@ -22,8 +22,8 @@ import com.enderio.legacy_layout.machines.common.blocks.base.state.MachineState;
 import com.enderio.legacy_layout.machines.common.blocks.base.task.PoweredCraftingMachineTask;
 import com.enderio.legacy_layout.machines.common.blocks.base.task.host.CraftingMachineTaskHost;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidHandler;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineTankLayout;

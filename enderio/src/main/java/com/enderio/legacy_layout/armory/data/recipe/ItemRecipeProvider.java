@@ -1,13 +1,13 @@
 package com.enderio.legacy_layout.armory.data.recipe;
 
-import com.enderio.legacy_layout.armory.common.init.ArmoryItems;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryItems;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.solar.SolarUpgradeTier;
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.init.EIOBlocks;
-import com.enderio.legacy_layout.base.common.init.EIOItems;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmeltingRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineBlocks;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;

@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.conduits.common.redstone;
 
 import com.enderio.enderio.common.content.conduits.types.redstone.RedstoneConduitNetworkContext;
-import com.enderio.legacy_layout.conduits.common.init.ConduitComponents;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitComponents;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 

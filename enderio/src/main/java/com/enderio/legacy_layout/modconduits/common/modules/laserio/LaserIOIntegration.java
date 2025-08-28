@@ -7,7 +7,7 @@ import com.enderio.legacy_layout.base.api.integration.IntegrationManager;
 import com.enderio.legacy_layout.base.api.integration.IntegrationWrapper;
 import com.enderio.legacy_layout.base.api.filter.FluidFilter;
 import com.enderio.legacy_layout.base.api.filter.ItemFilter;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.legacy_layout.modconduits.common.ModdedConduits;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;

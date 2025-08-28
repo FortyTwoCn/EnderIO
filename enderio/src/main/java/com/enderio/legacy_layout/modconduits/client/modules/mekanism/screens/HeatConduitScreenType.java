@@ -4,7 +4,7 @@ import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.enderio.api.conduits.screen.ConduitMenuDataAccess;
 import com.enderio.enderio.api.conduits.screen.ConduitScreenHelper;
 import com.enderio.enderio.api.conduits.screen.IOConduitScreenType;
-import com.enderio.legacy_layout.conduits.common.init.ConduitLang;
+import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitLang;
 import com.enderio.legacy_layout.modconduits.common.modules.mekanism.heat.HeatConduitConnectionConfig;
 
 public class HeatConduitScreenType extends IOConduitScreenType<HeatConduitConnectionConfig> {

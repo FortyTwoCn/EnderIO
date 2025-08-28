@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.blocks.obelisks.weather;
 
 import com.enderio.core.common.recipes.OutputStack;
 import com.enderio.legacy_layout.machines.common.blocks.base.MachineRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.common.obelisk;
 
 import com.enderio.legacy_layout.machines.EnderIOMachines;
 import com.enderio.legacy_layout.machines.common.blocks.obelisks.aversion.AversionObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.init.MachineAttachments;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineAttachments;
 import java.util.Set;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

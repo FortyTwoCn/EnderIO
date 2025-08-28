@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.base.common.lang;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.api.capacitor.CapacitorModifier;
-import com.enderio.legacy_layout.base.common.block.glass.GlassLighting;
+import com.enderio.enderio.common.content.utility.glass.GlassLighting;
 import com.enderio.core.common.util.TooltipUtil;
 import java.util.Locale;
 import net.minecraft.ChatFormatting;

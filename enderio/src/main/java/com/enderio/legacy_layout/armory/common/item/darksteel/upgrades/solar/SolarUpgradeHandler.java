@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.solar;
 
-import com.enderio.legacy_layout.armory.api.capability.IDarkSteelCapability;
-import com.enderio.legacy_layout.armory.common.init.ArmoryCapabilities;
-import com.enderio.legacy_layout.armory.common.init.ArmoryDataComponents;
+import com.enderio.enderio.api.dark_steel.IDarkSteelCapability;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import com.enderio.legacy_layout.armory.common.tag.ArmoryTags;
 import com.enderio.core.common.energy.ItemStackEnergy;
 import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelBlockEntity;

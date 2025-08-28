@@ -6,7 +6,7 @@ import com.enderio.legacy_layout.machines.common.blocks.painting.PaintingRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.sag_mill.SagMillingRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.soul_binder.SoulBindingRecipe;
 import com.enderio.legacy_layout.machines.common.blocks.vat.FermentingRecipe;
-import com.enderio.legacy_layout.machines.common.init.MachineRecipes;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.enderio.legacy_layout.machines.common.utility.RecipeInputCache;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

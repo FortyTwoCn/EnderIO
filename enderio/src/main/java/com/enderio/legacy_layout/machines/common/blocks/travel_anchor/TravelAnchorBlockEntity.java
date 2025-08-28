@@ -6,7 +6,7 @@ import com.enderio.core.common.network.NetworkDataSlot;
 import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.MachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.MachineInventoryLayout;
 import com.enderio.legacy_layout.machines.common.blocks.base.inventory.SingleSlotAccess;
-import com.enderio.legacy_layout.machines.common.init.MachineBlockEntities;
+import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlockEntities;
 import com.enderio.legacy_layout.machines.common.travel.AnchorTravelTarget;
 import java.util.Optional;
 import net.minecraft.core.BlockPos;

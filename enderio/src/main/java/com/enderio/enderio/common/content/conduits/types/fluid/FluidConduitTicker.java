@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.content.conduits.types.fluid;
 
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.enderio.api.conduits.network.ConduitBlockConnection;
 import com.enderio.enderio.api.conduits.network.IConduitNetwork;
 import com.enderio.enderio.api.conduits.ticker.ConduitTicker;

@@ -3,7 +3,7 @@ package com.enderio.enderio.common.compat.vanilla;
 import com.enderio.enderio.common.EnderIO;
 import com.enderio.enderio.api.soul.binding.ISoulBindable;
 import com.enderio.enderio.api.soul.storage.ISoulHandler;
-import com.enderio.legacy_layout.base.common.init.EIOCapabilities;
+import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SpawnEggItem;
 import net.neoforged.bus.api.SubscribeEvent;

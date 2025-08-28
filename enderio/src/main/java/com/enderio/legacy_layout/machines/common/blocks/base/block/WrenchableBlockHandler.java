@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.blocks.base.block;
 
 import com.enderio.legacy_layout.base.common.blockentity.Wrenchable;
-import com.enderio.legacy_layout.base.common.tag.EIOTags;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.legacy_layout.machines.EnderIOMachines;
 import net.minecraft.world.ItemInteractionResult;
 import net.neoforged.bus.api.SubscribeEvent;
