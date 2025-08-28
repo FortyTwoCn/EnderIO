@@ -1,13 +1,13 @@
 package com.enderio.enderio.common.registration.legacy_regilite.machines;
 
-import com.enderio.legacy_layout.machines.EnderIOMachines;
-import com.enderio.legacy_layout.machines.common.datamap.RangeExtender;
-import com.enderio.legacy_layout.machines.common.datamap.VatReagent;
+import com.enderio.enderio.common.EnderIO;
+import com.enderio.enderio.common.content.machines.upgrades.RangeExtender;
+import com.enderio.enderio.common.content.machines.upgrades.VatReagent;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.registries.datamaps.RegisterDataMapTypesEvent;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class MachineDataMaps {
     @SubscribeEvent
     public static void registerDataMap(RegisterDataMapTypesEvent event) {

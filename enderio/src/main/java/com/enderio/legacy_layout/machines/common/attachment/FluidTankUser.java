@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.attachment;
 
-import com.enderio.legacy_layout.machines.common.MachineNBTKeys;
+import com.enderio.legacy_layout.base.EIONBTKeys;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidHandler;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineTankLayout;
 import net.minecraft.core.Direction;
@@ -19,11 +19,11 @@ public interface FluidTankUser {
     MachineFluidHandler createFluidHandler();
 
     default void saveTank(HolderLookup.Provider lookupProvider, CompoundTag pTag) {
-        pTag.put(MachineNBTKeys.FLUIDS, getFluidHandler().serializeNBT(lookupProvider));
+        pTag.put(EIONBTKeys.FLUIDS, getFluidHandler().serializeNBT(lookupProvider));
     }
 
     default void loadTank(HolderLookup.Provider lookupProvider, CompoundTag pTag) {
-        getFluidHandler().deserializeNBT(lookupProvider, pTag.getCompound(MachineNBTKeys.FLUIDS));
+        getFluidHandler().deserializeNBT(lookupProvider, pTag.getCompound(EIONBTKeys.FLUIDS));
     }
 
     ICapabilityProvider<BlockEntity, Direction, IFluidHandler> FLUID_HANDLER_PROVIDER = (be, side) -> {

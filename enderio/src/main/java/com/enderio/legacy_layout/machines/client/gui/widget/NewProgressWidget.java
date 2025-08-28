@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.client.gui.widget;
 
 import com.enderio.core.common.util.TooltipUtil;
-import com.enderio.legacy_layout.machines.common.integrations.IntegrationUtility;
+import com.enderio.enderio.common.compat.IntegrationUtility;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import java.util.function.Supplier;
 import net.minecraft.client.Minecraft;

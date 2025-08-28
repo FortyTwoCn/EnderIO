@@ -6,7 +6,7 @@ import com.enderio.legacy_layout.base.client.gui.widget.RedstoneControlPickerWid
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.FluidStackStaticWidget;
-import com.enderio.legacy_layout.machines.common.blocks.vacuum.xp.XPVacuumMenu;
+import com.enderio.enderio.common.content.machines.blocks.vacuum.xp.XPVacuumMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

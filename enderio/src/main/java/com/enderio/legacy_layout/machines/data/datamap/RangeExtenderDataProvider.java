@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.machines.data.datamap;
 
-import com.enderio.legacy_layout.machines.common.datamap.RangeExtender;
+import com.enderio.enderio.common.registration.EIOTags;
+import com.enderio.enderio.common.content.machines.upgrades.RangeExtender;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
-import com.enderio.legacy_layout.machines.common.tag.MachineTags;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -25,8 +25,8 @@ public class RangeExtenderDataProvider extends DataMapProvider {
 
     @Override
     protected void gather() {
-        addData(MachineTags.Blocks.RANGE_EXTENDER, MachineBlocks.WIRELESS_CHARGER_ANTENNA.get(), 16);
-        addData(MachineTags.Blocks.RANGE_EXTENDER, MachineBlocks.WIRELESS_CHARGER_ANTENNA_ADVANCED.get(), 32);
+        addData(EIOTags.Blocks.RANGE_EXTENDER, MachineBlocks.WIRELESS_CHARGER_ANTENNA.get(), 16);
+        addData(EIOTags.Blocks.RANGE_EXTENDER, MachineBlocks.WIRELESS_CHARGER_ANTENNA_ADVANCED.get(), 32);
 
         var builder = builder(RangeExtender.DATA_MAP);
         data.forEach((block, map) -> {

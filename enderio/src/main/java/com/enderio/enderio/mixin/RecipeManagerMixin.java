@@ -1,7 +1,7 @@
 package com.enderio.enderio.mixin;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmeltingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.alloy.AlloySmeltingRecipe;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
 import com.google.common.collect.ImmutableMap;

@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.obelisk;
 
 import com.enderio.enderio.common.EnderIO;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.inhibitor.InhibitorObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.inhibitor.InhibitorObeliskBlockEntity;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineAttachments;
 import java.util.Set;
 import net.minecraft.core.BlockPos;

@@ -10,7 +10,7 @@ import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.enderio.common.compat.jei.JEIUtils;
 import com.enderio.legacy_layout.base.common.item.tool.SoulVialItem;
 import com.enderio.legacy_layout.machines.client.gui.screen.SoulBinderScreen;
-import com.enderio.legacy_layout.machines.common.blocks.soul_binder.SoulBindingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.soul_binder.SoulBindingRecipe;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.enderio.common.compat.jei.util.MachineRecipeCategory;
 import com.enderio.enderio.common.compat.jei.util.RecipeUtil;

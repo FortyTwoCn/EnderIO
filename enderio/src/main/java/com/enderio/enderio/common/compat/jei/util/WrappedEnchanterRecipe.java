@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.compat.jei.util;
 
-import com.enderio.legacy_layout.machines.common.blocks.enchanter.EnchanterRecipe;
+import com.enderio.enderio.common.content.machines.blocks.enchanter.EnchanterRecipe;
 
 import java.util.Arrays;
 import java.util.List;

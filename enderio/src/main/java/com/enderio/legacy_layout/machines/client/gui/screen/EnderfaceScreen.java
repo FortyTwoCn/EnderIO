@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.client.gui.screen;
 
-import com.enderio.legacy_layout.machines.common.blocks.enderface.EnderfaceBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.enderface.EnderfaceBlockEntity;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
 import com.enderio.legacy_layout.machines.common.network.EnderfaceInteractPacket;
 import com.mojang.blaze3d.platform.InputConstants;

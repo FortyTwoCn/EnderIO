@@ -8,7 +8,7 @@ import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.AlloySmelterModeWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.NewCapacitorEnergyWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.NewProgressWidget;
-import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmelterMenu;
+import com.enderio.enderio.common.content.machines.blocks.alloy.AlloySmelterMenu;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

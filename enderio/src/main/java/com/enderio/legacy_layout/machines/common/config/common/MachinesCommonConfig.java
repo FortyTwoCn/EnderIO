@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.config.common;
 
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.MobSpawnMode;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.MobSpawnMode;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class MachinesCommonConfig {

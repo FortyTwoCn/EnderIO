@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.machines.data.recipes;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
-import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.TankRecipe;
+import com.enderio.enderio.common.content.machines.blocks.fluid_tank.TankRecipe;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;

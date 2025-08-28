@@ -9,7 +9,7 @@ import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.NewCapacitorEnergyWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.NewProgressWidget;
-import com.enderio.legacy_layout.machines.common.blocks.sag_mill.SagMillMenu;
+import com.enderio.enderio.common.content.machines.blocks.sag_mill.SagMillMenu;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import java.util.List;
 import javax.annotation.Nullable;

@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.compat.jei.transfer;
 
-import com.enderio.legacy_layout.machines.common.blocks.crafter.CrafterMenu;
+import com.enderio.enderio.common.content.machines.blocks.crafter.CrafterMenu;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import com.enderio.legacy_layout.machines.common.network.UpdateCrafterTemplatePacket;
 import com.mojang.logging.LogUtils;

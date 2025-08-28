@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.client.gui.widget;
 
 import com.enderio.core.client.gui.widgets.EIOWidget;
-import com.enderio.legacy_layout.machines.common.blocks.base.fluid.FluidStorageInfo;
+import com.enderio.enderio.common.content.machines.base.fluid.FluidStorageInfo;
 import com.enderio.legacy_layout.machines.common.io.fluid.MachineFluidTank;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import com.mojang.blaze3d.systems.RenderSystem;

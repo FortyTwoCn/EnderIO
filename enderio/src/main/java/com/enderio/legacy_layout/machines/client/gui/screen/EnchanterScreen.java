@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.machines.client.gui.screen;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.core.client.gui.screen.EnderContainerScreen;
-import com.enderio.legacy_layout.machines.common.blocks.enchanter.EnchanterMenu;
+import com.enderio.enderio.common.content.machines.blocks.enchanter.EnchanterMenu;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

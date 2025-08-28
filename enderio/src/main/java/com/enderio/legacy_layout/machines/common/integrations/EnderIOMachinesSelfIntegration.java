@@ -2,8 +2,8 @@ package com.enderio.legacy_layout.machines.common.integrations;
 
 import com.enderio.enderio.api.farm.FarmTaskManager;
 import com.enderio.legacy_layout.base.api.integration.Integration;
-import com.enderio.legacy_layout.machines.common.blocks.base.task.MachineFarmingTasks;
-import com.enderio.legacy_layout.machines.common.blocks.travel_anchor.TravelAnchorBlock;
+import com.enderio.enderio.common.content.machines.base.task.MachineFarmingTasks;
+import com.enderio.enderio.common.content.machines.blocks.travel_anchor.TravelAnchorBlock;
 import net.minecraft.world.entity.player.Player;
 
 public class EnderIOMachinesSelfIntegration implements Integration {

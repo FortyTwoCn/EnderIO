@@ -6,7 +6,7 @@ import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.CapacitorEnergyWidget;
-import com.enderio.legacy_layout.machines.common.blocks.crafter.CrafterMenu;
+import com.enderio.enderio.common.content.machines.blocks.crafter.CrafterMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

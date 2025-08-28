@@ -1,19 +1,19 @@
 package com.enderio.legacy_layout.machines.common.recipe;
 
-import com.enderio.legacy_layout.machines.EnderIOMachines;
-import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmeltingRecipe;
-import com.enderio.legacy_layout.machines.common.blocks.painting.PaintingRecipe;
-import com.enderio.legacy_layout.machines.common.blocks.sag_mill.SagMillingRecipe;
-import com.enderio.legacy_layout.machines.common.blocks.soul_binder.SoulBindingRecipe;
-import com.enderio.legacy_layout.machines.common.blocks.vat.FermentingRecipe;
+import com.enderio.enderio.common.EnderIO;
+import com.enderio.enderio.common.content.machines.blocks.alloy.AlloySmeltingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.painting.PaintingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.sag_mill.SagMillingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.soul_binder.SoulBindingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.vat.FermentingRecipe;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineRecipes;
-import com.enderio.legacy_layout.machines.common.utility.RecipeInputCache;
+import com.enderio.enderio.common.foundation.utility.RecipeInputCache;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RecipesUpdatedEvent;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class RecipeCaches {
     public static final RecipeInputCache<AlloySmeltingRecipe.Input, AlloySmeltingRecipe> ALLOY_SMELTING_ONLY_ALLOY = new RecipeInputCache<>(
             MachineRecipes.ALLOY_SMELTING.type(), recipe -> !recipe.isSmelting());

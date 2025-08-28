@@ -3,8 +3,7 @@ package com.enderio.legacy_layout.machines.data.recipes;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOFluids;
 import com.enderio.enderio.common.registration.EIOTags;
-import com.enderio.legacy_layout.machines.common.blocks.vat.FermentingRecipe;
-import com.enderio.legacy_layout.machines.common.tag.MachineTags;
+import com.enderio.enderio.common.content.machines.blocks.vat.FermentingRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -27,33 +26,27 @@ public class FermentingRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        build(new FluidStack(EIOFluids.HOOTCH.getSource(), 250), SizedFluidIngredient.of(FluidTags.WATER, 1000),
-                MachineTags.Items.SEEDS, MachineTags.Items.CROPS, 200, recipeOutput);
-        build(new FluidStack(EIOFluids.ROCKET_FUEL.getSource(), 1000),
-                SizedFluidIngredient.of(EIOFluids.HOOTCH.getSource(), 1000), MachineTags.Items.EXPLOSIVES,
-                Tags.Items.DUSTS_REDSTONE, 400, recipeOutput);
-        build(new FluidStack(EIOFluids.NUTRIENT_DISTILLATION.getSource(), 250),
-                SizedFluidIngredient.of(FluidTags.WATER, 1000), MachineTags.Items.MEAT, MachineTags.Items.CROPS, 200,
-                recipeOutput);
-        build(new FluidStack(EIOFluids.FIRE_WATER.getSource(), 1000),
-                SizedFluidIngredient.of(EIOFluids.HOOTCH.getSource(), 1000), MachineTags.Items.BLAZE_POWDER,
-                Tags.Items.DUSTS_REDSTONE, 400, recipeOutput);
-        build(new FluidStack(EIOFluids.LIQUID_SUNSHINE.getSource(), 1000),
-                SizedFluidIngredient.of(FluidTags.WATER, 1000), MachineTags.Items.NATURAL_LIGHTS,
-                MachineTags.Items.SUNFLOWER, 200, recipeOutput);
-        build(new FluidStack(EIOFluids.LIQUID_DARKNESS.getSource(), 1000),
-                SizedFluidIngredient.of(EIOFluids.LIQUID_SUNSHINE.getSource(), 500), MachineTags.Items.AMETHYST,
-                EIOTags.Items.DUSTS_OBSIDIAN, 600, recipeOutput);
-        build(new FluidStack(EIOFluids.CLOUD_SEED.getSource(), 1000), SizedFluidIngredient.of(FluidTags.WATER, 1000),
-                MachineTags.Items.PRISMARINE, MachineTags.Items.CLOUD_COLD, 400, recipeOutput);
-        build(new FluidStack(EIOFluids.CLOUD_SEED_CONCENTRATED.getSource(), 500),
-                SizedFluidIngredient.of(EIOFluids.CLOUD_SEED_CONCENTRATED.getSource(), 1000),
-                MachineTags.Items.LIGHTNING_ROD, MachineTags.Items.WIND_CHARGES, 600, recipeOutput);
+        build(new FluidStack(EIOFluids.HOOTCH.getSource(), 250), SizedFluidIngredient.of(FluidTags.WATER, 1000), EIOTags.Items.SEEDS, EIOTags.Items.CROPS, 200,
+            recipeOutput);
+        build(new FluidStack(EIOFluids.ROCKET_FUEL.getSource(), 1000), SizedFluidIngredient.of(EIOFluids.HOOTCH.getSource(), 1000), EIOTags.Items.EXPLOSIVES,
+            Tags.Items.DUSTS_REDSTONE, 400, recipeOutput);
+        build(new FluidStack(EIOFluids.NUTRIENT_DISTILLATION.getSource(), 250), SizedFluidIngredient.of(FluidTags.WATER, 1000), EIOTags.Items.MEAT,
+            EIOTags.Items.CROPS, 200, recipeOutput);
+        build(new FluidStack(EIOFluids.FIRE_WATER.getSource(), 1000), SizedFluidIngredient.of(EIOFluids.HOOTCH.getSource(), 1000), EIOTags.Items.BLAZE_POWDER,
+            Tags.Items.DUSTS_REDSTONE, 400, recipeOutput);
+        build(new FluidStack(EIOFluids.LIQUID_SUNSHINE.getSource(), 1000), SizedFluidIngredient.of(FluidTags.WATER, 1000), EIOTags.Items.NATURAL_LIGHTS,
+            EIOTags.Items.SUNFLOWER, 200, recipeOutput);
+        build(new FluidStack(EIOFluids.LIQUID_DARKNESS.getSource(), 1000), SizedFluidIngredient.of(EIOFluids.LIQUID_SUNSHINE.getSource(), 500),
+            EIOTags.Items.AMETHYST, EIOTags.Items.DUSTS_OBSIDIAN, 600, recipeOutput);
+        build(new FluidStack(EIOFluids.CLOUD_SEED.getSource(), 1000), SizedFluidIngredient.of(FluidTags.WATER, 1000), EIOTags.Items.PRISMARINE,
+            EIOTags.Items.CLOUD_COLD, 400, recipeOutput);
+        build(new FluidStack(EIOFluids.CLOUD_SEED_CONCENTRATED.getSource(), 500), SizedFluidIngredient.of(EIOFluids.CLOUD_SEED_CONCENTRATED.getSource(), 1000),
+            EIOTags.Items.LIGHTNING_ROD, EIOTags.Items.WIND_CHARGES, 600, recipeOutput);
     }
 
-    protected void build(FluidStack output, SizedFluidIngredient input, TagKey<Item> leftReagent,
-            TagKey<Item> rightReagent, int ticks, RecipeOutput recipeOutput) {
+    protected void build(FluidStack output, SizedFluidIngredient input, TagKey<Item> leftReagent, TagKey<Item> rightReagent, int ticks,
+        RecipeOutput recipeOutput) {
         recipeOutput.accept(EnderIOAPI.loc("fermenting/" + BuiltInRegistries.FLUID.getKey(output.getFluid()).getPath()),
-                new FermentingRecipe(input, leftReagent, rightReagent, output, ticks), null);
+            new FermentingRecipe(input, leftReagent, rightReagent, output, ticks), null);
     }
 }

@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.souldata;
 
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.EnderIO;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;
@@ -16,7 +16,7 @@ import net.neoforged.neoforge.event.AddReloadListenerEvent;
 
 import java.util.Optional;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class SolarSoul {
 
     public record SoulData(ResourceLocation entitytype, boolean daytime, boolean nighttime, Optional<ResourceKey<Level>> level) implements com.enderio.legacy_layout.machines.common.souldata.SoulData {

@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.data.advancements;
 
-import com.enderio.legacy_layout.machines.common.block.CapacitorBankBlock;
-import com.enderio.legacy_layout.machines.common.blockentity.capacitorbank.CapacitorTier;
+import com.enderio.enderio.common.content.machines.blocks.capacitorbank.CapacitorBankBlock;
+import com.enderio.enderio.common.content.machines.blocks.capacitorbank.CapacitorTier;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import net.minecraft.advancements.Advancement;

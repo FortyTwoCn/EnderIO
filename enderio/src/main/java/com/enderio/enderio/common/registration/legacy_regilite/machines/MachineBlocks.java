@@ -4,6 +4,7 @@ import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.api.soul.Soul;
 import com.enderio.enderio.client.content.decoration.paint.PaintedBlockColor;
 import com.enderio.enderio.common.EnderIO;
+import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCreativeTabs;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
@@ -12,39 +13,38 @@ import com.enderio.enderio.common.foundation.soul.SoulCapabilityProviders;
 import com.enderio.legacy_layout.base.data.loot.DecorLootTable;
 import com.enderio.legacy_layout.base.data.model.block.EIOBlockState;
 import com.enderio.core.data.model.ModelHelper;
-import com.enderio.legacy_layout.machines.common.block.CapacitorBankBlock;
-import com.enderio.legacy_layout.machines.common.block.LegacyMachineBlock;
-import com.enderio.legacy_layout.machines.common.block.SolarPanelBlock;
-import com.enderio.legacy_layout.machines.common.blockentity.capacitorbank.CapacitorBankBlockEntity;
-import com.enderio.legacy_layout.machines.common.blockentity.capacitorbank.CapacitorTier;
-import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelBlockEntity;
-import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelTier;
-import com.enderio.legacy_layout.machines.common.blocks.base.block.MachineBlock;
-import com.enderio.legacy_layout.machines.common.blocks.base.block.ProgressMachineBlock;
-import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.MachineBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.block_detector.BlockDetectorBlock;
-import com.enderio.legacy_layout.machines.common.blocks.enchanter.EnchanterBlock;
-import com.enderio.legacy_layout.machines.common.blocks.enderface.EnderfaceBlock;
-import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.FluidTankBlock;
-import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.FluidTankBlockItem;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.attractor.AttractorObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.aversion.AversionObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.inhibitor.InhibitorObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.relocator.RelocatorObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.weather.WeatherObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.xp.XPObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.MindKillerBlock;
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.PoweredSpawnerBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.soul_engine.SoulEngineBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.travel_anchor.PaintedTravelAnchorBlock;
-import com.enderio.legacy_layout.machines.common.blocks.travel_anchor.TravelAnchorBlock;
-import com.enderio.legacy_layout.machines.common.blocks.travel_anchor.TravelAnchorBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.vacuum.chest.VacuumChestBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.vacuum.xp.XPVacuumBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.vat.VatBlock;
-import com.enderio.legacy_layout.machines.common.blocks.wireless_charger.WirelessAntennaBlock;
-import com.enderio.legacy_layout.machines.common.item.CapacitorBankItem;
-import com.enderio.legacy_layout.machines.common.tag.MachineTags;
+import com.enderio.enderio.common.content.machines.blocks.capacitorbank.CapacitorBankBlock;
+import com.enderio.enderio.common.content.machines.legacy.LegacyMachineBlock;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelBlock;
+import com.enderio.enderio.common.content.machines.blocks.capacitorbank.CapacitorBankBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.capacitorbank.CapacitorTier;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelTier;
+import com.enderio.enderio.common.content.machines.base.block.MachineBlock;
+import com.enderio.enderio.common.content.machines.base.block.ProgressMachineBlock;
+import com.enderio.enderio.common.content.machines.base.blockentity.MachineBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.block_detector.BlockDetectorBlock;
+import com.enderio.enderio.common.content.machines.blocks.enchanter.EnchanterBlock;
+import com.enderio.enderio.common.content.machines.blocks.enderface.EnderfaceBlock;
+import com.enderio.enderio.common.content.machines.blocks.fluid_tank.FluidTankBlock;
+import com.enderio.enderio.common.content.machines.blocks.fluid_tank.FluidTankBlockItem;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.attractor.AttractorObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.aversion.AversionObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.inhibitor.InhibitorObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.relocator.RelocatorObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.weather.WeatherObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.xp.XPObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.MindKillerBlock;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.PoweredSpawnerBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.soul_engine.SoulEngineBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.travel_anchor.PaintedTravelAnchorBlock;
+import com.enderio.enderio.common.content.machines.blocks.travel_anchor.TravelAnchorBlock;
+import com.enderio.enderio.common.content.machines.blocks.travel_anchor.TravelAnchorBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.vacuum.chest.VacuumChestBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.vacuum.xp.XPVacuumBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.vat.VatBlock;
+import com.enderio.enderio.common.content.machines.blocks.wireless_charger.WirelessAntennaBlock;
+import com.enderio.enderio.common.content.machines.blocks.capacitorbank.CapacitorBankItem;
 import com.enderio.legacy_layout.machines.data.loot.MachinesLootTable;
 import com.enderio.legacy_layout.machines.data.model.MachineModelUtil;
 import com.enderio.regilite.data.DataGenContext;
@@ -206,7 +206,7 @@ public class MachineBlocks {
                     .strength(2.5f, 8)
                     .isViewBlocking((pState, pLevel, pPos) -> false)
                     .noOcclusion())
-            .addBlockTags(BlockTags.NEEDS_IRON_TOOL, BlockTags.MINEABLE_WITH_PICKAXE, MachineTags.Blocks.MIND_KILLER)
+            .addBlockTags(BlockTags.NEEDS_IRON_TOOL, BlockTags.MINEABLE_WITH_PICKAXE, EIOTags.Blocks.MIND_KILLER)
             .setBlockStateProvider((prov, ctx) -> prov.simpleBlock(ctx.get(),
                 prov.models().getExistingFile(EnderIOAPI.loc("block/" + ctx.getName()))))
             .createBlockItem(ITEM_REGISTRY, item -> item.setTab((EIOCreativeTabs.MACHINES)));
@@ -448,7 +448,7 @@ public class MachineBlocks {
                                 .isViewBlocking((pState, pLevel, pPos) -> false)
                                 .noOcclusion())
                 .addBlockTags(BlockTags.NEEDS_IRON_TOOL, BlockTags.MINEABLE_WITH_PICKAXE,
-                        MachineTags.Blocks.RANGE_EXTENDER)
+                    EIOTags.Blocks.RANGE_EXTENDER)
                 .setBlockStateProvider((prov, ctx) -> prov.simpleBlock(ctx.get(),
                         prov.models().getExistingFile(EnderIOAPI.loc("block/" + ctx.getName()))))
                 .setTranslation(translation)

@@ -5,7 +5,7 @@ import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryCapa
 import com.enderio.enderio.common.registration.legacy_regilite.armory.ArmoryDataComponents;
 import com.enderio.legacy_layout.armory.common.tag.ArmoryTags;
 import com.enderio.core.common.energy.ItemStackEnergy;
-import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelBlockEntity;
 import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EquipmentSlot;

@@ -4,7 +4,7 @@ import com.enderio.enderio.api.dark_steel.IDarkSteelUpgrade;
 import com.enderio.enderio.api.dark_steel.IUpgradeTier;
 import com.enderio.legacy_layout.armory.common.config.ArmoryConfig;
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;
-import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelTier;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelTier;
 import java.util.function.Supplier;
 import net.minecraft.network.chat.Component;
 import net.neoforged.neoforge.common.ModConfigSpec;

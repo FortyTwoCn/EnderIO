@@ -4,7 +4,7 @@ import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.api.soul.Soul;
 import com.enderio.legacy_layout.base.common.item.tool.SoulVialItem;
 import com.enderio.legacy_layout.machines.client.gui.screen.SoulEngineScreen;
-import com.enderio.legacy_layout.machines.common.blocks.soul_engine.SoulEngineBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.soul_engine.SoulEngineBlockEntity;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import com.enderio.legacy_layout.machines.common.souldata.EngineSoul;

@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.network;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.MobSpawnMode;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.MobSpawnMode;
 import com.enderio.legacy_layout.machines.common.souldata.SpawnerSoul;
 import io.netty.buffer.ByteBuf;
 import java.util.HashMap;

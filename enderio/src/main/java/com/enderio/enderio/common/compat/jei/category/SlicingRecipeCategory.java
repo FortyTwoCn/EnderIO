@@ -2,7 +2,7 @@ package com.enderio.enderio.common.compat.jei.category;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.common.compat.jei.JEIUtils;
-import com.enderio.legacy_layout.machines.common.blocks.slicer.SlicingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.slicer.SlicingRecipe;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.enderio.common.compat.jei.util.MachineRecipeCategory;
 import com.enderio.enderio.common.compat.jei.util.RecipeUtil;

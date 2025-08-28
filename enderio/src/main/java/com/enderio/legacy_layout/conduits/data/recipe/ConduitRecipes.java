@@ -9,7 +9,7 @@ import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.common.content.conduits.ConduitBlockItem;
 import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitItems;
 import com.enderio.enderio.common.registration.legacy_regilite.conduits.Conduits;
-import com.enderio.legacy_layout.machines.common.blocks.painting.PaintingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.painting.PaintingRecipe;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderGetter;
@@ -24,7 +24,6 @@ import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
-import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
 
 public class ConduitRecipes extends RecipeProvider {
 

@@ -5,7 +5,7 @@ import com.enderio.legacy_layout.base.client.gui.widget.RedstoneControlPickerWid
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.LegacyMachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.EnergyWidget;
-import com.enderio.legacy_layout.machines.common.menu.CapacitorBankMenu;
+import com.enderio.enderio.common.content.machines.blocks.capacitorbank.CapacitorBankMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

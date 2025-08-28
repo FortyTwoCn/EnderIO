@@ -4,7 +4,7 @@ import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.core.client.gui.widgets.ToggleIconButton;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
-import com.enderio.legacy_layout.machines.common.blocks.travel_anchor.TravelAnchorMenu;
+import com.enderio.enderio.common.content.machines.blocks.travel_anchor.TravelAnchorMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.network.chat.Component;

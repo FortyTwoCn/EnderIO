@@ -6,7 +6,7 @@ import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.enderio.common.registration.EIOTags;
-import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmeltingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.alloy.AlloySmeltingRecipe;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.machines.client.gui.widget;
 
 import com.enderio.legacy_layout.machines.client.gui.icon.MachineEnumIcons;
-import com.enderio.legacy_layout.machines.common.blocks.base.state.MachineState;
-import com.enderio.legacy_layout.machines.common.blocks.base.state.MachineStateType;
+import com.enderio.enderio.common.content.machines.base.state.MachineState;
+import com.enderio.enderio.common.content.machines.base.state.MachineStateType;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import com.mojang.blaze3d.systems.RenderSystem;
 import java.util.List;

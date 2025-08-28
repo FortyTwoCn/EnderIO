@@ -2,7 +2,7 @@ package com.enderio.enderio.common.compat.jei.util;
 
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.core.common.util.TooltipUtil;
-import com.enderio.legacy_layout.machines.common.blocks.base.MachineRecipe;
+import com.enderio.enderio.common.content.machines.base.MachineRecipe;
 import java.text.NumberFormat;
 import java.util.Locale;
 import mezz.jei.api.recipe.category.IRecipeCategory;

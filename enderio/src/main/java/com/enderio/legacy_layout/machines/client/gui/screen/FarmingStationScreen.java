@@ -7,7 +7,7 @@ import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.CapacitorEnergyWidget;
-import com.enderio.legacy_layout.machines.common.blocks.farming_station.FarmingStationMenu;
+import com.enderio.enderio.common.content.machines.blocks.farming_station.FarmingStationMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

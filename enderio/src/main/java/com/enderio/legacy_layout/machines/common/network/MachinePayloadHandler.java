@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.machines.common.network;
 
-import com.enderio.legacy_layout.machines.common.blocks.base.blockentity.MachineBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.crafter.CrafterMenu;
-import com.enderio.legacy_layout.machines.common.blocks.enderface.EnderfaceBlockEntity;
+import com.enderio.enderio.common.content.machines.base.blockentity.MachineBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.crafter.CrafterMenu;
+import com.enderio.enderio.common.content.machines.blocks.enderface.EnderfaceBlockEntity;
 import com.enderio.legacy_layout.machines.common.souldata.EngineSoul;
 import com.enderio.legacy_layout.machines.common.souldata.FarmSoul;
 import com.enderio.legacy_layout.machines.common.souldata.SolarSoul;

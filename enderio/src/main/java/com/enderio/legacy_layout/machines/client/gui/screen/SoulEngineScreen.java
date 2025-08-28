@@ -7,7 +7,7 @@ import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.CapacitorEnergyWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.FluidStackWidget;
-import com.enderio.legacy_layout.machines.common.blocks.soul_engine.SoulEngineMenu;
+import com.enderio.enderio.common.content.machines.blocks.soul_engine.SoulEngineMenu;
 import com.enderio.legacy_layout.machines.common.souldata.EngineSoul;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;

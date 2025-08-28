@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.obelisk;
 
 import com.enderio.core.common.util.ChunkBoundLookup;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.ObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.ObeliskBlockEntity;
 import java.util.Set;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.ChunkPos;

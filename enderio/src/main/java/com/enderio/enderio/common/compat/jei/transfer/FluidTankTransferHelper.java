@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.compat.jei.transfer;
 
-import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.FluidTankMenu;
-import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.TankRecipe;
+import com.enderio.enderio.common.content.machines.blocks.fluid_tank.FluidTankMenu;
+import com.enderio.enderio.common.content.machines.blocks.fluid_tank.TankRecipe;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import com.enderio.enderio.common.compat.jei.category.TankCategory;
 import com.enderio.legacy_layout.machines.common.network.TransferItemsPacket;

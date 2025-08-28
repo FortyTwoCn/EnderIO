@@ -9,7 +9,7 @@ import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.NewCapacitorEnergyWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.NewProgressWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.PoweredSpawnerModeWidget;
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.PoweredSpawnerMenu;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.PoweredSpawnerMenu;
 import com.enderio.legacy_layout.machines.common.lang.MachineEnumLang;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import java.util.Objects;

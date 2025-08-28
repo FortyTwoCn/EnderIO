@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.machines.client.rendering.model;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.api.io.IOConfigurable;
 import com.enderio.legacy_layout.base.api.io.IOMode;
-import com.enderio.legacy_layout.machines.common.blockentity.base.LegacyMachineBlockEntity;
+import com.enderio.enderio.common.content.machines.legacy.LegacyMachineBlockEntity;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import java.util.ArrayList;

@@ -3,8 +3,8 @@ package com.enderio.legacy_layout.machines.common.lang;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.core.common.lang.EnumTranslationMap;
 import com.enderio.enderio.common.EnderIO;
-import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmelterMode;
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.PoweredSpawnerMode;
+import com.enderio.enderio.common.content.machines.blocks.alloy.AlloySmelterMode;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.PoweredSpawnerMode;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 

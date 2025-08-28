@@ -7,7 +7,7 @@ import com.enderio.enderio.api.soul.SoulBoundUtils;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
-import com.enderio.enderio.common.foundation.util.EntityCaptureUtils;
+import com.enderio.enderio.common.foundation.utility.EntityCaptureUtils;
 import com.enderio.core.client.item.AdvancedTooltipProvider;
 import com.enderio.core.common.util.TooltipUtil;
 import net.minecraft.core.BlockPos;

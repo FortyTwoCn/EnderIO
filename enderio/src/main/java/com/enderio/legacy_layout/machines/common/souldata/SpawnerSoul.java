@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.common.souldata;
 
-import com.enderio.legacy_layout.machines.EnderIOMachines;
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.MobSpawnMode;
+import com.enderio.enderio.common.EnderIO;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.MobSpawnMode;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;
@@ -15,7 +15,7 @@ import net.neoforged.neoforge.event.AddReloadListenerEvent;
 /**
  * Class that holds all information related to the mob soul in a spawner
  */
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class SpawnerSoul {
 
     /**

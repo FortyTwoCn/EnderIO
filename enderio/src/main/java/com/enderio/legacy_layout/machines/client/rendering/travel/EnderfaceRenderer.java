@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.machines.client.rendering.travel;
 
 import com.enderio.legacy_layout.base.api.travel.TravelRenderer;
-import com.enderio.legacy_layout.machines.common.travel.EnderfaceTravelTarget;
+import com.enderio.enderio.common.content.travel.anchor.EnderfaceTravelTarget;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.ChatFormatting;

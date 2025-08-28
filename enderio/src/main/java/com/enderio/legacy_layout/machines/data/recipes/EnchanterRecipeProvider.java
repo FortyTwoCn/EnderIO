@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.machines.data.recipes;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.enderio.common.registration.EIOTags;
-import com.enderio.legacy_layout.machines.common.blocks.enchanter.EnchanterRecipe;
+import com.enderio.enderio.common.content.machines.blocks.enchanter.EnchanterRecipe;
 import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;

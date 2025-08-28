@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.machines.common.souldata;
 
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.EnderIO;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;
@@ -11,7 +11,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class EngineSoul {
 
     // TODO: 20.6: May be able to use FluidIngredient

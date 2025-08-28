@@ -3,7 +3,7 @@ package com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.solar;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.DarkSteelUpgradeRegistry;
 import com.enderio.legacy_layout.armory.common.item.darksteel.upgrades.TieredUpgrade;
 import com.enderio.legacy_layout.armory.common.lang.ArmoryLang;
-import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelTier;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelTier;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;

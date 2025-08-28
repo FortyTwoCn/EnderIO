@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.machines.client.gui.screen;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.attractor.AttractorObeliskBlockEntity;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.attractor.AttractorObeliskMenu;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.attractor.AttractorObeliskBlockEntity;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.attractor.AttractorObeliskMenu;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;

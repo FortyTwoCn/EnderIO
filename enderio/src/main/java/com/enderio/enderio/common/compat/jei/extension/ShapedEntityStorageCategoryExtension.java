@@ -8,7 +8,7 @@ import com.enderio.enderio.api.soul.SoulBoundUtils;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOCapabilities;
 import com.enderio.enderio.common.compat.jei.EnderIOJEI;
 import com.enderio.legacy_layout.base.common.recipe.ShapedEntityStorageRecipe;
-import com.enderio.enderio.common.foundation.util.EntityCaptureUtils;
+import com.enderio.enderio.common.foundation.utility.EntityCaptureUtils;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

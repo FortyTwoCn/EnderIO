@@ -1,6 +1,6 @@
 package com.enderio.enderio.common.registration.legacy_regilite.machines;
 
-import com.enderio.legacy_layout.machines.EnderIOMachines;
+import com.enderio.enderio.common.EnderIO;
 import com.enderio.legacy_layout.machines.common.network.CycleIOConfigPacket;
 import com.enderio.legacy_layout.machines.common.network.EnderfaceInteractPacket;
 import com.enderio.legacy_layout.machines.common.network.FarmStationSoulPacket;
@@ -19,7 +19,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
-@EventBusSubscriber(modid = EnderIOMachines.MODULE_MOD_ID)
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
 public class MachineNetwork {
     private static final String PROTOCOL_VERSION = "1.0";
 

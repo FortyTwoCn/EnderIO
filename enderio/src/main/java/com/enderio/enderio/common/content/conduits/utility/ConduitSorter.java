@@ -3,7 +3,7 @@ package com.enderio.enderio.common.content.conduits.utility;
 import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.enderio.api.conduits.bundle.ConduitBundle;
 import com.enderio.enderio.common.EnderIO;
-import com.enderio.enderio.common.foundation.util.ThrowableUtil;
+import com.enderio.enderio.common.foundation.utility.ThrowableUtil;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitType;
 import java.util.ArrayList;

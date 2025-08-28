@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.compat.jei;
 
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
-import com.enderio.legacy_layout.machines.common.blocks.base.menu.GhostMachineSlot;
+import com.enderio.enderio.common.content.machines.base.menu.GhostMachineSlot;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.handlers.IGhostIngredientHandler;
 import mezz.jei.api.ingredients.ITypedIngredient;

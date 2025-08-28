@@ -2,9 +2,9 @@ package com.enderio.legacy_layout.machines.client.gui.icon;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.core.client.icon.EnumIconMap;
-import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmelterMode;
-import com.enderio.legacy_layout.machines.common.blocks.base.state.MachineStateType;
-import com.enderio.legacy_layout.machines.common.blocks.powered_spawner.PoweredSpawnerMode;
+import com.enderio.enderio.common.content.machines.blocks.alloy.AlloySmelterMode;
+import com.enderio.enderio.common.content.machines.base.state.MachineStateType;
+import com.enderio.enderio.common.content.machines.blocks.powered_spawner.PoweredSpawnerMode;
 
 public class MachineEnumIcons {
 

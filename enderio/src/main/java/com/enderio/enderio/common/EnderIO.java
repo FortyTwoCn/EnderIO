@@ -61,16 +61,15 @@ import com.enderio.enderio.common.registration.legacy_regilite.conduits.ConduitT
 import com.enderio.enderio.common.registration.legacy_regilite.conduits.Conduits;
 import com.enderio.legacy_layout.conduits.data.ConduitTagProvider;
 import com.enderio.legacy_layout.conduits.data.recipe.ConduitRecipes;
-import com.enderio.legacy_layout.machines.common.blocks.base.menu.GhostMachineSlot;
-import com.enderio.legacy_layout.machines.common.blocks.base.menu.MachineSlot;
-import com.enderio.legacy_layout.machines.common.blocks.base.menu.PreviewMachineSlot;
-import com.enderio.legacy_layout.machines.common.blocks.enchanter.EnchanterMenu;
+import com.enderio.enderio.common.content.machines.base.menu.GhostMachineSlot;
+import com.enderio.enderio.common.content.machines.base.menu.MachineSlot;
+import com.enderio.enderio.common.content.machines.base.menu.PreviewMachineSlot;
+import com.enderio.enderio.common.content.machines.blocks.enchanter.EnchanterMenu;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfigLang;
 import com.enderio.legacy_layout.machines.common.integrations.EnderIOMachinesSelfIntegration;
 import com.enderio.legacy_layout.machines.common.lang.MachineEnumLang;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
-import com.enderio.legacy_layout.machines.common.tag.MachineTags;
 import com.enderio.legacy_layout.machines.data.advancements.MachinesAdvancementGenerator;
 import com.enderio.legacy_layout.machines.data.datamap.RangeExtenderDataProvider;
 import com.enderio.legacy_layout.machines.data.reagentdata.ReagentProvider;
@@ -186,7 +185,6 @@ public class EnderIO {
 
         MachineLang.register();
         MachineEnumLang.register();
-        MachineTags.register();
 
         IntegrationManager.addIntegration(EnderIOMachinesSelfIntegration.INSTANCE);
 

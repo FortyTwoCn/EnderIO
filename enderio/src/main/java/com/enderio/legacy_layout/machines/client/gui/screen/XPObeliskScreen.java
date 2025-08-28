@@ -5,7 +5,7 @@ import com.enderio.legacy_layout.base.client.gui.widget.RedstoneControlPickerWid
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.ExperienceWidget;
-import com.enderio.legacy_layout.machines.common.blocks.obelisks.xp.XPObeliskMenu;
+import com.enderio.enderio.common.content.machines.blocks.obelisks.xp.XPObeliskMenu;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;
 import java.util.ArrayList;
 import java.util.List;

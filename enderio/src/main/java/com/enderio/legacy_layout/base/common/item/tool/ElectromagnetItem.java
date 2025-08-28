@@ -2,7 +2,7 @@ package com.enderio.legacy_layout.base.common.item.tool;
 
 import com.enderio.legacy_layout.base.common.config.BaseConfig;
 import com.enderio.enderio.common.registration.EIOTags;
-import com.enderio.enderio.common.foundation.util.AttractionUtil;
+import com.enderio.enderio.common.foundation.utility.AttractionUtil;
 import java.util.List;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ExperienceOrb;

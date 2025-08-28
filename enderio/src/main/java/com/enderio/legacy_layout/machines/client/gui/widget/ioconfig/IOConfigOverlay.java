@@ -5,7 +5,7 @@ import com.enderio.legacy_layout.base.api.io.IOConfigurable;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.core.client.gui.screen.BaseOverlay;
 import com.enderio.legacy_layout.machines.client.rendering.model.ModelRenderUtil;
-import com.enderio.legacy_layout.machines.common.blockentity.base.LegacyMachineBlockEntity;
+import com.enderio.enderio.common.content.machines.legacy.LegacyMachineBlockEntity;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
 import com.enderio.legacy_layout.machines.common.network.CycleIOConfigPacket;
 import com.mojang.blaze3d.platform.Lighting;

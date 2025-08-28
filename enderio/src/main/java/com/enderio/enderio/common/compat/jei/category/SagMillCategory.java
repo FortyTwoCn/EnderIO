@@ -7,7 +7,7 @@ import com.enderio.enderio.common.compat.jei.JEIUtils;
 import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.enderio.common.registration.EIOTags;
 import com.enderio.core.common.util.TooltipUtil;
-import com.enderio.legacy_layout.machines.common.blocks.sag_mill.SagMillingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.sag_mill.SagMillingRecipe;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineBlocks;
 import com.enderio.enderio.common.compat.jei.util.MachineRecipeCategory;
 import com.enderio.legacy_layout.machines.common.lang.MachineLang;

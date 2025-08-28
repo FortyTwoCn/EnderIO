@@ -2,9 +2,9 @@ package com.enderio.legacy_layout.machines.data.model;
 
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.core.data.model.ModelHelper;
-import com.enderio.legacy_layout.machines.common.block.SolarPanelBlock;
-import com.enderio.legacy_layout.machines.common.blockentity.solar.SolarPanelTier;
-import com.enderio.legacy_layout.machines.common.blocks.base.block.ProgressMachineBlock;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelBlock;
+import com.enderio.enderio.common.content.machines.blocks.solar.SolarPanelTier;
+import com.enderio.enderio.common.content.machines.base.block.ProgressMachineBlock;
 import com.enderio.regilite.data.DataGenContext;
 import com.enderio.regilite.data.RegiliteItemModelProvider;
 import java.util.Locale;

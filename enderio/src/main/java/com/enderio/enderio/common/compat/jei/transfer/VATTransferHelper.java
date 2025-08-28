@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.compat.jei.transfer;
 
-import com.enderio.legacy_layout.machines.common.blocks.vat.FermentingRecipe;
-import com.enderio.legacy_layout.machines.common.blocks.vat.VatMenu;
+import com.enderio.enderio.common.content.machines.blocks.vat.FermentingRecipe;
+import com.enderio.enderio.common.content.machines.blocks.vat.VatMenu;
 import com.enderio.enderio.common.registration.legacy_regilite.machines.MachineMenus;
 import com.enderio.enderio.common.compat.jei.category.VATCategory;
 import com.enderio.legacy_layout.machines.common.network.TransferItemsPacket;

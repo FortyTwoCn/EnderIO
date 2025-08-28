@@ -7,7 +7,7 @@ import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.CapacitorEnergyWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.ProgressWidget;
-import com.enderio.legacy_layout.machines.common.blocks.wired_charger.WiredChargerMenu;
+import com.enderio.enderio.common.content.machines.blocks.wired_charger.WiredChargerMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

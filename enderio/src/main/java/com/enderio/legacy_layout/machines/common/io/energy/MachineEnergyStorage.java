@@ -1,8 +1,8 @@
 package com.enderio.legacy_layout.machines.common.io.energy;
 
+import com.enderio.legacy_layout.base.EIONBTKeys;
 import com.enderio.legacy_layout.base.api.io.IOConfigurable;
 import com.enderio.legacy_layout.base.api.io.energy.EnergyIOMode;
-import com.enderio.legacy_layout.machines.common.MachineNBTKeys;
 import com.enderio.legacy_layout.machines.common.config.MachinesConfig;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
@@ -167,13 +167,13 @@ public class MachineEnergyStorage implements IMachineEnergyStorage, INBTSerializ
     @Override
     public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
         CompoundTag tag = new CompoundTag();
-        tag.putInt(MachineNBTKeys.ENERGY_STORED, getEnergyStored());
+        tag.putInt(EIONBTKeys.ENERGY_STORED, getEnergyStored());
         return tag;
     }
 
     @Override
     public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
-        energyStored = nbt.getInt(MachineNBTKeys.ENERGY_STORED);
+        energyStored = nbt.getInt(EIONBTKeys.ENERGY_STORED);
     }
 
     private record Sided(MachineEnergyStorage wrapped, Direction side) implements IEnergyStorage {

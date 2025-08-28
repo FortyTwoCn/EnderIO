@@ -4,7 +4,7 @@ import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.legacy_layout.base.api.grindingball.GrindingBallData;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
 import com.enderio.legacy_layout.machines.common.attachment.ActionRange;
-import com.enderio.legacy_layout.machines.common.blocks.alloy.AlloySmelterMode;
+import com.enderio.enderio.common.content.machines.blocks.alloy.AlloySmelterMode;
 import com.enderio.legacy_layout.machines.common.io.IOConfig;
 import com.mojang.serialization.Codec;
 import java.util.function.Supplier;

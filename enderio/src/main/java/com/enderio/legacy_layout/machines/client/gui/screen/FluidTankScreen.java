@@ -6,7 +6,7 @@ import com.enderio.legacy_layout.base.common.lang.EIOLang;
 import com.enderio.legacy_layout.machines.client.gui.screen.base.MachineScreen;
 import com.enderio.legacy_layout.machines.client.gui.widget.ActivityWidget;
 import com.enderio.legacy_layout.machines.client.gui.widget.FluidStackWidget;
-import com.enderio.legacy_layout.machines.common.blocks.fluid_tank.FluidTankMenu;
+import com.enderio.enderio.common.content.machines.blocks.fluid_tank.FluidTankMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
