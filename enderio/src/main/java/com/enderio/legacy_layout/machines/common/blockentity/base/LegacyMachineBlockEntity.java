@@ -4,7 +4,7 @@ import com.enderio.legacy_layout.base.api.capability.SideConfig;
 import com.enderio.legacy_layout.base.api.io.IOConfigurable;
 import com.enderio.legacy_layout.base.api.io.IOMode;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
-import com.enderio.legacy_layout.base.common.blockentity.Wrenchable;
+import com.enderio.enderio.common.foundation.block.entity.Wrenchable;
 import com.enderio.core.common.blockentity.EnderBlockEntity;
 import com.enderio.core.common.network.NetworkDataSlot;
 import com.enderio.legacy_layout.machines.common.MachineNBTKeys;

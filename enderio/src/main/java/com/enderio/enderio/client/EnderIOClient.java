@@ -10,7 +10,7 @@ import com.enderio.legacy_layout.base.client.particle.RangeParticle;
 import com.enderio.legacy_layout.base.client.renderer.block.EnderSkullRenderer;
 import com.enderio.enderio.client.content.utility.glider.ActiveGliderRenderLayer;
 import com.enderio.enderio.client.content.travel.TravelTargetRendering;
-import com.enderio.legacy_layout.base.common.block.skull.EnderSkullBlock;
+import com.enderio.enderio.common.content.decoration.skull.EnderSkullBlock;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlockEntities;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;

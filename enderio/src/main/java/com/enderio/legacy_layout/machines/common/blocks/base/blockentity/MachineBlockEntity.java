@@ -7,7 +7,7 @@ import com.enderio.legacy_layout.base.api.io.IOMode;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
 import com.enderio.enderio.api.soul.binding.ISoulBindable;
 import com.enderio.enderio.common.foundation.block.entity.EIOBlockEntity;
-import com.enderio.legacy_layout.base.common.blockentity.Wrenchable;
+import com.enderio.enderio.common.foundation.block.entity.Wrenchable;
 import com.enderio.legacy_layout.machines.common.MachineNBTKeys;
 import com.enderio.legacy_layout.machines.common.block.LegacyMachineBlock;
 import com.enderio.legacy_layout.machines.common.blockentity.base.LegacyMachineBlockEntity;

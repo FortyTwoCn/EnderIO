@@ -1,7 +1,7 @@
 package com.enderio.legacy_layout.base.data.recipe;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.block.ResettingLeverBlock;
+import com.enderio.enderio.common.content.utility.ResettingLeverBlock;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOBlocks;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIOItems;
 import com.enderio.enderio.common.registration.EIOTags;

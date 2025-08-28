@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.registration.legacy_regilite.base;
 
 import com.enderio.enderio.api.EnderIOAPI;
-import com.enderio.legacy_layout.base.common.advancement.UseGliderTrigger;
+import com.enderio.enderio.common.content.utility.glider.advancement.UseGliderTrigger;
 import com.enderio.enderio.common.content.decoration.paint.PaintingTrigger;
 import net.minecraft.advancements.CriterionTrigger;
 import net.minecraft.core.registries.Registries;

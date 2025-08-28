@@ -4,7 +4,7 @@ import com.enderio.enderio.api.capacitor.CapacitorData;
 import com.enderio.enderio.api.capacitor.CapacitorScalable;
 import com.enderio.legacy_layout.base.api.io.energy.EnergyIOMode;
 import com.enderio.legacy_layout.base.api.misc.RedstoneControl;
-import com.enderio.legacy_layout.base.common.blockentity.MachineInstallable;
+import com.enderio.enderio.common.foundation.block.entity.MachineInstallable;
 import com.enderio.enderio.common.registration.legacy_regilite.base.EIODataComponents;
 import com.enderio.legacy_layout.base.common.item.capacitors.CapacitorItem;
 import com.enderio.core.common.network.NetworkDataSlot;

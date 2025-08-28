@@ -1,0 +1,30 @@
+package com.enderio.enderio.common.content.utility.glider.advancement;
+
+import com.enderio.enderio.common.EnderIO;
+import com.enderio.enderio.api.EnderIOAPI;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.player.AdvancementEvent;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@EventBusSubscriber(modid = EnderIO.MOD_ID)
+public class UseGliderAdvancementBenefit {
+
+    public static final ResourceLocation USE_GLIDER_ADVANCEMENT = EnderIOAPI.loc("adventure/use_glider");
+
+    public static final Map<Integer, Item> PLAYER_BOUND_GLIDERS = new HashMap<>();
+
+    @SubscribeEvent
+    public static void onEarnAdvancement(AdvancementEvent.AdvancementEarnEvent earnAdvancement) {
+        if (earnAdvancement.getAdvancement().id().equals(USE_GLIDER_ADVANCEMENT)) {
+            Item item = PLAYER_BOUND_GLIDERS.get(earnAdvancement.getEntity().getUUID().hashCode());
+            if (item != null && !earnAdvancement.getEntity().addItem(item.getDefaultInstance())) {
+                earnAdvancement.getEntity().drop(item.getDefaultInstance(), false);
+            }
+        }
+    }
+}

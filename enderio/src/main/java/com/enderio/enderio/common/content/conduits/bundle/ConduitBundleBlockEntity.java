@@ -1,7 +1,7 @@
 package com.enderio.enderio.common.content.conduits.bundle;
 
 import com.enderio.legacy_layout.base.api.UseOnly;
-import com.enderio.legacy_layout.base.common.blockentity.Wrenchable;
+import com.enderio.enderio.common.foundation.block.entity.Wrenchable;
 import com.enderio.legacy_layout.conduits.ConduitNBTKeys;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.api.conduits.ConduitCapabilities;

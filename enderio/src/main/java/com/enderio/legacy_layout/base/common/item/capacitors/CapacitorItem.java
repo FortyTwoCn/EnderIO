@@ -1,6 +1,6 @@
 package com.enderio.legacy_layout.base.common.item.capacitors;
 
-import com.enderio.legacy_layout.base.common.blockentity.MachineInstallable;
+import com.enderio.enderio.common.foundation.block.entity.MachineInstallable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
